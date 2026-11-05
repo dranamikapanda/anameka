@@ -1,0 +1,23 @@
+import Link from "next/link";
+import { PageHero } from "@/components/PageHero";
+import { GalleryGrid } from "@/components/GalleryGrid";
+import { EmptyState } from "@/components/EmptyState";
+import { getGallery } from "@/lib/data";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata() {
+  return buildMetadata({ path: "/gallery", title: "Gallery | Events, Workshops & Photographs | Dr. Anameka S Panda", description: "Photographs of Dr. Anameka S Panda's work: events, workshops, consultations, achievements and media coverage." });
+}
+export default async function Gallery() {
+  const items = await getGallery();
+  return (
+    <>
+      <PageHero title="Gallery" crumbs={[{ name: "Gallery", path: "/gallery" }]} intro="Photographs from consultations, workshops, events and media appearances.">
+        <Link href="/videos" className="btn-ghost mt-8">Watch the videos</Link>
+      </PageHero>
+      <section className="section"><div className="container-x">
+        {items.length ? <GalleryGrid items={items} /> : <EmptyState title="Photographs coming soon" body="Images from events, workshops and consultations will be added here." />}
+      </div></section>
+    </>
+  );
+}

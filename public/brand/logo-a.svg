@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 60 1080 1080" role="img" aria-label="Anameka S Panda monogram">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2C766"/><stop offset="1" stop-color="#C8912F"/></linearGradient></defs>
+  <circle cx="620" cy="600" r="505" fill="#441F51" stroke="url(#g)" stroke-width="26"/>
+  <path fill="url(#g)" fill-rule="evenodd" d="M247 872 607 207H785L905 872H740L718 725H483L410 872ZM536 608 668 326 705 608Z"/>
+</svg>

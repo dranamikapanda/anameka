@@ -1,0 +1,610 @@
+[
+ {
+  "slug": "vedic-astrology",
+  "title": "Vedic Astrology",
+  "icon": "Orbit",
+  "short_description": "A reading of your birth chart in the Jyotish tradition, covering planetary periods and timing questions such as career and marriage.",
+  "intro": "Vedic astrology, or Jyotish, is one of the oldest systems of astrology still in practice. A consultation uses your date, time and place of birth to prepare a chart, which then becomes the starting point for a structured conversation about the areas of life you want to think through.",
+  "what_is": "Jyotish maps the positions of the planets and lunar mansions (nakshatras) at the moment of birth. Practitioners read the chart through houses, signs, planetary periods (dashas) and transits. It is a traditional interpretive framework, not an empirical science, and a good consultation is clear about that.",
+  "process": "Dr. Anameka prepares your chart in advance, studies the questions you have shared, and reads the chart with those questions in mind. The session focuses on your priorities rather than a general recitation of every placement.",
+  "who_for": "People at a crossroads in career, relationships or family life; those asking timing questions such as career moves or marriage; and anyone who values traditional Indian knowledge systems as part of how they plan.",
+  "procedure": [
+   {
+    "title": "Share your birth details",
+    "body": "Date, exact time and place of birth. If the time is uncertain, mention it so the reading can account for that."
+   },
+   {
+    "title": "Tell us your questions",
+    "body": "Two or three focused questions make for a far more useful session than a general reading."
+   },
+   {
+    "title": "Consultation",
+    "body": "An unhurried session online or in person, with time for your follow-up questions."
+   },
+   {
+    "title": "Summary and suggestions",
+    "body": "Key observations and any optional practices discussed are summarised so you can refer back to them."
+   }
+  ],
+  "benefits": [
+   "A structured way to reflect on decisions and timing",
+   "Time with an experienced practitioner who listens to your situation",
+   "Suggestions that are practical and optional, never coercive"
+  ],
+  "limitations": [
+   "Astrology is a traditional belief system; outcomes are not guaranteed",
+   "It does not replace medical, legal, financial or psychological advice",
+   "Accuracy depends on the accuracy of the birth time provided"
+  ],
+  "faqs": [
+   {
+    "q": "What details do I need for a Vedic astrology consultation?",
+    "a": "Your date of birth, the most accurate time of birth you have, and your place of birth. A list of the questions you most want to explore helps the session stay focused."
+   },
+   {
+    "q": "What if I don't know my exact birth time?",
+    "a": "Let us know when you book. Some observations depend heavily on birth time, so the consultation will say which parts of the reading are less certain."
+   },
+   {
+    "q": "Can astrology predict exactly what will happen?",
+    "a": "No responsible practitioner can promise that. Consultations are offered as guidance and reflection, and the decisions remain yours."
+   },
+   {
+    "q": "Is the consultation available online?",
+    "a": "Yes. Consultations can be held online or in person, whichever suits you."
+   }
+  ],
+  "seo_title": "Vedic Astrology Consultation | Dr. Anameka S Panda",
+  "seo_description": "Personalised Vedic astrology (Jyotish) consultations with Dr. Anameka S Panda, online or in person. Thoughtful birth-chart guidance for career, family and life decisions."
+ },
+ {
+  "slug": "vastu-consultation",
+  "title": "Vastu Consultation",
+  "icon": "Compass",
+  "short_description": "Guidance on the layout, orientation and use of homes and workplaces according to the principles of Vastu Shastra.",
+  "intro": "Vastu Shastra is the traditional Indian discipline of space and architecture. A Vastu consultation looks at how a home, office, shop or factory is oriented and arranged, and offers suggestions for planning new spaces or adjusting existing ones.",
+  "what_is": "Vastu considers directions, the placement of rooms and entrances, the flow of light and movement, and the use of the five elements. Suggestions can range from planning advice for new construction to simple rearrangements in an existing space.",
+  "process": "The consultation begins with a floor plan and the orientation of the property. Dr. Anameka reviews the layout, discusses how the space is actually used, and identifies the areas that matter most to you.",
+  "who_for": "Families planning, buying or renovating a home; business owners setting up offices, shops or factories; and anyone who wants their space to reflect Vastu principles.",
+  "procedure": [
+   {
+    "title": "Send the floor plan",
+    "body": "A floor plan with the north direction marked, plus photographs if available."
+   },
+   {
+    "title": "Discuss your priorities",
+    "body": "Explain how you use the space and what concerns you most."
+   },
+   {
+    "title": "Site review",
+    "body": "An online review of plans and photographs, or a visit where offline consultation is arranged."
+   },
+   {
+    "title": "Recommendations",
+    "body": "Prioritised suggestions, separating simple adjustments from larger changes."
+   }
+  ],
+  "benefits": [
+   "Clarity on how Vastu principles apply to your specific space",
+   "Prioritised suggestions you can act on gradually",
+   "Useful input at the planning stage, before construction costs are committed"
+  ],
+  "limitations": [
+   "Vastu is a traditional discipline; specific outcomes cannot be guaranteed",
+   "Structural, electrical or legal matters must always be checked by qualified professionals",
+   "Recommendations depend on the accuracy of the plans shared"
+  ],
+  "faqs": [
+   {
+    "q": "Do I need to demolish or rebuild to follow Vastu?",
+    "a": "Usually not. Many suggestions involve placement, usage and arrangement. Where structural change is discussed, it is presented as an option, and non-invasive alternatives are explained."
+   },
+   {
+    "q": "Can Vastu consultation be done online?",
+    "a": "Yes, using floor plans, the north orientation and photographs. Site visits can be arranged for offline consultations."
+   },
+   {
+    "q": "Is Vastu only for homes?",
+    "a": "No. It is applied to offices, shops, clinics, factories and other commercial spaces as well."
+   }
+  ],
+  "seo_title": "Vastu Consultation for Homes & Businesses | Dr. Anameka S Panda",
+  "seo_description": "Vastu Shastra consultation for homes, offices and commercial spaces. Practical, prioritised guidance from plans and site reviews, online or in person."
+ },
+ {
+  "slug": "non-invasive-vastu",
+  "title": "Non-Invasive Vastu",
+  "icon": "Home",
+  "short_description": "Vastu corrections that work with your existing home: no demolition, no breaking, no structural changes.",
+  "intro": "Many people live or work in spaces they cannot rebuild: rented homes, apartments, established offices. Non-invasive Vastu focuses on suggestions that respect the structure as it stands.",
+  "what_is": "Instead of moving walls or entrances, non-invasive Vastu works through the use of rooms, placement of furniture and objects, colours, lighting and other reversible adjustments.",
+  "process": "The existing layout is reviewed and the suggestions are limited to changes you can make without construction. Each suggestion is explained so you understand the reasoning behind it.",
+  "who_for": "Tenants, apartment residents, businesses in leased premises, and anyone who wants Vastu guidance without the cost and disruption of construction.",
+  "procedure": [
+   {
+    "title": "Share the current layout",
+    "body": "Floor plan, north direction and photographs of the main areas."
+   },
+   {
+    "title": "Identify constraints",
+    "body": "Tell us what can and cannot be changed in the space."
+   },
+   {
+    "title": "Review",
+    "body": "Online or on-site review focused on reversible adjustments."
+   },
+   {
+    "title": "Action list",
+    "body": "A clear, prioritised list of non-structural suggestions."
+   }
+  ],
+  "benefits": [
+   "No demolition or construction cost",
+   "Suggestions suitable for rented or shared spaces",
+   "Changes can be made gradually and reversed if needed"
+  ],
+  "limitations": [
+   "Outcomes are not guaranteed",
+   "Some layout features cannot be addressed without structural change, and this is stated plainly",
+   "Not a substitute for safety, structural or legal advice"
+  ],
+  "faqs": [
+   {
+    "q": "What does non-invasive Vastu mean?",
+    "a": "It means working with the existing structure: adjusting usage, placement, colours and arrangement rather than breaking or rebuilding anything."
+   },
+   {
+    "q": "Is it suitable for a rented flat?",
+    "a": "Yes. It was designed for exactly this kind of situation, where structural change isn't possible."
+   }
+  ],
+  "seo_title": "Non-Invasive Vastu Without Demolition | Dr. Anameka S Panda",
+  "seo_description": "Non-invasive Vastu guidance for homes and offices: practical, reversible suggestions with no demolition or construction. Online and in-person consultations."
+ },
+ {
+  "slug": "astro-vastu-integration",
+  "title": "Astro-Vastu Integration",
+  "icon": "Sparkles",
+  "short_description": "Your birth chart and your living space, read together, with non-invasive Vastu suggestions guided by your chart.",
+  "intro": "Astrology looks at you; Vastu looks at your space. Astro-Vastu Integration brings the two together, so suggestions for your home or workplace take your own chart into account. In Anameka's words: the stars align, your space aligns, you align.",
+  "what_is": "An integrated consultation that combines a Vedic astrology reading with a Vastu review of your home or workplace. Suggestions are non-invasive and need no structural changes.",
+  "process": "Your birth chart is prepared and your floor plan reviewed in advance. The consultation looks at both together and focuses on the areas of life you want to work on, such as health, career, relationships or peace of mind.",
+  "who_for": "People who want guidance on both their own timing and their living or working space, especially when moving home, renovating or starting a business.",
+  "procedure": [
+   {
+    "title": "Share details",
+    "body": "Birth details plus a floor plan with north marked and photographs."
+   },
+   {
+    "title": "Preparation",
+    "body": "Chart and plan are studied together."
+   },
+   {
+    "title": "Consultation",
+    "body": "Online or in person, focused on your priorities."
+   },
+   {
+    "title": "Suggestions",
+    "body": "Prioritised, non-structural adjustments and optional remedies."
+   }
+  ],
+  "benefits": [
+   "One consultation covering both chart and space",
+   "No demolition or structural changes needed",
+   "Suggestions linked to the areas of life you care about"
+  ],
+  "limitations": [
+   "Astrology and Vastu are traditional systems; outcomes are not guaranteed",
+   "Not a substitute for structural, medical, legal or financial advice"
+  ],
+  "faqs": [
+   {
+    "q": "What is Astro-Vastu?",
+    "a": "An approach that reads your birth chart and your home or workplace together, so Vastu suggestions take your chart into account."
+   },
+   {
+    "q": "Will I need to make structural changes?",
+    "a": "No. Suggestions are non-invasive and work with your existing space."
+   }
+  ],
+  "seo_title": "Astro-Vastu Integration Consultation | Dr. Anameka S Panda, Bhubaneswar",
+  "seo_description": "Vedic astrology and non-invasive Vastu read together: your chart and your space aligned, with no structural changes. Online or in Bhubaneswar."
+ },
+ {
+  "slug": "graphology",
+  "title": "Graphology",
+  "icon": "PenLine",
+  "short_description": "Handwriting analysis that looks at how you write as a starting point for self-reflection.",
+  "intro": "Graphology is the study of handwriting: its size, slant, pressure, spacing, margins and letter forms. A consultation uses these features as prompts for a conversation about personal tendencies and patterns.",
+  "what_is": "Graphologists observe recurring features of handwriting and interpret them within a structured framework. Its scientific validity as a personality measure is debated, and it should not be used as the sole basis for decisions such as hiring.",
+  "process": "You provide a sample of natural handwriting on unruled paper. Dr. Anameka studies the sample before the session and then discusses her observations with you, inviting your own reflections.",
+  "who_for": "Individuals interested in self-reflection; students and parents, as part of Anameka's student programmes; teachers who want another lens for understanding pupils; and anyone interested in handwriting as a personal practice.",
+  "procedure": [
+   {
+    "title": "Write a sample",
+    "body": "Half a page to a page of natural writing on unruled paper, with your usual pen, plus your signature."
+   },
+   {
+    "title": "Send it",
+    "body": "A clear photograph or scan works for online consultations."
+   },
+   {
+    "title": "Analysis session",
+    "body": "Observations are discussed with you, not delivered as a verdict."
+   },
+   {
+    "title": "Follow-up",
+    "body": "Where useful, the session may lead into graphotherapy exercises."
+   }
+  ],
+  "benefits": [
+   "An engaging, structured prompt for self-reflection",
+   "No birth details required",
+   "Can be combined with graphotherapy practice"
+  ],
+  "limitations": [
+   "Graphology is not a validated psychological assessment",
+   "It cannot diagnose health or mental health conditions",
+   "Should not be used as the sole basis for employment or legal decisions"
+  ],
+  "faqs": [
+   {
+    "q": "How should I prepare a handwriting sample?",
+    "a": "Write naturally on unruled paper about half a page to a page, using your normal pen and pace, and sign at the end. Avoid copying text or writing unusually neatly."
+   },
+   {
+    "q": "Can graphology diagnose illness?",
+    "a": "No. Graphology is not a medical or diagnostic tool, and any health concern should be taken to a qualified doctor."
+   }
+  ],
+  "seo_title": "Graphology & Handwriting Analysis | Dr. Anameka S Panda",
+  "seo_description": "Handwriting analysis consultations with Dr. Anameka S Panda. A thoughtful, reflective look at your handwriting, available online or in person."
+ },
+ {
+  "slug": "graphotherapy",
+  "title": "Graphotherapy",
+  "icon": "Feather",
+  "short_description": "Guided handwriting exercises practised over several weeks, as a mindful habit-building routine.",
+  "intro": "Graphotherapy builds on graphology. It involves practising specific changes to handwriting through regular, short exercises, often over a period of several weeks.",
+  "what_is": "Practitioners of graphotherapy suggest that consciously practising particular strokes and letter forms can support intention-setting and habit change. The approach is traditional and anecdotal; it is best understood as a mindful practice rather than a clinical therapy.",
+  "process": "After a handwriting analysis, a small number of exercises are chosen. You practise them daily for a set period, with check-ins to review progress and adjust the exercises.",
+  "who_for": "Students preparing for exams (see the Exam Ready From the Inside programme), people who enjoy structured daily practices, and anyone wanting a calm, focused routine as part of personal growth.",
+  "procedure": [
+   {
+    "title": "Initial analysis",
+    "body": "Graphotherapy starts with a handwriting analysis session."
+   },
+   {
+    "title": "Exercise plan",
+    "body": "A short set of exercises suited to your goals."
+   },
+   {
+    "title": "Daily practice",
+    "body": "Usually a few minutes each day over several weeks."
+   },
+   {
+    "title": "Review",
+    "body": "Check-ins to compare samples and adjust the plan."
+   }
+  ],
+  "benefits": [
+   "A calm, mindful daily routine",
+   "Visible changes in handwriting with regular practice",
+   "Accountability through scheduled reviews"
+  ],
+  "limitations": [
+   "Graphotherapy is not a substitute for medical or psychological treatment",
+   "Results depend on consistent practice and vary between individuals",
+   "Not a validated clinical therapy"
+  ],
+  "faqs": [
+   {
+    "q": "How long does graphotherapy take?",
+    "a": "Programmes usually run for several weeks of short daily practice. The exact period is agreed after the initial analysis."
+   },
+   {
+    "q": "Is graphotherapy suitable for children?",
+    "a": "Children can practise handwriting exercises with a parent's involvement. It should complement, not replace, any support recommended by teachers or health professionals."
+   }
+  ],
+  "seo_title": "Graphotherapy Handwriting Practice | Dr. Anameka S Panda",
+  "seo_description": "Graphotherapy programmes with Dr. Anameka S Panda: guided handwriting exercises and regular reviews, practised as a mindful habit-building routine."
+ },
+ {
+  "slug": "signature-analysis",
+  "title": "Signature Analysis",
+  "icon": "Signature",
+  "short_description": "A close reading of your signature, with optional suggestions for refining it.",
+  "intro": "Your signature is the most personal mark you make, and you make it on your most important documents. Signature analysis studies its form, legibility, direction and placement.",
+  "what_is": "Drawing on graphology, signature analysis looks at features such as size relative to your handwriting, underlining, slant and readability. Where you wish, suggestions for a refined signature can be discussed.",
+  "process": "You share several samples of your signature and a short handwriting sample. Observations are discussed with you, and any suggested changes are practical and easy to adopt.",
+  "who_for": "Professionals, business owners and individuals who want to reflect on their signature or are considering changing it; teachers looking at students' signatures alongside their handwriting.",
+  "procedure": [
+   {
+    "title": "Provide samples",
+    "body": "Five or six signatures as you normally sign, plus a short handwriting sample."
+   },
+   {
+    "title": "Analysis",
+    "body": "Features of the signature are studied in context."
+   },
+   {
+    "title": "Discussion",
+    "body": "Observations and optional refinements are explained."
+   },
+   {
+    "title": "Practice",
+    "body": "If you adopt a new signature, a practice routine is suggested."
+   }
+  ],
+  "benefits": [
+   "Insight into how your signature relates to your handwriting",
+   "Practical suggestions you can adopt at your own pace"
+  ],
+  "limitations": [
+   "Outcomes are not guaranteed",
+   "Changing your signature on legal and banking records has administrative implications; check with the relevant institutions first"
+  ],
+  "faqs": [
+   {
+    "q": "Should I change my signature on official documents?",
+    "a": "That is your decision. Changing a signature on bank, legal or identity records may require formal updates, so check with those institutions before you switch."
+   }
+  ],
+  "seo_title": "Signature Analysis | Dr. Anameka S Panda",
+  "seo_description": "Signature analysis consultations: a careful reading of your signature with optional, practical suggestions for refining it. Online and in person."
+ },
+ {
+  "slug": "watch-correction",
+  "title": "Watch Correction",
+  "icon": "Watch",
+  "short_description": "Traditional guidance on choosing and wearing a wristwatch: hand, dial, colour and style.",
+  "intro": "In some remedial traditions, everyday objects are chosen with care. Watch correction offers guidance on how and which wristwatch to wear, based on the principles Dr. Anameka works with.",
+  "what_is": "Suggestions may cover which wrist to wear a watch on, dial shape and colour, strap material, and whether to keep a watch running and correctly set. These are traditional, low-cost suggestions.",
+  "process": "Usually offered as part of a broader consultation, using your birth details and current habits as context.",
+  "who_for": "Clients who already work with Dr. Anameka on astrology or remedial measures and want simple everyday suggestions.",
+  "procedure": [
+   {
+    "title": "Share context",
+    "body": "Birth details and a photo of the watch you currently wear."
+   },
+   {
+    "title": "Guidance",
+    "body": "Suggestions on wearing and choosing a watch."
+   }
+  ],
+  "benefits": [
+   "Simple, inexpensive and easy to adopt",
+   "No need to buy anything unless you choose to"
+  ],
+  "limitations": [
+   "A traditional practice; outcomes are not guaranteed",
+   "You are never required to purchase a specific product"
+  ],
+  "faqs": [
+   {
+    "q": "Do I have to buy a new watch?",
+    "a": "No. Guidance often concerns how you wear the watch you already own. Any purchase is entirely your choice."
+   }
+  ],
+  "seo_title": "Watch Correction Guidance | Dr. Anameka S Panda",
+  "seo_description": "Watch correction guidance from Dr. Anameka S Panda: traditional suggestions on which wrist, dial and style to wear, offered as part of a personal consultation."
+ },
+ {
+  "slug": "logo-design-guidance",
+  "title": "Logo Design Guidance",
+  "icon": "Shapes",
+  "short_description": "Logo analysis and design guidance for business owners, looking at shape, colour and lettering alongside a review of your business mindset.",
+  "intro": "A logo is a business's signature. Anameka offers logo analysis together with a conversation about where the business and its owner are heading, so the brand you present reflects the direction you want to take.",
+  "what_is": "The consultation reviews a proposed or existing logo and offers suggestions on elements such as colour choice, the direction of lines and text, and the balance of the composition.",
+  "process": "Share your current logo or design concepts and information about your business. Suggestions are given so that your designer can incorporate them; Dr. Anameka does not replace a professional designer.",
+  "who_for": "Founders launching a new business, companies considering a rebrand, and designers working with clients who value these principles.",
+  "procedure": [
+   {
+    "title": "Share concepts",
+    "body": "Existing logo or design drafts, business name and sector."
+   },
+   {
+    "title": "Review",
+    "body": "Composition, colour and lettering are studied."
+   },
+   {
+    "title": "Suggestions",
+    "body": "Written notes your designer can work from."
+   }
+  ],
+  "benefits": [
+   "A considered review before you commit to a brand identity",
+   "Notes that work alongside your designer's process"
+  ],
+  "limitations": [
+   "Business results are not guaranteed by any logo",
+   "Trademark searches and legal clearance must be handled separately"
+  ],
+  "faqs": [
+   {
+    "q": "Will you design the logo for me?",
+    "a": "The service provides guidance and review. The final artwork is created by your designer, who can incorporate the suggestions."
+   },
+   {
+    "q": "Do I still need a trademark search?",
+    "a": "Yes. Always check trademark availability with a qualified professional before adopting a logo."
+   }
+  ],
+  "seo_title": "Logo Design Guidance for Businesses | Dr. Anameka S Panda",
+  "seo_description": "Logo design guidance for new and existing businesses: a considered review of shape, colour and lettering that works alongside your designer."
+ },
+ {
+  "slug": "mobile-number-analysis",
+  "title": "Mobile Number Numerology",
+  "icon": "Smartphone",
+  "short_description": "A numerological reading of your mobile number, with guidance if you are choosing a new personal or business number.",
+  "intro": "Many people choose phone numbers with care, especially for business. Mobile number analysis applies numerological principles to your current number or to a shortlist of options.",
+  "what_is": "The digits of a number, their sequence and their totals are interpreted within a numerological framework, in the context of your date of birth.",
+  "process": "Share your current number or the options you are considering, along with your date of birth. You receive observations and, where relevant, a comparison of the options.",
+  "who_for": "Professionals and business owners choosing a new number, and individuals curious about their current one.",
+  "procedure": [
+   {
+    "title": "Share numbers",
+    "body": "Your current number or a shortlist, with your date of birth."
+   },
+   {
+    "title": "Analysis",
+    "body": "Each number is interpreted and compared."
+   },
+   {
+    "title": "Recommendation",
+    "body": "Observations to help you decide."
+   }
+  ],
+  "benefits": [
+   "Quick, focused guidance",
+   "Helpful when choosing between several available numbers"
+  ],
+  "limitations": [
+   "Numerology is a traditional belief system; outcomes are not guaranteed",
+   "Changing a business number has practical costs that should be weighed separately"
+  ],
+  "faqs": [
+   {
+    "q": "Do I need to change my number?",
+    "a": "Not necessarily. The analysis gives observations; whether to change is your decision, and practical costs matter too."
+   }
+  ],
+  "seo_title": "Mobile Number Analysis | Dr. Anameka S Panda",
+  "seo_description": "Mobile number analysis using numerological principles. Compare options before choosing a new personal or business number."
+ },
+ {
+  "slug": "remedial-measures",
+  "title": "Remedial Measures",
+  "icon": "Flame",
+  "short_description": "No-fear, practical traditional remedies such as mantras, rituals and, where appropriate, gemstones, suggested within a full consultation.",
+  "intro": "Remedial measures are traditional practices suggested after an astrology or Vastu consultation. Dr. Anameka favours remedies that are simple, affordable and fit into daily life.",
+  "what_is": "Remedies can include mantras, simple rituals, charitable acts, routines, colour or placement suggestions and, where appropriate, gemstones. Anameka's approach is no-fear and practical: remedies are offered as optional supports to your own reflection and effort, never as threats or substitutes for them.",
+  "process": "Remedies are always discussed in context, with the reasoning explained. You are free to adopt, adapt or decline any suggestion.",
+  "who_for": "Clients who have had an astrology or Vastu consultation and want practical, traditional steps to accompany their own efforts.",
+  "procedure": [
+   {
+    "title": "Consultation",
+    "body": "Remedies follow from a full consultation, not in isolation."
+   },
+   {
+    "title": "Suggestions",
+    "body": "A short list of practices, with how and when to follow them."
+   },
+   {
+    "title": "Review",
+    "body": "Optional follow-up to discuss how the practices fit your routine."
+   }
+  ],
+  "benefits": [
+   "Simple practices that fit into daily routines",
+   "No pressure to buy expensive items"
+  ],
+  "limitations": [
+   "Remedies are traditional practices; outcomes are not guaranteed",
+   "Never stop medical treatment or ignore professional advice in favour of a remedy"
+  ],
+  "faqs": [
+   {
+    "q": "Do remedies require buying gemstones or costly items?",
+    "a": "No. The emphasis is on simple, affordable practices. Any purchase is optional and your decision."
+   },
+   {
+    "q": "Can remedies replace medical treatment?",
+    "a": "No. Always follow the advice of your doctor or other qualified professionals."
+   }
+  ],
+  "seo_title": "Remedial Measures | Dr. Anameka S Panda",
+  "seo_description": "Simple, practical traditional remedies suggested within a full astrology or Vastu consultation. Affordable, optional and explained clearly."
+ },
+ {
+  "slug": "life-transformation-coaching",
+  "title": "Life Transformation Coaching",
+  "icon": "Sunrise",
+  "short_description": "Structured coaching conversations to clarify goals, build habits and move forward with intent.",
+  "intro": "Coaching brings together reflection, goal-setting and accountability. Sessions may draw on insights from Dr. Anameka's other disciplines, while staying grounded in practical steps you choose and take.",
+  "what_is": "Life coaching is a collaborative, forward-looking process. It is not counselling or therapy, and it does not address mental health conditions.",
+  "process": "An initial session clarifies what you want to change. Later sessions set specific goals, plan actions and review progress.",
+  "who_for": "People navigating transitions, wanting clearer direction, or looking for accountability in building new habits.",
+  "procedure": [
+   {
+    "title": "Discovery session",
+    "body": "Clarify where you are and where you want to go."
+   },
+   {
+    "title": "Goal setting",
+    "body": "Turn intentions into specific, realistic goals."
+   },
+   {
+    "title": "Regular sessions",
+    "body": "Action planning, reflection and accountability."
+   },
+   {
+    "title": "Review",
+    "body": "Look back at progress and decide next steps."
+   }
+  ],
+  "benefits": [
+   "Clearer goals and priorities",
+   "Accountability and structured reflection",
+   "Practical action plans you set yourself"
+  ],
+  "limitations": [
+   "Coaching is not therapy and does not treat mental health conditions",
+   "Progress depends on your own commitment and circumstances"
+  ],
+  "faqs": [
+   {
+    "q": "Is life coaching the same as therapy?",
+    "a": "No. Coaching focuses on goals and action. If you are experiencing mental health difficulties, please speak with a qualified mental health professional."
+   }
+  ],
+  "seo_title": "Life Transformation Coaching | Dr. Anameka S Panda",
+  "seo_description": "Life transformation coaching with Dr. Anameka S Panda: structured sessions to clarify goals, build habits and move forward with intent."
+ },
+ {
+  "slug": "business-growth-guidance",
+  "title": "Business Growth Guidance",
+  "icon": "TrendingUp",
+  "short_description": "A combined perspective on your business using astrology, Vastu, naming and branding guidance.",
+  "intro": "Business owners often bring several questions at once: timing a launch, setting up premises, choosing a name or logo. This service brings Dr. Anameka's disciplines together into one consultation for your business.",
+  "what_is": "Depending on your needs, guidance may draw on Vedic astrology for timing, Vastu for premises, and review of names, logos and numbers. It complements, and never replaces, professional financial, legal and strategic advice.",
+  "process": "An intake conversation identifies the decisions you are facing. Relevant analyses are prepared and brought together in one consultation.",
+  "who_for": "Founders, family businesses, shop owners and professionals planning launches, relocations or rebrands.",
+  "procedure": [
+   {
+    "title": "Intake",
+    "body": "Describe your business and the decisions ahead."
+   },
+   {
+    "title": "Preparation",
+    "body": "Relevant charts, plans and brand materials are reviewed."
+   },
+   {
+    "title": "Consultation",
+    "body": "A combined session covering each area."
+   },
+   {
+    "title": "Notes",
+    "body": "A summary of observations and suggestions."
+   }
+  ],
+  "benefits": [
+   "One consultation that brings several perspectives together",
+   "Useful before major commitments such as premises or branding"
+  ],
+  "limitations": [
+   "Business outcomes depend on many factors and are not guaranteed",
+   "Does not replace financial, legal, tax or strategic professional advice"
+  ],
+  "faqs": [
+   {
+    "q": "Can this replace a business consultant or accountant?",
+    "a": "No. It is a complementary perspective. Always consult qualified financial, legal and tax professionals for those matters."
+   }
+  ],
+  "seo_title": "Business Growth Guidance | Dr. Anameka S Panda",
+  "seo_description": "Business guidance combining Vedic astrology, Vastu, and name and logo review for founders and business owners. Complements professional advice."
+ }
+]

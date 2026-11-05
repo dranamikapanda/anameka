@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ivory: #FBF6EF; --cream: #F4E8DA; --gold: #C8912F; --gold-light: #F2C766; --plum: #441F51; --charcoal: #2E2E2E;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-ivory text-charcoal font-sans antialiased; font-feature-settings: "kern", "liga"; }
+  h1, h2, h3 { @apply font-display text-plum; letter-spacing: -0.01em; font-weight: 500; }
+  h1 { font-size: clamp(2.5rem, 5.2vw, 4.75rem); line-height: 1.02; }
+  h2 { font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1.1; }
+  h3 { font-size: 1.6rem; line-height: 1.2; }
+  ::selection { background: var(--gold-light); color: var(--plum); }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-8; }
+  .section { @apply py-20 md:py-28; }
+  .lede { @apply text-lg leading-relaxed text-charcoal/80 max-w-prose; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[0.95rem] font-medium transition-[background,color,box-shadow,transform] duration-300 active:scale-[0.98] disabled:opacity-60; }
+  .btn-gold { @apply btn bg-gold text-plum-deep shadow-gold hover:bg-gold-light; }
+  .btn-plum { @apply btn bg-plum text-ivory hover:bg-plum-deep; }
+  .btn-ghost { @apply btn border border-gold/50 text-plum hover:bg-cream; }
+  .btn-ghost-light { @apply btn border border-gold-light/50 text-ivory hover:bg-white/10; }
+  .field { @apply w-full rounded-xl border border-plum/15 bg-white px-4 py-3 text-charcoal placeholder:text-charcoal/55 transition focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/25; }
+  .label { @apply mb-1.5 block text-sm font-medium text-plum; }
+  .err { @apply mt-1 text-sm text-[#A1321F]; }
+  .prose-rich { @apply text-[1.075rem] leading-[1.8] text-charcoal/90; }
+  .prose-rich h2 { @apply mt-12 mb-4 text-[2rem] scroll-mt-28; }
+  .prose-rich h3 { @apply mt-8 mb-3 scroll-mt-28; }
+  .prose-rich p { @apply mb-5; }
+  .prose-rich ul { @apply mb-5 list-disc pl-6 marker:text-gold; }
+  .prose-rich ol { @apply mb-5 list-decimal pl-6 marker:text-gold; }
+  .prose-rich li { @apply mb-2; }
+  .prose-rich a { @apply text-plum underline decoration-gold underline-offset-4 hover:decoration-2; }
+  .prose-rich blockquote { @apply my-8 border-l-2 border-gold pl-6 font-display text-2xl italic text-plum; }
+  .prose-rich strong { @apply font-semibold text-plum; }
+}
+
+/* Paper grain on cream surfaces – a nod to manuscript and handwriting work */
+.grain { position: relative; isolation: isolate; }
+.grain::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: .35;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .27 0 0 0 0 .12 0 0 0 0 .32 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+@keyframes settle { from { transform: translateY(18px); } to { transform: none; } }
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
