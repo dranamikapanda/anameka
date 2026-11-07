@@ -4,6 +4,7 @@ import { rateLimit, clientIp, hashIp } from "@/lib/rate-limit";
 import { serviceClient } from "@/lib/supabase/server";
 import { cleanText } from "@/lib/sanitize";
 import { notifyEnquiry } from "@/lib/notify";
+import { syncToGoogleSheet } from "@/lib/google-sheets";
 import { getProgrammes, getServices } from "@/lib/data";
 
 export async function POST(req: Request) {
@@ -34,10 +35,27 @@ export async function POST(req: Request) {
   const db = serviceClient();
   if (db) {
     const { error } = await db.from("enquiries").insert(row);
-    if (error) { console.error("[enquiries] insert failed", error.message); return NextResponse.json({ error: "We couldn't save your request. Please call or WhatsApp us instead." }, { status: 500 }); }
+    if (error) {
+      console.error("[enquiries] Supabase insert failed:", error.message);
+    }
   } else {
-    console.warn("[enquiries] Supabase not configured – enquiry logged only", { kind: row.kind, service: row.service_slug });
+    console.warn("[enquiries] Supabase not configured – saving via Google Sheets & email notification");
   }
-  await notifyEnquiry(e, service?.title).catch((err) => console.error("[enquiries] notify failed", err));
+  // Forward to email notification and Google Sheets simultaneously
+  await Promise.allSettled([
+    notifyEnquiry(e, service?.title).catch((err) => console.error("[enquiries] notify failed", err)),
+    syncToGoogleSheet({
+      kind: e.kind === "consultation" ? "Consultation Booking" : "Contact Enquiry",
+      full_name: row.full_name,
+      phone: row.phone,
+      email: row.email,
+      service: service?.title || e.service_slug,
+      mode: row.mode,
+      preferred_date: row.preferred_date,
+      preferred_time: row.preferred_time,
+      message: row.message,
+      source_page: row.source_page,
+    }).catch((err) => console.error("[enquiries] sheet sync failed", err)),
+  ]);
   return NextResponse.json({ ok: true });
 }
