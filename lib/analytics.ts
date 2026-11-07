@@ -1,7 +1,19 @@
 "use client";
 export type AnalyticsEvent =
-  | "generate_lead" | "contact_form_submit" | "whatsapp_click" | "phone_click" | "consultation_request"
-  | "newsletter_signup" | "service_view" | "blog_view" | "gallery_interaction" | "video_play";
+  | "generate_lead"
+  | "contact_form_submit"
+  | "whatsapp_click"
+  | "phone_click"
+  | "consultation_request"
+  | "newsletter_signup"
+  | "service_view"
+  | "blog_view"
+  | "gallery_interaction"
+  | "video_play"
+  | "tool_tab_switch"
+  | "vastu_direction_select"
+  | "rashi_select"
+  | (string & {});
 
 declare global { interface Window { dataLayer?: unknown[] } }
 
