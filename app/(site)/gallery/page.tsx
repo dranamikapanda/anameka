@@ -12,9 +12,15 @@ export default async function Gallery() {
   const items = await getGallery();
   return (
     <>
-      <PageHero title="Gallery" crumbs={[{ name: "Gallery", path: "/gallery" }]} intro="Photographs from consultations, workshops, events and media appearances.">
-        <Link href="/videos" className="btn-ghost mt-8">Watch the videos</Link>
-      </PageHero>
+      <PageHero
+        badge="Visual Archive"
+        title="Consultation & Event Gallery"
+        crumbs={[{ name: "Gallery", path: "/gallery" }]}
+        intro="Photographs from consultations, workshops, keynote speaking events, and media appearances with Dr. Anameka S Panda."
+        ctaHref="/videos"
+        ctaText="Watch Video Sessions"
+        showWhatsAppCta
+      />
       <section className="section"><div className="container-x">
         {items.length ? <GalleryGrid items={items} /> : <EmptyState title="Photographs coming soon" body="Images from events, workshops and consultations will be added here." />}
       </div></section>

@@ -16,8 +16,15 @@ export default async function Blog() {
   const cards = Object.fromEntries(posts.map((p) => [p.slug, <BlogCard key={p.slug} post={p} categoryName={name(p.category_slug)} level="h2" />]));
   return (
     <>
-      <PageHero title="Knowledge centre" crumbs={[{ name: "Knowledge centre", path: "/blog" }]}
-        intro="Plain-language articles on the traditions Dr. Anameka works with: what they are, how consultations work, and what to keep in mind." />
+      <PageHero
+        badge="Wisdom & Insights"
+        title="Knowledge Centre"
+        crumbs={[{ name: "Knowledge Centre", path: "/blog" }]}
+        intro="Authentic, practical guidance on Vedic Astrology, Non-Invasive Vastu, Graphotherapy, and Holistic Remedial Sciences by Dr. Anameka S Panda."
+        ctaHref="/book-consultation"
+        ctaText="Book a 1-on-1 Consultation"
+        showWhatsAppCta
+      />
       <section className="section">
         <div className="container-x">
           {posts.length ? <BlogBrowser posts={posts} categories={cats} cards={cards} featured={featured ? { slug: featured.slug, node: <BlogCard post={featured} categoryName={name(featured.category_slug)} large level="h2" /> } : undefined} />

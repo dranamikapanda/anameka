@@ -15,7 +15,15 @@ export default async function Contact() {
   return (
     <>
       <JsonLd data={webPageSchema("/contact", "Contact", "Contact Dr. Anameka S Panda")} />
-      <PageHero title="Contact" crumbs={[{ name: "Contact", path: "/contact" }]} intro="Call, message on WhatsApp, or write to us below. To request a specific consultation time, use the booking page." />
+      <PageHero
+        badge="Direct Office Desk"
+        title="Contact Dr. Anameka S Panda"
+        crumbs={[{ name: "Contact", path: "/contact" }]}
+        intro="Direct inquiries, consultation bookings, and sacred astrological, vastu, and graphology guidance. In-person at Bhubaneswar, and virtual worldwide."
+        ctaHref="/book-consultation"
+        ctaText="Book Consultation Slot"
+        showWhatsAppCta
+      />
       <section className="section"><div className="container-x grid gap-14 lg:grid-cols-12">
         <div className="lg:col-span-4 space-y-6">
           <div className="rounded-3xl border border-whatsapp/40 bg-whatsapp/10 p-6 backdrop-blur-sm">

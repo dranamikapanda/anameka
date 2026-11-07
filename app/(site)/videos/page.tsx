@@ -13,7 +13,15 @@ export default async function Videos() {
   return (
     <>
       {items.length > 0 && <JsonLd data={items.map(videoSchema)} />}
-      <PageHero title="Video gallery" crumbs={[{ name: "Gallery", path: "/gallery" }, { name: "Videos", path: "/videos" }]} intro="Talks, explainers and interviews." />
+      <PageHero
+        badge="Video Sessions & Media"
+        title="Video Gallery & Insights"
+        crumbs={[{ name: "Gallery", path: "/gallery" }, { name: "Videos", path: "/videos" }]}
+        intro="Talks, explainers on astrology, Vastu, signature analysis, and client testimonials by Dr. Anameka S Panda."
+        ctaHref="/book-consultation"
+        ctaText="Book a Consultation"
+        showWhatsAppCta
+      />
       <section className="section"><div className="container-x">
         {items.length ? <VideoGrid items={items} /> : <EmptyState title="Videos coming soon" body="Talks and explainers will be published here." />}
       </div></section>

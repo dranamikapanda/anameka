@@ -22,7 +22,7 @@ export function Navbar({ logoUrl }: { logoUrl?: string }) {
   const path = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const overDark = !scrolled && (path === "/" || path.startsWith("/services/") || path.startsWith("/programmes/"));
+  const overDark = !scrolled;
 
   useEffect(() => {
     const on = () => setScrolled(window.scrollY > 30);
