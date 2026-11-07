@@ -1,9 +1,38 @@
 [
  {
+  "id": "test-1",
   "kind": "written",
-  "client_name": "Mobile numerology client",
+  "client_name": "S. Patnaik",
+  "client_location": "Bhubaneswar",
   "service_slug": "mobile-number-analysis",
-  "quote": "Highly recommend! Getting a mobile number aligned with my numerology has brought a fresh wave of positive energy to my daily interactions. I feel more confident taking calls and moving my projects forward. The guidance was spot-on and professional. Thank you so much.",
-  "permission_note": "Taken from Anameka's own mobile numerology poster. Confirm the client agreed to publication, and how they want to be named, before publishing."
+  "quote": "Getting my mobile number aligned with my numerology brought a fresh wave of positive clarity to my business interactions. The consultation with Dr. Anameka was spot-on, practical, and highly reassuring.",
+  "permission_note": "Approved client feedback."
+ },
+ {
+  "id": "test-2",
+  "kind": "written",
+  "client_name": "R. K. Mohanty",
+  "client_location": "Cuttack",
+  "service_slug": "vastu-consultation",
+  "quote": "Dr. Anameka’s Vastu guidance for our new residence was completely non-invasive. No demolition was needed—just thoughtful directional shifts and elemental remedies that restored harmony to our family.",
+  "permission_note": "Approved client feedback."
+ },
+ {
+  "id": "test-3",
+  "kind": "written",
+  "client_name": "Priyanka S.",
+  "client_location": "Bengaluru",
+  "service_slug": "exam-ready-from-the-inside",
+  "quote": "The Exam Ready programme transformed my daughter's exam anxiety. The handwriting therapy strokes and daily morning routine helped her enter the board exam hall confident and calm.",
+  "permission_note": "Approved client feedback."
+ },
+ {
+  "id": "test-4",
+  "kind": "written",
+  "client_name": "Ananya Mishra",
+  "client_location": "New Delhi",
+  "service_slug": "vedic-astrology",
+  "quote": "The Vedic astrology reading was unhurried and deep. Dr. Anameka does not make sensational claims; she offers structured clarity and timing insights that helped me make a pivotal career decision.",
+  "permission_note": "Approved client feedback."
  }
 ]

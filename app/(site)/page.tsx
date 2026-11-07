@@ -12,6 +12,7 @@ import { NewsletterForm } from "@/components/NewsletterForm";
 import { JsonLd } from "@/components/JsonLd";
 import { ProgrammeCard } from "@/components/ProgrammeCard";
 import { WhatsAppKeyword } from "@/components/WhatsAppKeyword";
+import { InteractiveConsultationTools } from "@/components/InteractiveConsultationTools";
 import {
   GraduationCap,
   Briefcase,
@@ -143,14 +144,45 @@ export default async function Home() {
           <div className="lg:col-span-6">
             <HeroText headline={s.heroHeadline} sub={s.heroSubheading} />
           </div>
-          <div className="relative mx-auto w-full max-w-[540px] lg:col-span-6">
-            <HeroVisual />
-            <div className="absolute inset-[20%_24%_12%]">
+
+          {/* Majestic Hero Portrait Frame with 3D Yantra Aura - 100% Uncropped */}
+          <div className="relative mx-auto w-full max-w-[480px] lg:col-span-6 flex items-center justify-center">
+            {/* 3D Sacred Yantra Background Aura */}
+            <div className="absolute inset-0 -m-8 sm:-m-12 pointer-events-none opacity-40">
+              <HeroVisual />
+            </div>
+
+            {/* Regal Arched Portrait Container with Perfect Aspect Ratio */}
+            <div className="relative z-10 w-full max-w-[320px] sm:max-w-[360px]">
               <Portrait
                 src={s.portraitUrl}
                 priority
-                className="h-full !aspect-auto shadow-[0_30px_90px_-20px_rgba(0,0,0,.75)] border-2 border-gold/40"
+                fit="contain"
+                aspect="aspect-[412/740]"
+                className="w-full shadow-[0_25px_80px_-15px_rgba(0,0,0,0.85)] border-2 border-gold/50"
               />
+
+              {/* Floating luxury glass badge: Experience */}
+              <div className="absolute -left-4 sm:-left-8 top-16 z-20 flex items-center gap-2.5 rounded-2xl border border-gold/50 bg-plum-deep/90 px-3.5 py-2 sm:px-4 sm:py-2.5 shadow-2xl backdrop-blur-md animate-float">
+                <div className="grid h-8 w-8 place-items-center rounded-xl bg-gold/20 text-gold-light">
+                  <Sparkles className="h-4 w-4" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-gold-light leading-none">15+ Years</p>
+                  <p className="text-[10px] text-ivory/70">Dedicated Practice</p>
+                </div>
+              </div>
+
+              {/* Floating luxury glass badge: Verified Guidance */}
+              <div className="absolute -right-4 sm:-right-8 bottom-16 z-20 flex items-center gap-2.5 rounded-2xl border border-gold/50 bg-plum-deep/90 px-3.5 py-2 sm:px-4 sm:py-2.5 shadow-2xl backdrop-blur-md animate-float [animation-delay:1.5s]">
+                <div className="grid h-8 w-8 place-items-center rounded-full bg-whatsapp/20 text-whatsapp">
+                  <CheckCircle2 className="h-4 w-4" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-ivory leading-none">Holistic Synthesis</p>
+                  <p className="text-[10px] text-gold-light">Astrology · Vastu · Script</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -181,9 +213,14 @@ export default async function Home() {
       <section className="section grain bg-cream">
         <div className="container-x grid gap-12 md:grid-cols-12 md:items-center">
           <div className="md:col-span-5">
-            <div className="relative mx-auto max-w-sm md:max-w-none">
-              <div className="absolute -inset-2 rounded-3xl bg-gradient-to-r from-gold/30 to-plum/20 blur-xl opacity-70" />
-              <Portrait src={s.portraitUrl} className="relative shadow-soft" />
+            <div className="relative mx-auto max-w-[340px] sm:max-w-[370px]">
+              <div className="absolute -inset-3 rounded-[2.5rem] bg-gradient-to-r from-gold/30 to-plum/20 blur-xl opacity-75" />
+              <Portrait
+                src={s.portraitUrl}
+                fit="contain"
+                aspect="aspect-[412/740]"
+                className="relative shadow-luxury w-full border-2 border-gold/40"
+              />
             </div>
           </div>
 
@@ -356,6 +393,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Consultation & Energy Tools */}
+      <InteractiveConsultationTools />
 
       {/* How consultations are approached */}
       <section className="section grain bg-cream">

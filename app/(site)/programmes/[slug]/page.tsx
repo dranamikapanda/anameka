@@ -7,7 +7,6 @@ import { FaqList } from "@/components/FaqList";
 import { CtaBand } from "@/components/CtaBand";
 import { JsonLd } from "@/components/JsonLd";
 import { TrackView } from "@/components/TrackView";
-import { FlyerViewer } from "@/components/FlyerViewer";
 import { WhatsAppKeyword } from "@/components/WhatsAppKeyword";
 import { ProgrammeCard } from "@/components/ProgrammeCard";
 import { getProgramme, getProgrammes } from "@/lib/data";
@@ -91,7 +90,6 @@ export default async function ProgrammePage({ params }: P) {
                 <span>Ask on WhatsApp</span>
               </a>
             </div>
-            {p.poster_url && <div><h2 className="mb-3 text-xl">Programme flyer</h2><FlyerViewer src={p.poster_url} alt={p.poster_alt || `${p.title} flyer`} /></div>}
           </div>
         </aside>
       </div>

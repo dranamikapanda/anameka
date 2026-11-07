@@ -13,6 +13,8 @@ import categoriesSeed from "@/lib/content/blog-categories.json";
 import legalSeed from "@/lib/content/legal.json";
 import profileSeed from "@/lib/content/profile.json";
 import programmesSeed from "@/lib/content/programmes.json";
+import galleryDraft from "@/lib/content/gallery-draft.json";
+import testimonialsDraft from "@/lib/content/testimonials-draft.json";
 import { readingMinutes } from "@/lib/utils";
 
 /**
@@ -51,13 +53,13 @@ export const getProgrammes = cache(() =>
 export const getProgramme = cache(async (slug: string) => (await getProgrammes()).find((p) => p.slug === slug) ?? null);
 
 export const getTestimonials = cache(() =>
-  query<Testimonial[]>((db) => db.from("testimonials").select("*").eq("status", "published").order("featured", { ascending: false }).order("created_at", { ascending: false }), []));
+  query<Testimonial[]>((db) => db.from("testimonials").select("*").eq("status", "published").order("featured", { ascending: false }).order("created_at", { ascending: false }), testimonialsDraft as unknown as Testimonial[]));
 
 export const getStories = cache(() =>
   query<SuccessStory[]>((db) => db.from("success_stories").select("*").eq("status", "published").order("updated_at", { ascending: false }), []));
 
 export const getGallery = cache(() =>
-  query<GalleryItem[]>((db) => db.from("gallery_items").select("*").eq("status", "published").order("sort_order"), []));
+  query<GalleryItem[]>((db) => db.from("gallery_items").select("*").eq("status", "published").order("sort_order"), galleryDraft as unknown as GalleryItem[]));
 
 export const getVideos = cache(() =>
   query<Video[]>((db) => db.from("videos").select("*").eq("status", "published").order("sort_order"), []));

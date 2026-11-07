@@ -21,7 +21,7 @@ export default async function Stories() {
         {stories.map((st, i) => (
           <article key={st.id} id={st.slug} className="grid scroll-mt-28 gap-10 lg:grid-cols-12">
             <header className={`lg:col-span-5 ${i % 2 ? "lg:order-2 lg:col-start-8" : ""}`}>
-              {st.image_url && <div className="relative mb-8 aspect-[4/3] overflow-hidden rounded-3xl"><Image src={st.image_url} alt="" fill className="object-cover" sizes="40vw" /></div>}
+              {st.image_url && <div className="relative mb-8 aspect-[4/3] overflow-hidden rounded-3xl border border-gold/30 bg-cream/40 p-2 shadow-soft"><Image src={st.image_url} alt="" fill className="object-contain" sizes="40vw" /></div>}
               <p className="text-sm text-gold-deep">{st.client_label}{svc(st.service_slug) && <>, <Link href={`/services/${st.service_slug}`} className="underline">{svc(st.service_slug)!.title}</Link></>}</p>
               <h2 className="mt-3">{st.title}</h2>
             </header>

@@ -46,7 +46,7 @@ export default async function Post({ params }: P) {
           </p>
         </div>
       </header>
-      {p.cover_url && <div className="container-x -mt-2 max-w-5xl"><div className="relative aspect-[16/8] overflow-hidden rounded-3xl"><Image src={p.cover_url} alt={p.cover_alt || ""} fill priority className="object-cover" sizes="(min-width:1024px) 64rem, 100vw" /></div></div>}
+      {p.cover_url && <div className="container-x -mt-2 max-w-5xl"><div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-gold/30 bg-cream/40 shadow-soft"><Image src={p.cover_url} alt={p.cover_alt || ""} fill priority className="object-contain" sizes="(min-width:1024px) 64rem, 100vw" /></div></div>}
       <div className="container-x grid gap-14 py-16 lg:grid-cols-12">
         {toc.length > 2 && (
           <nav aria-label="Table of contents" className="lg:col-span-3">

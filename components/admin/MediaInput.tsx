@@ -32,7 +32,7 @@ export function MediaInput({ name, initial, kind }: { name: string; initial: str
       {url && kind === "image" && (
         <div className="relative inline-block">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={url} alt="" className="h-28 rounded-lg border border-plum/10 object-cover" />
+          <img src={url} alt="" className="h-28 rounded-lg border border-plum/10 object-contain bg-cream/40" />
           <button type="button" onClick={() => setUrl("")} className="absolute -right-2 -top-2 rounded-full bg-plum p-1 text-ivory" aria-label="Remove image"><X className="h-3 w-3" /></button>
         </div>
       )}

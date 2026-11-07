@@ -16,7 +16,8 @@ export default async function About() {
   const [s, { sections, timeline }, services, gallery] = await Promise.all([getSettings(), getProfile(), getServices(), getGallery()]);
   const intro = sections.find((x) => x.slug === "introduction");
   const others = sections.filter((x) => x.slug !== "introduction");
-  const photos = gallery.filter((g) => g.category === "professional" || g.category === "events");
+  const photos = gallery.filter((g) => g.category === "professional" || g.category === "events" || g.category === "achievements");
+  const displayPhotos = photos.length > 0 ? photos : gallery.slice(0, 6);
   return (
     <>
       <JsonLd data={webPageSchema("/about", "About Dr. Anameka S Panda", s.shortBio)} />
@@ -61,8 +62,8 @@ export default async function About() {
           </div>
         </div>
       </section>
-      {photos.length > 0 && (
-        <section className="section bg-cream pt-16"><div className="container-x"><h2 className="mb-10">Photographs</h2><GalleryGrid items={photos} limit={6} /></div></section>
+      {displayPhotos.length > 0 && (
+        <section className="section bg-cream pt-16"><div className="container-x"><h2 className="mb-10">Photographs & Certifications</h2><GalleryGrid items={displayPhotos} limit={6} /></div></section>
       )}
       <CtaBand title="Talk to Dr. Anameka" />
     </>

@@ -120,8 +120,8 @@
   "price_note": "Fees are shared when you enquire.",
   "cta_label": "Enquire about the programme",
   "whatsapp_keyword": "INNER EXCELLENCE",
-  "poster_url": "/brand/flyers/student-inner-excellence.webp",
-  "poster_alt": "Student Inner Excellence Program flyer",
+  "poster_url": null,
+  "poster_alt": null,
   "faqs": [
    {
     "q": "Which classes is this programme for?",
@@ -252,8 +252,8 @@
   "price_note": "Fees are shared when you enquire.",
   "cta_label": "Enquire to enrol",
   "whatsapp_keyword": "CERTIFY",
-  "poster_url": null,
-  "poster_alt": null,
+  "poster_url": "/brand/flyers/handwriting-mastery-certification.webp",
+  "poster_alt": "Handwriting Mastery Certification for Teachers flyer by Dr. Anameka S Panda",
   "faqs": [
    {
     "q": "Can a whole school staff take this together?",
