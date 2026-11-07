@@ -144,25 +144,26 @@ export default async function Home() {
             <HeroText headline={s.heroHeadline} sub={s.heroSubheading} />
           </div>
 
-          {/* Majestic Hero Portrait Frame with 3D Yantra Aura - 100% Uncropped & Unobstructed */}
-          <div className="relative mx-auto w-full max-w-[460px] lg:col-span-6 flex flex-col items-center justify-center px-2 sm:px-0">
+          {/* Majestic Hero Portrait Frame with 3D Yantra Aura - Refined Proportions */}
+          <div className="relative mx-auto w-full max-w-[400px] lg:col-span-6 flex flex-col items-center justify-center px-2 sm:px-0">
             {/* 3D Sacred Yantra Background Aura */}
             <div className="absolute inset-0 pointer-events-none opacity-40 overflow-hidden">
               <HeroVisual />
             </div>
 
             {/* Regal Portrait Container */}
-            <div className="relative z-10 w-full max-w-[280px] xs:max-w-[310px] sm:max-w-[350px]">
+            <div className="relative z-10 w-full max-w-[230px] xs:max-w-[250px] sm:max-w-[275px] lg:max-w-[295px]">
               <Portrait
                 src={s.portraitUrl}
                 priority
-                className="w-full shadow-[0_25px_80px_-15px_rgba(0,0,0,0.85)]"
+                aspect="aspect-[4/5]"
+                className="w-full shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8)]"
               />
 
-              {/* Desktop-only floating badges - safely anchored outside the portrait box */}
-              <div className="hidden lg:flex absolute -left-12 top-16 z-20 items-center gap-2.5 rounded-2xl border border-gold/50 bg-plum-deep/95 px-4 py-2.5 shadow-2xl backdrop-blur-md animate-float">
-                <div className="grid h-8 w-8 place-items-center rounded-xl bg-gold/20 text-gold-light shrink-0">
-                  <Sparkles className="h-4 w-4" />
+              {/* Desktop-only floating badges - neatly positioned beside the frame */}
+              <div className="hidden lg:flex absolute -left-10 top-12 z-20 items-center gap-2.5 rounded-xl border border-gold/40 bg-plum-deep/95 px-3.5 py-2 shadow-xl backdrop-blur-md animate-float">
+                <div className="grid h-7 w-7 place-items-center rounded-lg bg-gold/20 text-gold-light shrink-0">
+                  <Sparkles className="h-3.5 w-3.5" />
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-gold-light leading-none">15+ Years</p>
@@ -170,9 +171,9 @@ export default async function Home() {
                 </div>
               </div>
 
-              <div className="hidden lg:flex absolute -right-12 bottom-16 z-20 items-center gap-2.5 rounded-2xl border border-gold/50 bg-plum-deep/95 px-4 py-2.5 shadow-2xl backdrop-blur-md animate-float [animation-delay:1.5s]">
-                <div className="grid h-8 w-8 place-items-center rounded-full bg-whatsapp/20 text-whatsapp shrink-0">
-                  <CheckCircle2 className="h-4 w-4" />
+              <div className="hidden lg:flex absolute -right-10 bottom-12 z-20 items-center gap-2.5 rounded-xl border border-gold/40 bg-plum-deep/95 px-3.5 py-2 shadow-xl backdrop-blur-md animate-float [animation-delay:1.5s]">
+                <div className="grid h-7 w-7 place-items-center rounded-full bg-whatsapp/20 text-whatsapp shrink-0">
+                  <CheckCircle2 className="h-3.5 w-3.5" />
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-ivory leading-none">Holistic Care</p>
@@ -181,26 +182,15 @@ export default async function Home() {
               </div>
             </div>
 
-            {/* Mobile/Tablet Trust Ribbon - placed cleanly underneath the portrait so her photo is 100% visible */}
-            <div className="relative z-20 mt-4 flex flex-wrap items-center justify-center gap-2.5 lg:hidden w-full max-w-[350px]">
-              <div className="flex items-center gap-2 rounded-xl border border-gold/45 bg-plum-deep/95 px-3 py-2 shadow-lg backdrop-blur-md">
-                <div className="grid h-6 w-6 place-items-center rounded-lg bg-gold/20 text-gold-light shrink-0">
-                  <Sparkles className="h-3 w-3" />
-                </div>
-                <div className="text-left">
-                  <p className="text-xs font-semibold text-gold-light leading-none">15+ Years</p>
-                  <p className="text-[9px] text-ivory/70 mt-0.5">Dedicated Practice</p>
-                </div>
+            {/* Mobile/Tablet Trust Ribbon - placed cleanly underneath the portrait */}
+            <div className="relative z-20 mt-3.5 flex flex-wrap items-center justify-center gap-2 lg:hidden w-full max-w-[300px]">
+              <div className="flex items-center gap-1.5 rounded-lg border border-gold/40 bg-plum-deep/95 px-2.5 py-1.5 shadow-md backdrop-blur-md">
+                <Sparkles className="h-3 w-3 text-gold-light" />
+                <span className="text-[11px] font-semibold text-gold-light">15+ Years Practice</span>
               </div>
-
-              <div className="flex items-center gap-2 rounded-xl border border-gold/45 bg-plum-deep/95 px-3 py-2 shadow-lg backdrop-blur-md">
-                <div className="grid h-6 w-6 place-items-center rounded-full bg-whatsapp/20 text-whatsapp shrink-0">
-                  <CheckCircle2 className="h-3 w-3" />
-                </div>
-                <div className="text-left">
-                  <p className="text-xs font-semibold text-ivory leading-none">Holistic Care</p>
-                  <p className="text-[9px] text-gold-light mt-0.5">Vedic · Vastu · Script</p>
-                </div>
+              <div className="flex items-center gap-1.5 rounded-lg border border-gold/40 bg-plum-deep/95 px-2.5 py-1.5 shadow-md backdrop-blur-md">
+                <CheckCircle2 className="h-3 w-3 text-whatsapp" />
+                <span className="text-[11px] font-semibold text-ivory">Certified Holistic Care</span>
               </div>
             </div>
           </div>
@@ -230,12 +220,13 @@ export default async function Home() {
 
       {/* Introduction to Dr. Anameka */}
       <section className="section grain bg-cream">
-        <div className="container-x grid gap-12 md:grid-cols-12 md:items-center">
-          <div className="md:col-span-5">
-            <div className="relative mx-auto max-w-[340px] sm:max-w-[370px]">
-              <div className="absolute -inset-3 rounded-[2.5rem] bg-gradient-to-r from-gold/30 to-plum/20 blur-xl opacity-75" />
+        <div className="container-x grid gap-10 md:grid-cols-12 md:items-center">
+          <div className="md:col-span-5 flex justify-center md:justify-start">
+            <div className="relative w-full max-w-[230px] xs:max-w-[250px] sm:max-w-[275px] lg:max-w-[295px]">
+              <div className="absolute -inset-2.5 rounded-[2rem] bg-gradient-to-r from-gold/25 to-plum/15 blur-lg opacity-70" />
               <Portrait
                 src={s.portraitUrl}
+                aspect="aspect-[4/5]"
                 className="relative shadow-luxury w-full"
               />
             </div>

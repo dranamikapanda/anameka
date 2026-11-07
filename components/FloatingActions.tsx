@@ -211,11 +211,11 @@ export function FloatingActions() {
 
       {/* Floating Bottom Action Dock */}
       <div className="fixed bottom-3 right-3 sm:bottom-5 sm:right-6 z-40 flex items-center gap-2 sm:gap-2.5">
-        {/* Tooltip bubble on first load */}
+        {/* Tooltip bubble positioned cleanly above the dock */}
         {showTooltip && !isOpen && (
-          <div className="hidden md:flex items-center gap-2 rounded-full border border-gold/40 bg-plum-deep/95 py-2 px-4 text-xs font-medium text-ivory shadow-lg backdrop-blur-md animate-[rise_.4s_ease-out_both]">
-            <span className="h-2 w-2 rounded-full bg-whatsapp animate-ping" />
-            <span>Chat with Dr. Anameka on WhatsApp 🙏</span>
+          <div className="hidden sm:flex absolute bottom-14 sm:bottom-16 right-0 items-center gap-2 rounded-full border border-gold/40 bg-plum-deep/95 py-1.5 px-3.5 text-xs font-medium text-ivory shadow-xl backdrop-blur-md animate-[rise_.4s_ease-out_both] whitespace-nowrap">
+            <span className="h-2 w-2 rounded-full bg-whatsapp animate-ping shrink-0" />
+            <span>Chat on WhatsApp 🙏</span>
             <button
               onClick={() => setShowTooltip(false)}
               className="ml-1 text-ivory/60 hover:text-ivory"

@@ -24,8 +24,8 @@ export default async function About() {
       <section className="section">
         <div className="container-x grid gap-14 lg:grid-cols-12">
           <aside className="lg:col-span-4">
-            <div className="lg:sticky lg:top-32 mx-auto max-w-xs sm:max-w-sm lg:max-w-none">
-              <Portrait src={s.portraitUrl} />
+            <div className="lg:sticky lg:top-32 mx-auto max-w-[240px] sm:max-w-[270px]">
+              <Portrait src={s.portraitUrl} aspect="aspect-[4/5]" />
             <dl className="mt-8 space-y-4 text-sm">
               <div><dt className="text-charcoal/75">Consultations</dt><dd className="text-plum">{s.serviceArea}</dd></div>
               <div><dt className="text-charcoal/75">Disciplines</dt><dd className="text-plum">{services.length} services across astrology, Vastu, handwriting and coaching</dd></div>
