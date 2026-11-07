@@ -7,12 +7,12 @@
 }
 
 @layer base {
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-  body { @apply bg-ivory text-charcoal font-sans antialiased; font-feature-settings: "kern", "liga"; }
-  h1, h2, h3 { @apply font-display text-plum; letter-spacing: -0.01em; font-weight: 500; }
-  h1 { font-size: clamp(2.5rem, 5.2vw, 4.75rem); line-height: 1.02; }
-  h2 { font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1.1; }
-  h3 { font-size: 1.6rem; line-height: 1.2; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; max-width: 100%; }
+  body { @apply bg-ivory text-charcoal font-sans antialiased; font-feature-settings: "kern", "liga"; overflow-x: hidden; max-width: 100%; width: 100%; position: relative; }
+  h1, h2, h3 { @apply font-display text-plum; letter-spacing: -0.01em; font-weight: 500; word-wrap: break-word; overflow-wrap: break-word; }
+  h1 { font-size: clamp(2rem, 5vw, 4.5rem); line-height: 1.08; }
+  h2 { font-size: clamp(1.65rem, 3.4vw, 2.75rem); line-height: 1.15; }
+  h3 { font-size: clamp(1.3rem, 2.4vw, 1.6rem); line-height: 1.25; }
   ::selection { background: var(--gold-light); color: var(--plum); }
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
   @media (prefers-reduced-motion: reduce) {
@@ -22,15 +22,15 @@
 }
 
 @layer components {
-  .container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-8; }
-  .section { @apply py-20 md:py-28; }
-  .lede { @apply text-lg leading-relaxed text-charcoal/80 max-w-prose; }
-  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[0.95rem] font-medium transition-[background,color,box-shadow,transform] duration-300 active:scale-[0.98] disabled:opacity-60; }
+  .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .section { @apply py-14 sm:py-20 md:py-28; }
+  .lede { @apply text-base sm:text-lg leading-relaxed text-charcoal/80 max-w-prose; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-[0.95rem] font-medium transition-[background,color,box-shadow,transform] duration-300 active:scale-[0.98] disabled:opacity-60; }
   .btn-gold { @apply btn bg-gradient-to-r from-gold via-gold-light to-gold text-plum-deep shadow-gold hover:shadow-gold-glow hover:scale-[1.02] active:scale-[0.98]; }
   .btn-plum { @apply btn bg-plum text-ivory hover:bg-plum-deep hover:shadow-soft hover:scale-[1.02]; }
   .btn-ghost { @apply btn border border-gold/50 text-plum hover:bg-cream hover:border-gold; }
   .btn-ghost-light { @apply btn border border-gold-light/40 text-ivory backdrop-blur-sm hover:bg-white/10 hover:border-gold-light; }
-  .btn-whatsapp { @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-whatsapp px-6 py-3 text-[0.95rem] font-medium text-white shadow-whatsapp-glow transition-all duration-300 hover:bg-whatsapp-hover hover:scale-[1.02] active:scale-[0.98]; }
+  .btn-whatsapp { @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-whatsapp px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-[0.95rem] font-medium text-white shadow-whatsapp-glow transition-all duration-300 hover:bg-whatsapp-hover hover:scale-[1.02] active:scale-[0.98]; }
   .field { @apply w-full rounded-xl border border-plum/15 bg-white px-4 py-3 text-charcoal placeholder:text-charcoal/55 transition focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/25; }
   .label { @apply mb-1.5 block text-sm font-medium text-plum; }
   .err { @apply mt-1 text-sm text-[#A1321F]; }

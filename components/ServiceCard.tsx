@@ -8,7 +8,7 @@ export function ServiceCard({ s }: { s: Service }) {
   const waMessage = `Hello Dr. Anameka, I would like to inquire about the ${s.title} consultation.`;
 
   return (
-    <article className="group relative flex h-full flex-col justify-between rounded-3xl border border-gold/30 bg-white/90 p-7 shadow-soft transition-all duration-300 hover:border-gold hover:shadow-gold-glow hover:-translate-y-1.5">
+    <article className="group relative flex h-full flex-col justify-between rounded-3xl border border-gold/30 bg-white/90 p-5 sm:p-7 shadow-soft transition-all duration-300 hover:border-gold hover:shadow-gold-glow hover:-translate-y-1.5">
       <div>
         {/* Top bar with icon and category badge */}
         <div className="flex items-center justify-between">

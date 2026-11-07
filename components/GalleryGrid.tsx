@@ -84,7 +84,7 @@ export function GalleryGrid({ items, limit }: { items: GalleryItem[]; limit?: nu
                 <div className="absolute inset-0 flex items-center justify-center bg-plum-deep/40 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100">
                   <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-plum-deep/95 px-4 py-2 text-xs font-semibold text-gold-light shadow-xl">
                     <ZoomIn className="h-4 w-4" />
-                    <span>View full flyer</span>
+                    <span>View image</span>
                   </span>
                 </div>
               </button>

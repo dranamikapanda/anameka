@@ -23,7 +23,9 @@ export default async function About() {
       <PageHero title="About Dr. Anameka S Panda" crumbs={[{ name: "About", path: "/about" }]} />
       <section className="section">
         <div className="container-x grid gap-14 lg:grid-cols-12">
-          <aside className="lg:col-span-4"><div className="lg:sticky lg:top-32"><Portrait src={s.portraitUrl} />
+          <aside className="lg:col-span-4">
+            <div className="lg:sticky lg:top-32 mx-auto max-w-xs sm:max-w-sm lg:max-w-none">
+              <Portrait src={s.portraitUrl} />
             <dl className="mt-8 space-y-4 text-sm">
               <div><dt className="text-charcoal/75">Consultations</dt><dd className="text-plum">{s.serviceArea}</dd></div>
               <div><dt className="text-charcoal/75">Disciplines</dt><dd className="text-plum">{services.length} services across astrology, Vastu, handwriting and coaching</dd></div>

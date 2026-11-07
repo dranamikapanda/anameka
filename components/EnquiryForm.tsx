@@ -85,7 +85,7 @@ export function EnquiryForm({ kind, services, programmes = [], defaultService }:
   const a = (id: string) => ({ id: `f-${id}`, name: id, "aria-invalid": !!errors[id] || undefined, "aria-describedby": errors[id] ? `e-${id}` : undefined, className: cn("field", errors[id] && "border-[#A1321F]") });
 
   return (
-    <form onSubmit={onSubmit} noValidate className="grid gap-5 rounded-3xl border border-gold/25 bg-white p-6 shadow-soft md:grid-cols-2 md:p-10">
+    <form onSubmit={onSubmit} noValidate className="grid gap-5 rounded-3xl border border-gold/25 bg-white p-5 sm:p-7 md:p-10 shadow-soft md:grid-cols-2">
       <Field e={errors} id="full_name" label="Full name"><input {...a("full_name")} autoComplete="name" /></Field>
       <Field e={errors} id="phone" label="Phone number"><input {...a("phone")} type="tel" autoComplete="tel" inputMode="tel" placeholder="+91" /></Field>
       <Field e={errors} id="email" label="Email address" optional={!consult}><input {...a("email")} type="email" autoComplete="email" /></Field>
@@ -101,11 +101,11 @@ export function EnquiryForm({ kind, services, programmes = [], defaultService }:
         <>
           <fieldset className="md:col-span-2">
             <legend className="label">Consultation mode</legend>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[["online", "Online", "Video or phone call"], ["offline", "In person", "By appointment"]].map(([v, l, d]) => (
-                <label key={v} className="flex cursor-pointer items-start gap-3 rounded-xl border border-plum/15 p-4 has-[:checked]:border-gold has-[:checked]:bg-cream">
+                <label key={v} className="flex cursor-pointer items-start gap-3 rounded-xl border border-plum/15 p-3.5 sm:p-4 has-[:checked]:border-gold has-[:checked]:bg-cream">
                   <input type="radio" name="mode" value={v} id={v === "online" ? "f-mode" : undefined} className="mt-1 accent-[#C8912F]" />
-                  <span><span className="block font-medium text-plum">{l}</span><span className="text-sm text-charcoal/75">{d}</span></span>
+                  <span><span className="block font-medium text-plum">{l}</span><span className="text-xs sm:text-sm text-charcoal/75">{d}</span></span>
                 </label>
               ))}
             </div>

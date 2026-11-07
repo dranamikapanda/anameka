@@ -13,7 +13,6 @@ import categoriesSeed from "@/lib/content/blog-categories.json";
 import legalSeed from "@/lib/content/legal.json";
 import profileSeed from "@/lib/content/profile.json";
 import programmesSeed from "@/lib/content/programmes.json";
-import galleryDraft from "@/lib/content/gallery-draft.json";
 import testimonialsDraft from "@/lib/content/testimonials-draft.json";
 import { readingMinutes } from "@/lib/utils";
 

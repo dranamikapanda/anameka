@@ -63,7 +63,7 @@ export function TestimonialCarousel({ items }: { items: Testimonial[] }) {
               ))}
             </div>
 
-            <blockquote className="font-display text-[clamp(1.4rem,2.4vw,2.1rem)] italic leading-relaxed text-ivory font-normal">
+            <blockquote className="font-display text-[clamp(1.2rem,3.5vw,2rem)] italic leading-relaxed text-ivory font-normal">
               “{t.quote}”
             </blockquote>
 

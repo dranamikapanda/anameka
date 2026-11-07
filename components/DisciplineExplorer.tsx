@@ -91,27 +91,27 @@ export function DisciplineExplorer() {
                 onClick={() => setActive(i)}
                 onMouseEnter={() => setActive(i)}
                 className={cn(
-                  "group flex w-full items-center justify-between gap-4 rounded-2xl p-4 sm:p-5 text-left transition-all duration-300",
+                  "group flex w-full items-center justify-between gap-3 sm:gap-4 rounded-2xl p-3.5 sm:p-5 text-left transition-all duration-300",
                   isSelected
                     ? "border border-gold/60 bg-gradient-to-r from-plum to-plum-deep text-ivory shadow-soft"
                     : "border border-gold/20 bg-white/70 text-plum hover:border-gold/50 hover:bg-cream/60"
                 )}
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3 sm:gap-4 min-w-0 flex-1">
                   <div
                     className={cn(
-                      "grid h-12 w-12 shrink-0 place-items-center rounded-xl transition-all duration-300",
+                      "grid h-10 w-10 sm:h-12 sm:w-12 shrink-0 place-items-center rounded-xl transition-all duration-300",
                       isSelected
                         ? "bg-gold/20 text-gold-light border border-gold/50"
                         : "bg-cream text-plum/70 group-hover:text-plum group-hover:bg-gold/15"
                     )}
                   >
-                    <TabIcon className="h-6 w-6" strokeWidth={1.75} />
+                    <TabIcon className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h3
                       className={cn(
-                        "font-display text-xl sm:text-2xl transition-colors",
+                        "font-display text-lg sm:text-2xl transition-colors truncate",
                         isSelected ? "text-ivory" : "text-plum group-hover:text-gold-deep"
                       )}
                     >
@@ -119,7 +119,7 @@ export function DisciplineExplorer() {
                     </h3>
                     <p
                       className={cn(
-                        "text-xs sm:text-sm transition-colors",
+                        "text-xs sm:text-sm transition-colors truncate",
                         isSelected ? "text-gold-light/90" : "text-charcoal/60"
                       )}
                     >
@@ -130,7 +130,7 @@ export function DisciplineExplorer() {
 
                 <span
                   className={cn(
-                    "text-xs font-medium px-3 py-1 rounded-full transition-all",
+                    "text-[11px] sm:text-xs font-medium px-2.5 sm:px-3 py-1 rounded-full transition-all shrink-0",
                     isSelected
                       ? "bg-gold text-plum-deep font-semibold"
                       : "text-plum/50 group-hover:text-plum group-hover:translate-x-1"
@@ -153,7 +153,7 @@ export function DisciplineExplorer() {
       >
         <div
           key={d.key}
-          className="relative overflow-hidden rounded-3xl border border-gold/40 bg-gradient-to-br from-plum-deep via-plum to-plum-darkest p-7 sm:p-9 text-ivory shadow-luxury lg:sticky lg:top-32 animate-[rise_.35s_ease-out_both]"
+          className="relative overflow-hidden rounded-3xl border border-gold/40 bg-gradient-to-br from-plum-deep via-plum to-plum-darkest p-5 sm:p-7 lg:p-9 text-ivory shadow-luxury lg:sticky lg:top-32 animate-[rise_.35s_ease-out_both]"
         >
           {/* Subtle background glow */}
           <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-gold/10 blur-3xl pointer-events-none" />

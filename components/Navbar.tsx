@@ -82,14 +82,14 @@ export function Navbar({ logoUrl }: { logoUrl?: string }) {
 
         {/* Right actions: WhatsApp + Book */}
         <div className="flex items-center gap-3">
-          {/* Quick WhatsApp Link in header */}
+          {/* Quick WhatsApp Link in header - visible on tablet landscape & desktop */}
           <a
             href={waLink("Hello Dr. Anameka, I am visiting your website and would like to inquire about a consultation.")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track("whatsapp_click", { location: "navbar" })}
             className={cn(
-              "hidden sm:inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-xs font-medium transition-all duration-300",
+              "hidden md:inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-xs font-medium transition-all duration-300",
               overDark
                 ? "border border-whatsapp/50 bg-whatsapp/15 text-white hover:bg-whatsapp/30"
                 : "border border-whatsapp/40 bg-whatsapp/10 text-whatsapp-dark hover:bg-whatsapp hover:text-white"

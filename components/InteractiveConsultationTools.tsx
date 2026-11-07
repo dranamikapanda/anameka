@@ -4,7 +4,6 @@ import {
   Sparkles,
   Compass,
   FileSignature,
-  ArrowRight,
   MessageCircle,
   CheckCircle2,
   AlertTriangle,
@@ -190,21 +189,21 @@ export function InteractiveConsultationTools() {
           </p>
         </div>
 
-        {/* Tab Switcher */}
-        <div className="flex justify-center mb-10">
-          <div className="inline-flex p-1.5 rounded-full border border-gold/30 bg-white/80 shadow-soft backdrop-blur-md">
+        {/* Tab Switcher - Fully Responsive for Mobile & Tablet */}
+        <div className="flex justify-center mb-8 sm:mb-10 w-full px-1">
+          <div className="flex flex-wrap sm:inline-flex items-center justify-center gap-1 sm:gap-1.5 p-1.5 rounded-2xl sm:rounded-full border border-gold/30 bg-white/90 shadow-soft backdrop-blur-md max-w-full">
             <button
               onClick={() => {
                 setActiveTab("vastu");
                 track("tool_tab_switch", { tab: "vastu" });
               }}
-              className={`flex items-center gap-2 rounded-full px-5 py-2.5 text-xs sm:text-sm font-semibold transition-all duration-300 ${
+              className={`flex items-center justify-center gap-1.5 sm:gap-2 rounded-xl sm:rounded-full px-3.5 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold transition-all duration-300 ${
                 activeTab === "vastu"
                   ? "bg-gradient-to-r from-plum to-plum-deep text-ivory shadow-sm"
                   : "text-plum/75 hover:text-plum hover:bg-gold/10"
               }`}
             >
-              <Compass className="h-4 w-4" />
+              <Compass className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
               <span>Vastu Compass</span>
             </button>
 
@@ -213,13 +212,13 @@ export function InteractiveConsultationTools() {
                 setActiveTab("astrology");
                 track("tool_tab_switch", { tab: "astrology" });
               }}
-              className={`flex items-center gap-2 rounded-full px-5 py-2.5 text-xs sm:text-sm font-semibold transition-all duration-300 ${
+              className={`flex items-center justify-center gap-1.5 sm:gap-2 rounded-xl sm:rounded-full px-3.5 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold transition-all duration-300 ${
                 activeTab === "astrology"
                   ? "bg-gradient-to-r from-plum to-plum-deep text-ivory shadow-sm"
                   : "text-plum/75 hover:text-plum hover:bg-gold/10"
               }`}
             >
-              <Sparkles className="h-4 w-4" />
+              <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
               <span>Rashi & Cosmic Lens</span>
             </button>
 
@@ -228,13 +227,13 @@ export function InteractiveConsultationTools() {
                 setActiveTab("graphology");
                 track("tool_tab_switch", { tab: "graphology" });
               }}
-              className={`flex items-center gap-2 rounded-full px-5 py-2.5 text-xs sm:text-sm font-semibold transition-all duration-300 ${
+              className={`flex items-center justify-center gap-1.5 sm:gap-2 rounded-xl sm:rounded-full px-3.5 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold transition-all duration-300 ${
                 activeTab === "graphology"
                   ? "bg-gradient-to-r from-plum to-plum-deep text-ivory shadow-sm"
                   : "text-plum/75 hover:text-plum hover:bg-gold/10"
               }`}
             >
-              <FileSignature className="h-4 w-4" />
+              <FileSignature className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
               <span>Handwriting Diagnostic</span>
             </button>
           </div>
@@ -280,7 +279,7 @@ export function InteractiveConsultationTools() {
 
             {/* Direction Deep-Dive Card */}
             <div className="lg:col-span-7">
-              <div className="rounded-3xl border-2 border-gold/40 bg-gradient-to-br from-plum-deep via-plum to-plum-darkest p-7 sm:p-9 text-ivory shadow-luxury">
+              <div className="rounded-3xl border-2 border-gold/40 bg-gradient-to-br from-plum-deep via-plum to-plum-darkest p-5 sm:p-7 lg:p-9 text-ivory shadow-luxury">
                 <div className="flex items-center justify-between border-b border-gold/20 pb-5">
                   <div>
                     <span className="text-xs font-mono font-semibold uppercase tracking-widest text-gold-light">
@@ -384,7 +383,7 @@ export function InteractiveConsultationTools() {
 
             {/* Rashi Output */}
             <div className="lg:col-span-7">
-              <div className="rounded-3xl border-2 border-gold/40 bg-gradient-to-br from-plum-deep via-plum to-plum-darkest p-7 sm:p-9 text-ivory shadow-luxury">
+              <div className="rounded-3xl border-2 border-gold/40 bg-gradient-to-br from-plum-deep via-plum to-plum-darkest p-5 sm:p-7 lg:p-9 text-ivory shadow-luxury">
                 <div className="flex items-center justify-between border-b border-gold/20 pb-5">
                   <div>
                     <span className="text-xs font-semibold uppercase tracking-widest text-gold-light">
@@ -451,15 +450,17 @@ export function InteractiveConsultationTools() {
                   1. How does your handwriting slant?
                 </label>
                 <div className="grid grid-cols-3 gap-2">
-                  {[
-                    ["right", "Slanted Right /"],
-                    ["upright", "Straight |"],
-                    ["left", "Slanted Left \\"],
-                  ].map(([k, label]) => (
+                  {(
+                    [
+                      ["right", "Slanted Right /"],
+                      ["upright", "Straight |"],
+                      ["left", "Slanted Left \\"],
+                    ] as const
+                  ).map(([k, label]) => (
                     <button
                       key={k}
                       type="button"
-                      onClick={() => setSlant(k as any)}
+                      onClick={() => setSlant(k)}
                       className={`p-2.5 rounded-xl border text-xs font-medium text-center transition-all ${
                         slant === k
                           ? "border-gold bg-plum text-ivory font-semibold shadow-sm"
@@ -477,15 +478,17 @@ export function InteractiveConsultationTools() {
                   2. What does your signature baseline look like?
                 </label>
                 <div className="grid grid-cols-3 gap-2">
-                  {[
-                    ["ascending", "Ascends Up ↗"],
-                    ["underline", "Clean Underline ─"],
-                    ["crossing", "Line Through ̶"],
-                  ].map(([k, label]) => (
+                  {(
+                    [
+                      ["ascending", "Ascends Up ↗"],
+                      ["underline", "Clean Underline ─"],
+                      ["crossing", "Line Through ̶"],
+                    ] as const
+                  ).map(([k, label]) => (
                     <button
                       key={k}
                       type="button"
-                      onClick={() => setSignature(k as any)}
+                      onClick={() => setSignature(k)}
                       className={`p-2.5 rounded-xl border text-xs font-medium text-center transition-all ${
                         signature === k
                           ? "border-gold bg-plum text-ivory font-semibold shadow-sm"
@@ -503,15 +506,17 @@ export function InteractiveConsultationTools() {
                   3. Pen pressure on paper:
                 </label>
                 <div className="grid grid-cols-3 gap-2">
-                  {[
-                    ["heavy", "Heavy (Deep impressions)"],
-                    ["medium", "Balanced / Medium"],
-                    ["light", "Light & Gentle"],
-                  ].map(([k, label]) => (
+                  {(
+                    [
+                      ["heavy", "Heavy (Deep impressions)"],
+                      ["medium", "Balanced / Medium"],
+                      ["light", "Light & Gentle"],
+                    ] as const
+                  ).map(([k, label]) => (
                     <button
                       key={k}
                       type="button"
-                      onClick={() => setPressure(k as any)}
+                      onClick={() => setPressure(k)}
                       className={`p-2.5 rounded-xl border text-xs font-medium text-center transition-all ${
                         pressure === k
                           ? "border-gold bg-plum text-ivory font-semibold shadow-sm"
@@ -527,7 +532,7 @@ export function InteractiveConsultationTools() {
 
             {/* Diagnostic Output */}
             <div className="lg:col-span-7">
-              <div className="rounded-3xl border-2 border-gold/40 bg-gradient-to-br from-plum-deep via-plum to-plum-darkest p-7 sm:p-9 text-ivory shadow-luxury">
+              <div className="rounded-3xl border-2 border-gold/40 bg-gradient-to-br from-plum-deep via-plum to-plum-darkest p-5 sm:p-7 lg:p-9 text-ivory shadow-luxury">
                 <div className="flex items-center justify-between border-b border-gold/20 pb-5">
                   <div>
                     <span className="text-xs font-semibold uppercase tracking-widest text-gold-light">

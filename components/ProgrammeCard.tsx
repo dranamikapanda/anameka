@@ -8,7 +8,7 @@ export function ProgrammeCard({ p, dark = false }: { p: Programme; dark?: boolea
 
   return (
     <article
-      className={`group relative flex h-full flex-col justify-between rounded-3xl p-7 transition-all duration-300 hover:-translate-y-1.5 ${
+      className={`group relative flex h-full flex-col justify-between rounded-3xl p-5 sm:p-7 transition-all duration-300 hover:-translate-y-1.5 ${
         dark
           ? "border border-gold/30 bg-gradient-to-br from-plum-deep via-plum to-plum-darkest text-ivory shadow-luxury hover:border-gold/60"
           : "border border-gold/30 bg-white/90 text-charcoal shadow-soft hover:border-gold hover:shadow-gold-glow"

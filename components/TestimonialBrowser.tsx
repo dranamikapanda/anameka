@@ -19,17 +19,19 @@ export function TestimonialBrowser({ items, services }: { items: Testimonial[]; 
   });
   return (
     <>
-      <div className="mb-10 flex flex-wrap items-center gap-3">
+      <div className="mb-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div role="tablist" aria-label="Testimonial type" className="flex flex-wrap gap-2">
           {kinds.map(([k, l]) => (
             <button key={k} role="tab" aria-selected={kind === k} onClick={() => setKind(k)}
-              className={cn("rounded-full border px-4 py-2 text-sm transition", kind === k ? "border-plum bg-plum text-ivory" : "border-gold/40 text-plum hover:bg-cream")}>{l}</button>
+              className={cn("rounded-full border px-4 py-2 text-xs sm:text-sm font-medium transition", kind === k ? "border-plum bg-plum text-ivory" : "border-gold/40 text-plum hover:bg-cream")}>{l}</button>
           ))}
         </div>
-        <label className="sr-only" htmlFor="t-svc">Filter by service</label>
-        <select id="t-svc" value={svc} onChange={(e) => setSvc(e.target.value)} className="field !w-auto !py-2 text-sm">
-          <option value="">All services</option>{services.map((s) => <option key={s.slug} value={s.slug}>{s.title}</option>)}
-        </select>
+        <div className="w-full sm:w-auto">
+          <label className="sr-only" htmlFor="t-svc">Filter by service</label>
+          <select id="t-svc" value={svc} onChange={(e) => setSvc(e.target.value)} className="field w-full sm:!w-auto !py-2 text-sm">
+            <option value="">All services</option>{services.map((s) => <option key={s.slug} value={s.slug}>{s.title}</option>)}
+          </select>
+        </div>
       </div>
       {list.length === 0 ? <p className="text-charcoal/75">No testimonials match these filters yet.</p> : (
         <ul className="columns-1 gap-6 sm:columns-2 lg:columns-3">

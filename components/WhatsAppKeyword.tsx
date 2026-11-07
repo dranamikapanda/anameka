@@ -22,8 +22,8 @@ export function WhatsAppKeyword({
       onClick={() => track("whatsapp_click", { location: context, keyword })}
       className={
         light
-          ? "inline-flex items-center gap-2.5 rounded-full border border-whatsapp/50 bg-whatsapp/20 px-5 py-3 text-sm font-medium text-white shadow-sm backdrop-blur-sm transition-all hover:bg-whatsapp hover:scale-105 active:scale-95"
-          : "inline-flex items-center gap-2.5 rounded-full bg-whatsapp px-6 py-3.5 text-sm font-medium text-white shadow-whatsapp-glow transition-all hover:bg-whatsapp-hover hover:scale-105 active:scale-95"
+          ? "inline-flex items-center justify-center gap-2.5 rounded-full border border-whatsapp/50 bg-whatsapp/20 px-4 py-2.5 sm:px-5 sm:py-3 text-xs sm:text-sm font-medium text-white shadow-sm backdrop-blur-sm transition-all hover:bg-whatsapp hover:scale-105 active:scale-95 w-full sm:w-auto text-center"
+          : "inline-flex items-center justify-center gap-2.5 rounded-full bg-whatsapp px-4 py-3 sm:px-6 sm:py-3.5 text-xs sm:text-sm font-medium text-white shadow-whatsapp-glow transition-all hover:bg-whatsapp-hover hover:scale-105 active:scale-95 w-full sm:w-auto text-center"
       }
     >
       <span className="relative flex h-2 w-2">

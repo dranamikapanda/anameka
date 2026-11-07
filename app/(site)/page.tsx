@@ -22,7 +22,6 @@ import {
   Award,
   CheckCircle2,
   Compass,
-  FileSignature,
   Star,
   MessageCircle,
   ArrowRight,
@@ -145,42 +144,62 @@ export default async function Home() {
             <HeroText headline={s.heroHeadline} sub={s.heroSubheading} />
           </div>
 
-          {/* Majestic Hero Portrait Frame with 3D Yantra Aura - 100% Uncropped */}
-          <div className="relative mx-auto w-full max-w-[480px] lg:col-span-6 flex items-center justify-center">
+          {/* Majestic Hero Portrait Frame with 3D Yantra Aura - 100% Uncropped & Unobstructed */}
+          <div className="relative mx-auto w-full max-w-[460px] lg:col-span-6 flex flex-col items-center justify-center px-2 sm:px-0">
             {/* 3D Sacred Yantra Background Aura */}
-            <div className="absolute inset-0 -m-8 sm:-m-12 pointer-events-none opacity-40">
+            <div className="absolute inset-0 pointer-events-none opacity-40 overflow-hidden">
               <HeroVisual />
             </div>
 
-            {/* Regal Arched Portrait Container with Perfect Aspect Ratio */}
-            <div className="relative z-10 w-full max-w-[320px] sm:max-w-[360px]">
+            {/* Regal Portrait Container */}
+            <div className="relative z-10 w-full max-w-[280px] xs:max-w-[310px] sm:max-w-[350px]">
               <Portrait
                 src={s.portraitUrl}
                 priority
-                fit="contain"
-                aspect="aspect-[412/740]"
-                className="w-full shadow-[0_25px_80px_-15px_rgba(0,0,0,0.85)] border-2 border-gold/50"
+                className="w-full shadow-[0_25px_80px_-15px_rgba(0,0,0,0.85)]"
               />
 
-              {/* Floating luxury glass badge: Experience */}
-              <div className="absolute -left-4 sm:-left-8 top-16 z-20 flex items-center gap-2.5 rounded-2xl border border-gold/50 bg-plum-deep/90 px-3.5 py-2 sm:px-4 sm:py-2.5 shadow-2xl backdrop-blur-md animate-float">
-                <div className="grid h-8 w-8 place-items-center rounded-xl bg-gold/20 text-gold-light">
+              {/* Desktop-only floating badges - safely anchored outside the portrait box */}
+              <div className="hidden lg:flex absolute -left-12 top-16 z-20 items-center gap-2.5 rounded-2xl border border-gold/50 bg-plum-deep/95 px-4 py-2.5 shadow-2xl backdrop-blur-md animate-float">
+                <div className="grid h-8 w-8 place-items-center rounded-xl bg-gold/20 text-gold-light shrink-0">
                   <Sparkles className="h-4 w-4" />
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-gold-light leading-none">15+ Years</p>
-                  <p className="text-[10px] text-ivory/70">Dedicated Practice</p>
+                  <p className="text-[10px] text-ivory/70 mt-0.5">Dedicated Practice</p>
                 </div>
               </div>
 
-              {/* Floating luxury glass badge: Verified Guidance */}
-              <div className="absolute -right-4 sm:-right-8 bottom-16 z-20 flex items-center gap-2.5 rounded-2xl border border-gold/50 bg-plum-deep/90 px-3.5 py-2 sm:px-4 sm:py-2.5 shadow-2xl backdrop-blur-md animate-float [animation-delay:1.5s]">
-                <div className="grid h-8 w-8 place-items-center rounded-full bg-whatsapp/20 text-whatsapp">
+              <div className="hidden lg:flex absolute -right-12 bottom-16 z-20 items-center gap-2.5 rounded-2xl border border-gold/50 bg-plum-deep/95 px-4 py-2.5 shadow-2xl backdrop-blur-md animate-float [animation-delay:1.5s]">
+                <div className="grid h-8 w-8 place-items-center rounded-full bg-whatsapp/20 text-whatsapp shrink-0">
                   <CheckCircle2 className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-ivory leading-none">Holistic Synthesis</p>
-                  <p className="text-[10px] text-gold-light">Astrology · Vastu · Script</p>
+                  <p className="text-xs font-semibold text-ivory leading-none">Holistic Care</p>
+                  <p className="text-[10px] text-gold-light mt-0.5">Vedic · Vastu · Script</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile/Tablet Trust Ribbon - placed cleanly underneath the portrait so her photo is 100% visible */}
+            <div className="relative z-20 mt-4 flex flex-wrap items-center justify-center gap-2.5 lg:hidden w-full max-w-[350px]">
+              <div className="flex items-center gap-2 rounded-xl border border-gold/45 bg-plum-deep/95 px-3 py-2 shadow-lg backdrop-blur-md">
+                <div className="grid h-6 w-6 place-items-center rounded-lg bg-gold/20 text-gold-light shrink-0">
+                  <Sparkles className="h-3 w-3" />
+                </div>
+                <div className="text-left">
+                  <p className="text-xs font-semibold text-gold-light leading-none">15+ Years</p>
+                  <p className="text-[9px] text-ivory/70 mt-0.5">Dedicated Practice</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 rounded-xl border border-gold/45 bg-plum-deep/95 px-3 py-2 shadow-lg backdrop-blur-md">
+                <div className="grid h-6 w-6 place-items-center rounded-full bg-whatsapp/20 text-whatsapp shrink-0">
+                  <CheckCircle2 className="h-3 w-3" />
+                </div>
+                <div className="text-left">
+                  <p className="text-xs font-semibold text-ivory leading-none">Holistic Care</p>
+                  <p className="text-[9px] text-gold-light mt-0.5">Vedic · Vastu · Script</p>
                 </div>
               </div>
             </div>
@@ -188,19 +207,19 @@ export default async function Home() {
         </div>
 
         {/* Impact & Trust Stats Ribbon */}
-        <div className="border-t border-gold/25 bg-plum-darkest/75 backdrop-blur-md py-6">
+        <div className="border-t border-gold/25 bg-plum-darkest/75 backdrop-blur-md py-5 sm:py-6">
           <div className="container-x">
-            <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
+            <div className="grid grid-cols-2 gap-3.5 sm:gap-6 lg:grid-cols-4">
               {stats.map(({ value, label, icon: StatIcon }) => (
-                <div key={label} className="flex items-center gap-3.5">
-                  <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-gold/30 bg-gold/10 text-gold-light">
-                    <StatIcon className="h-5 w-5" />
+                <div key={label} className="flex items-center gap-2.5 sm:gap-3.5">
+                  <div className="grid h-9 w-9 sm:h-11 sm:w-11 shrink-0 place-items-center rounded-xl border border-gold/30 bg-gold/10 text-gold-light">
+                    <StatIcon className="h-4 w-4 sm:h-5 sm:w-5" />
                   </div>
-                  <div>
-                    <p className="font-display text-xl sm:text-2xl font-semibold text-gold-light leading-none">
+                  <div className="min-w-0">
+                    <p className="font-display text-lg sm:text-2xl font-semibold text-gold-light leading-none truncate">
                       {value}
                     </p>
-                    <p className="mt-1 text-xs text-ivory/70 font-medium">{label}</p>
+                    <p className="mt-1 text-[11px] sm:text-xs text-ivory/70 font-medium truncate sm:whitespace-normal">{label}</p>
                   </div>
                 </div>
               ))}
@@ -217,9 +236,7 @@ export default async function Home() {
               <div className="absolute -inset-3 rounded-[2.5rem] bg-gradient-to-r from-gold/30 to-plum/20 blur-xl opacity-75" />
               <Portrait
                 src={s.portraitUrl}
-                fit="contain"
-                aspect="aspect-[412/740]"
-                className="relative shadow-luxury w-full border-2 border-gold/40"
+                className="relative shadow-luxury w-full"
               />
             </div>
           </div>
@@ -291,7 +308,7 @@ export default async function Home() {
             {audiences.map(({ Icon, title, badge, body, href, link }) => (
               <div
                 key={title}
-                className="group relative flex flex-col justify-between rounded-3xl border border-gold/30 bg-white p-7 shadow-soft transition-all duration-300 hover:border-gold hover:shadow-gold-glow hover:-translate-y-1.5"
+                className="group relative flex flex-col justify-between rounded-3xl border border-gold/30 bg-white p-5 sm:p-7 shadow-soft transition-all duration-300 hover:border-gold hover:shadow-gold-glow hover:-translate-y-1.5"
               >
                 <div>
                   <div className="flex items-center justify-between">

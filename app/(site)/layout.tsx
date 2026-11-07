@@ -15,7 +15,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
     <>
       <JsonLd data={[personSchema(s.name, s.portraitUrl || undefined, sameAs), organizationSchema(s.name, s.logoUrl || undefined, sameAs), websiteSchema(s.name)]} />
       <Navbar logoUrl={s.logoUrl} />
-      <main id="main">{children}</main>
+      <main id="main" className="overflow-x-hidden w-full max-w-[100vw]">{children}</main>
       <Footer />
       <FloatingActions />
       <Analytics />

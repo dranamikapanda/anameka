@@ -62,8 +62,10 @@ export default async function Post({ params }: P) {
           <article className="prose-rich max-w-prose" dangerouslySetInnerHTML={{ __html: html }} />
           {p.tags.length > 0 && <ul className="mt-10 flex flex-wrap gap-2">{p.tags.map((t) => <li key={t}><Link href={`/blog?tag=${encodeURIComponent(t)}`} className="rounded-full bg-cream px-3 py-1 text-sm text-plum hover:bg-gold/20">{t}</Link></li>)}</ul>}
           <div className="mt-10 border-t border-gold/30 pt-8"><ShareButtons url={url} title={p.title} /></div>
-          <aside className="mt-12 grid gap-6 rounded-3xl bg-cream p-8 sm:grid-cols-[7rem_1fr] sm:items-center" aria-label="About the author">
-            <Portrait src={s.portraitUrl} className="w-28" />
+          <aside className="mt-12 grid gap-6 rounded-3xl bg-cream p-6 sm:p-8 sm:grid-cols-[7rem_1fr] sm:items-center" aria-label="About the author">
+            <div className="mx-auto sm:mx-0">
+              <Portrait src={s.portraitUrl} variant="avatar" className="w-24 h-24 sm:w-28 sm:h-28" />
+            </div>
             <div><p className="text-sm text-charcoal/75">Written by</p><h2 className="text-2xl">{s.name}</h2><p className="mt-2 text-charcoal/75">{s.shortBio}</p>
               <Link href="/about" className="mt-3 inline-block text-plum underline decoration-gold underline-offset-4">Read her profile</Link></div>
           </aside>

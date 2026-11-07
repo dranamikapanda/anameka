@@ -38,7 +38,7 @@ export default async function Book() {
               <p className="text-xs text-charcoal/75">Connect directly with Dr. Anameka’s desk on WhatsApp.</p>
             </div>
           </div>
-          <a href={waLink("Namaste Dr. Anameka, I would like to book a consultation session directly.")} target="_blank" rel="noopener noreferrer" className="btn-whatsapp shrink-0 !py-2.5 !px-5 text-xs sm:text-sm">
+          <a href={waLink("Namaste Dr. Anameka, I would like to book a consultation session directly.")} target="_blank" rel="noopener noreferrer" className="btn-whatsapp shrink-0 !py-2.5 !px-5 text-xs sm:text-sm text-center justify-center w-full sm:w-auto">
             <span>Book via WhatsApp</span>
           </a>
         </div>

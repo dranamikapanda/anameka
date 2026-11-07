@@ -35,8 +35,8 @@ export default async function Contact() {
           </div>
 
           <ul>
-            <li className={row}><Phone className="mt-1 h-5 w-5 text-gold" /><div><p className="text-sm text-charcoal/75">Phone</p><a href={`tel:${env.phone}`} className="font-display text-2xl text-plum">{formatPhone(env.phone)}</a></div></li>
-            <li className={row}><MessageCircle className="mt-1 h-5 w-5 text-gold" /><div><p className="text-sm text-charcoal/75">WhatsApp</p><a href={waLink("Hello, I have a question about a consultation.")} target="_blank" rel="noopener noreferrer" className="font-display text-2xl text-plum">Message on WhatsApp</a></div></li>
+            <li className={row}><Phone className="mt-1 h-5 w-5 text-gold shrink-0" /><div><p className="text-xs sm:text-sm text-charcoal/75">Phone</p><a href={`tel:${env.phone}`} className="font-display text-xl sm:text-2xl text-plum">{formatPhone(env.phone)}</a></div></li>
+            <li className={row}><MessageCircle className="mt-1 h-5 w-5 text-gold shrink-0" /><div><p className="text-xs sm:text-sm text-charcoal/75">WhatsApp</p><a href={waLink("Hello, I have a question about a consultation.")} target="_blank" rel="noopener noreferrer" className="font-display text-xl sm:text-2xl text-plum">Message on WhatsApp</a></div></li>
             {env.email && <li className={row}><Mail className="mt-1 h-5 w-5 text-gold" /><div><p className="text-sm text-charcoal/75">Email</p><a href={`mailto:${env.email}`} className="text-lg text-plum">{env.email}</a></div></li>}
             <li className={row}><MapPin className="mt-1 h-5 w-5 text-gold" /><div><p className="text-sm text-charcoal/75">Location</p><p className="text-plum">{env.address ? `${env.address}, ` : ""}{env.city}, {env.region}</p><p className="text-sm text-charcoal/75">In person by appointment, online worldwide</p></div></li>
             <li className={`${row} border-b`}><Clock className="mt-1 h-5 w-5 text-gold" /><div><p className="text-sm text-charcoal/75">Hours</p><p className="text-plum">{s.hours}</p></div></li>

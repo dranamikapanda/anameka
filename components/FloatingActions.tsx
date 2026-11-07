@@ -100,7 +100,7 @@ export function FloatingActions() {
       {isOpen && (
         <div
           ref={panelRef}
-          className="fixed bottom-24 right-4 z-50 w-[92vw] max-w-sm overflow-hidden rounded-3xl border border-gold/40 bg-plum-deep text-ivory shadow-2xl backdrop-blur-xl sm:right-6 animate-[rise_.3s_cubic-bezier(.2,.8,.2,1)_both]"
+          className="fixed bottom-20 sm:bottom-24 right-3 sm:right-6 z-50 w-[calc(100vw-24px)] max-w-sm overflow-hidden rounded-3xl border border-gold/40 bg-plum-deep text-ivory shadow-2xl backdrop-blur-xl animate-[rise_.3s_cubic-bezier(.2,.8,.2,1)_both]"
           role="dialog"
           aria-label="WhatsApp Quick Concierge"
         >
@@ -210,10 +210,10 @@ export function FloatingActions() {
       )}
 
       {/* Floating Bottom Action Dock */}
-      <div className="fixed bottom-5 right-4 z-40 flex items-center gap-2.5 sm:right-6">
+      <div className="fixed bottom-3 right-3 sm:bottom-5 sm:right-6 z-40 flex items-center gap-2 sm:gap-2.5">
         {/* Tooltip bubble on first load */}
         {showTooltip && !isOpen && (
-          <div className="hidden sm:flex items-center gap-2 rounded-full border border-gold/40 bg-plum-deep/95 py-2 px-4 text-xs font-medium text-ivory shadow-lg backdrop-blur-md animate-[rise_.4s_ease-out_both]">
+          <div className="hidden md:flex items-center gap-2 rounded-full border border-gold/40 bg-plum-deep/95 py-2 px-4 text-xs font-medium text-ivory shadow-lg backdrop-blur-md animate-[rise_.4s_ease-out_both]">
             <span className="h-2 w-2 rounded-full bg-whatsapp animate-ping" />
             <span>Chat with Dr. Anameka on WhatsApp 🙏</span>
             <button
@@ -230,11 +230,11 @@ export function FloatingActions() {
         <a
           href={`tel:${env.phone}`}
           onClick={() => track("phone_click", { location: "floating" })}
-          className="group relative grid h-12 w-12 place-items-center rounded-full border border-gold/30 bg-plum-deep text-ivory shadow-soft transition-all duration-300 hover:border-gold hover:bg-plum hover:scale-105 active:scale-95"
+          className="group relative grid h-10 w-10 sm:h-12 sm:w-12 place-items-center rounded-full border border-gold/30 bg-plum-deep text-ivory shadow-soft transition-all duration-300 hover:border-gold hover:bg-plum hover:scale-105 active:scale-95"
           aria-label={`Call ${env.phone}`}
           title="Direct Call"
         >
-          <Phone className="h-5 w-5 text-gold-light" />
+          <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-gold-light" />
           <span className="sr-only">Call</span>
         </a>
 
@@ -242,11 +242,11 @@ export function FloatingActions() {
         {path !== "/book-consultation" && (
           <Link
             href="/book-consultation"
-            className="group relative grid h-12 w-12 place-items-center rounded-full border border-gold/40 bg-gradient-to-r from-gold via-gold-light to-gold text-plum-deep shadow-gold transition-all duration-300 hover:shadow-gold-glow hover:scale-105 active:scale-95"
+            className="group relative grid h-10 w-10 sm:h-12 sm:w-12 place-items-center rounded-full border border-gold/40 bg-gradient-to-r from-gold via-gold-light to-gold text-plum-deep shadow-gold transition-all duration-300 hover:shadow-gold-glow hover:scale-105 active:scale-95"
             aria-label="Book a consultation"
             title="Book Consultation"
           >
-            <CalendarHeart className="h-5 w-5" />
+            <CalendarHeart className="h-4 w-4 sm:h-5 sm:w-5" />
             <span className="sr-only">Book consultation</span>
           </Link>
         )}
@@ -259,19 +259,19 @@ export function FloatingActions() {
             setShowTooltip(false);
             track("whatsapp_click", { location: "floating_trigger" });
           }}
-          className="group relative flex items-center gap-2.5 rounded-full bg-whatsapp px-4 py-3 text-white shadow-whatsapp-glow transition-all duration-300 hover:bg-whatsapp-hover hover:scale-105 active:scale-95"
+          className="group relative flex items-center gap-2 rounded-full bg-whatsapp px-3.5 py-2.5 sm:px-4 sm:py-3 text-white shadow-whatsapp-glow transition-all duration-300 hover:bg-whatsapp-hover hover:scale-105 active:scale-95"
           aria-label="Chat on WhatsApp"
           aria-expanded={isOpen}
         >
           <div className="relative">
-            <MessageCircle className="h-6 w-6 fill-current" />
+            <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6 fill-current" />
             {/* Live Green Pulsing Dot */}
-            <span className="absolute -top-1 -right-1 flex h-3 w-3">
+            <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5 sm:h-3 sm:w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-white"></span>
             </span>
           </div>
-          <span className="hidden sm:inline font-medium text-sm tracking-wide">
+          <span className="hidden sm:inline font-medium text-xs sm:text-sm tracking-wide">
             {isOpen ? "Close" : "WhatsApp"}
           </span>
         </button>
