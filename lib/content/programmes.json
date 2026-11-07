@@ -180,8 +180,8 @@
   "price_note": "Discovery call is free. Programme fees are shared on the call.",
   "cta_label": "Book a free discovery call",
   "whatsapp_keyword": "COACH",
-  "poster_url": "/brand/flyers/child-script-coach.webp",
-  "poster_alt": "Child Script Coach Program flyer",
+  "poster_url": null,
+  "poster_alt": null,
   "faqs": [
    {
     "q": "Do I need any background in graphology?",
@@ -252,8 +252,8 @@
   "price_note": "Fees are shared when you enquire.",
   "cta_label": "Enquire to enrol",
   "whatsapp_keyword": "CERTIFY",
-  "poster_url": "/brand/flyers/handwriting-mastery-certification.webp",
-  "poster_alt": "Handwriting Mastery Certification for Teachers flyer by Dr. Anameka S Panda",
+  "poster_url": null,
+  "poster_alt": null,
   "faqs": [
    {
     "q": "Can a whole school staff take this together?",
@@ -308,8 +308,8 @@
   "price_inr": 599,
   "cta_label": "Book a consultation",
   "whatsapp_keyword": "ANALYZE",
-  "poster_url": "/brand/flyers/teacher-consultation.webp",
-  "poster_alt": "Handwriting insight consultation for teachers flyer",
+  "poster_url": null,
+  "poster_alt": null,
   "faqs": [
    {
     "q": "Do I need the parents' permission to share a student's handwriting?",

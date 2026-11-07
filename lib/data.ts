@@ -59,7 +59,7 @@ export const getStories = cache(() =>
   query<SuccessStory[]>((db) => db.from("success_stories").select("*").eq("status", "published").order("updated_at", { ascending: false }), []));
 
 export const getGallery = cache(() =>
-  query<GalleryItem[]>((db) => db.from("gallery_items").select("*").eq("status", "published").order("sort_order"), galleryDraft as unknown as GalleryItem[]));
+  query<GalleryItem[]>((db) => db.from("gallery_items").select("*").eq("status", "published").order("sort_order"), []));
 
 export const getVideos = cache(() =>
   query<Video[]>((db) => db.from("videos").select("*").eq("status", "published").order("sort_order"), []));

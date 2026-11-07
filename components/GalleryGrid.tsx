@@ -9,11 +9,11 @@ import { cn } from "@/lib/utils";
 import { waLink } from "@/lib/env";
 
 export const galleryCategories: Record<string, string> = {
-  all: "All flyers & media",
-  workshops: "Workshops & student programmes",
-  consultations: "Consultations & Vastu",
-  achievements: "Certifications & training",
-  flyers: "Knowledge & checklists",
+  all: "All photographs & media",
+  events: "Events & workshops",
+  consultations: "Consultations",
+  achievements: "Achievements & honors",
+  professional: "Professional portraits",
 };
 
 export function GalleryGrid({ items, limit }: { items: GalleryItem[]; limit?: number }) {
@@ -25,7 +25,7 @@ export function GalleryGrid({ items, limit }: { items: GalleryItem[]; limit?: nu
     [items, cat, limit]
   );
 
-  const presentCategories = ["all", "workshops", "consultations", "achievements", "flyers"].filter(
+  const presentCategories = ["all", "events", "consultations", "achievements", "professional"].filter(
     (c) => c === "all" || items.some((i) => i.category === c)
   );
 
