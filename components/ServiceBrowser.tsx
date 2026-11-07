@@ -152,3 +152,4 @@ export function ServiceBrowser({ services }: { services: Service[] }) {
     </div>
   );
 }
+
