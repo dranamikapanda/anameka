@@ -1,9 +1,11 @@
 import { Suspense } from "react";
+import { MessageCircle } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { BookingForm } from "@/components/BookingForm";
 import { getProgrammes, getServices } from "@/lib/data";
 import { buildMetadata } from "@/lib/seo";
+import { waLink } from "@/lib/env";
 
 export async function generateMetadata() {
   return buildMetadata({ path: "/book-consultation", title: "Book a Consultation | Dr. Anameka S Panda", description: "Request an online or in-person consultation with Dr. Anameka S Panda. Choose a service and a preferred date; the office will confirm your time." });
@@ -26,6 +28,20 @@ export default async function Book() {
         </ol>
       </PageHero>
       <section className="section"><div className="container-x max-w-4xl">
+        <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-whatsapp/40 bg-whatsapp/10 p-5 backdrop-blur-sm">
+          <div className="flex items-center gap-3">
+            <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-whatsapp text-white shadow-sm">
+              <MessageCircle className="h-5 w-5 fill-current" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-plum">Prefer instant booking or have preliminary questions?</p>
+              <p className="text-xs text-charcoal/75">Connect directly with Dr. Anameka’s desk on WhatsApp.</p>
+            </div>
+          </div>
+          <a href={waLink("Namaste Dr. Anameka, I would like to book a consultation session directly.")} target="_blank" rel="noopener noreferrer" className="btn-whatsapp shrink-0 !py-2.5 !px-5 text-xs sm:text-sm">
+            <span>Book via WhatsApp</span>
+          </a>
+        </div>
         <Suspense fallback={<EnquiryForm kind="consultation" services={list} programmes={progs} />}><BookingForm services={list} programmes={progs} /></Suspense>
         <p className="mt-6 text-sm text-charcoal/75">Submitting this form is a request, not a confirmed appointment. Please read the <a className="underline" href="/cancellation-refund-policy">cancellation policy</a> and <a className="underline" href="/disclaimer">disclaimer</a>.</p>
       </div></section>

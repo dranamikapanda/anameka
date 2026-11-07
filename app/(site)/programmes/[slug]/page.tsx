@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MessageCircle } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { YantraLines } from "@/components/YantraLines";
 import { FaqList } from "@/components/FaqList";
@@ -11,6 +12,7 @@ import { WhatsAppKeyword } from "@/components/WhatsAppKeyword";
 import { ProgrammeCard } from "@/components/ProgrammeCard";
 import { getProgramme, getProgrammes } from "@/lib/data";
 import { buildMetadata, faqSchema, programmeSchema } from "@/lib/seo";
+import { waLink } from "@/lib/env";
 
 type P = { params: Promise<{ slug: string }> };
 export async function generateStaticParams() { return (await getProgrammes()).map((p) => ({ slug: p.slug })); }
@@ -79,11 +81,15 @@ export default async function ProgrammePage({ params }: P) {
 
         <aside className="lg:col-span-4">
           <div className="space-y-8 lg:sticky lg:top-32">
-            <div className="rounded-3xl bg-plum p-8 text-ivory">
+            <div className="rounded-3xl border border-gold/30 bg-plum p-8 text-ivory shadow-soft">
               <h2 className="text-[1.8rem] text-ivory">How to begin</h2>
               <p className="mt-3 text-ivory/75">{p.format}</p>
               {p.price_note && <p className="mt-3 font-medium text-gold-light">{p.price_note}</p>}
-              <Link href={book} className="btn-gold mt-6 w-full">{p.cta_label}</Link>
+              <Link href={book} className="btn-gold mt-6 w-full text-center justify-center">{p.cta_label}</Link>
+              <a href={waLink(`Namaste Dr. Anameka, I would like to inquire about the ${p.title} programme.`)} target="_blank" rel="noopener noreferrer" className="btn-whatsapp mt-3 w-full text-center justify-center text-xs sm:text-sm">
+                <MessageCircle className="h-4 w-4 fill-current" />
+                <span>Ask on WhatsApp</span>
+              </a>
             </div>
             {p.poster_url && <div><h2 className="mb-3 text-xl">Programme flyer</h2><FlyerViewer src={p.poster_url} alt={p.poster_alt || `${p.title} flyer`} /></div>}
           </div>

@@ -26,10 +26,11 @@
   .section { @apply py-20 md:py-28; }
   .lede { @apply text-lg leading-relaxed text-charcoal/80 max-w-prose; }
   .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[0.95rem] font-medium transition-[background,color,box-shadow,transform] duration-300 active:scale-[0.98] disabled:opacity-60; }
-  .btn-gold { @apply btn bg-gold text-plum-deep shadow-gold hover:bg-gold-light; }
-  .btn-plum { @apply btn bg-plum text-ivory hover:bg-plum-deep; }
-  .btn-ghost { @apply btn border border-gold/50 text-plum hover:bg-cream; }
-  .btn-ghost-light { @apply btn border border-gold-light/50 text-ivory hover:bg-white/10; }
+  .btn-gold { @apply btn bg-gradient-to-r from-gold via-gold-light to-gold text-plum-deep shadow-gold hover:shadow-gold-glow hover:scale-[1.02] active:scale-[0.98]; }
+  .btn-plum { @apply btn bg-plum text-ivory hover:bg-plum-deep hover:shadow-soft hover:scale-[1.02]; }
+  .btn-ghost { @apply btn border border-gold/50 text-plum hover:bg-cream hover:border-gold; }
+  .btn-ghost-light { @apply btn border border-gold-light/40 text-ivory backdrop-blur-sm hover:bg-white/10 hover:border-gold-light; }
+  .btn-whatsapp { @apply inline-flex items-center justify-center gap-2.5 rounded-full bg-whatsapp px-6 py-3 text-[0.95rem] font-medium text-white shadow-whatsapp-glow transition-all duration-300 hover:bg-whatsapp-hover hover:scale-[1.02] active:scale-[0.98]; }
   .field { @apply w-full rounded-xl border border-plum/15 bg-white px-4 py-3 text-charcoal placeholder:text-charcoal/55 transition focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/25; }
   .label { @apply mb-1.5 block text-sm font-medium text-plum; }
   .err { @apply mt-1 text-sm text-[#A1321F]; }
@@ -43,6 +44,19 @@
   .prose-rich a { @apply text-plum underline decoration-gold underline-offset-4 hover:decoration-2; }
   .prose-rich blockquote { @apply my-8 border-l-2 border-gold pl-6 font-display text-2xl italic text-plum; }
   .prose-rich strong { @apply font-semibold text-plum; }
+  
+  /* Luxury utility classes */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #F2C766 0%, #C8912F 50%, #F2C766 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card-luxury {
+    @apply rounded-3xl border border-gold/30 bg-white/80 p-8 shadow-soft backdrop-blur-sm transition-all duration-300 hover:border-gold hover:shadow-gold-glow hover:-translate-y-1;
+  }
+  .card-luxury-dark {
+    @apply rounded-3xl border border-gold/25 bg-plum-deep/80 p-8 text-ivory backdrop-blur-md transition-all duration-300 hover:border-gold/60 hover:shadow-luxury hover:-translate-y-1;
+  }
 }
 
 /* Paper grain on cream surfaces – a nod to manuscript and handwriting work */

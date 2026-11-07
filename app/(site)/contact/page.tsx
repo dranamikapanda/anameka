@@ -17,7 +17,23 @@ export default async function Contact() {
       <JsonLd data={webPageSchema("/contact", "Contact", "Contact Dr. Anameka S Panda")} />
       <PageHero title="Contact" crumbs={[{ name: "Contact", path: "/contact" }]} intro="Call, message on WhatsApp, or write to us below. To request a specific consultation time, use the booking page." />
       <section className="section"><div className="container-x grid gap-14 lg:grid-cols-12">
-        <div className="lg:col-span-4">
+        <div className="lg:col-span-4 space-y-6">
+          <div className="rounded-3xl border border-whatsapp/40 bg-whatsapp/10 p-6 backdrop-blur-sm">
+            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-whatsapp-dark">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-whatsapp opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-whatsapp"></span>
+              </span>
+              <span>Fastest Response: WhatsApp</span>
+            </div>
+            <h3 className="mt-2 text-xl font-display text-plum font-medium">Chat Directly with Dr. Anameka</h3>
+            <p className="mt-2 text-sm text-charcoal/80">Typically responds within 15 minutes during office hours. Ask questions or request time slots.</p>
+            <a href={waLink("Namaste Dr. Anameka, I am reaching out from your website contact page.")} target="_blank" rel="noopener noreferrer" className="btn-whatsapp mt-4 w-full text-center justify-center text-sm shadow-sm">
+              <MessageCircle className="h-4 w-4 fill-current" />
+              <span>Open WhatsApp Chat</span>
+            </a>
+          </div>
+
           <ul>
             <li className={row}><Phone className="mt-1 h-5 w-5 text-gold" /><div><p className="text-sm text-charcoal/75">Phone</p><a href={`tel:${env.phone}`} className="font-display text-2xl text-plum">{formatPhone(env.phone)}</a></div></li>
             <li className={row}><MessageCircle className="mt-1 h-5 w-5 text-gold" /><div><p className="text-sm text-charcoal/75">WhatsApp</p><a href={waLink("Hello, I have a question about a consultation.")} target="_blank" rel="noopener noreferrer" className="font-display text-2xl text-plum">Message on WhatsApp</a></div></li>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MessageCircle } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { YantraLines } from "@/components/YantraLines";
@@ -10,6 +11,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { TrackView } from "@/components/TrackView";
 import { getCategories, getPosts, getProgrammes, getService, getServices, getTestimonials } from "@/lib/data";
 import { buildMetadata, faqSchema, serviceSchema } from "@/lib/seo";
+import { waLink } from "@/lib/env";
 
 type P = { params: Promise<{ slug: string }> };
 export async function generateStaticParams() { return (await getServices()).map((s) => ({ slug: s.slug })); }
@@ -56,8 +58,12 @@ export default async function ServicePage({ params }: P) {
           <ServiceIcon name={s.icon} className="mt-10 h-12 w-12 text-gold-light" />
           <h1 className="mt-6 max-w-3xl text-ivory">{s.title}</h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ivory/75">{s.short_description}</p>
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link href={`/book-consultation?service=${s.slug}`} className="btn-gold">Book {s.title.toLowerCase()}</Link>
+            <a href={waLink(`Namaste Dr. Anameka, I would like to inquire about the ${s.title} consultation.`)} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+              <MessageCircle className="h-4 w-4 fill-current" />
+              <span>Ask on WhatsApp</span>
+            </a>
             <a href="#how-it-works" className="btn-ghost-light">How it works</a>
           </div>
         </div>
@@ -109,10 +115,14 @@ export default async function ServicePage({ params }: P) {
 
         <aside className="lg:col-span-4">
           <div className="space-y-8 lg:sticky lg:top-32">
-            <div className="rounded-3xl bg-plum p-8 text-ivory">
+            <div className="rounded-3xl border border-gold/30 bg-plum p-8 text-ivory shadow-soft">
               <h2 className="text-[1.8rem] text-ivory">Book this consultation</h2>
               <p className="mt-3 text-ivory/70">Online or in person. Choose a preferred date and the office will confirm.</p>
-              <Link href={`/book-consultation?service=${s.slug}`} className="btn-gold mt-6 w-full">Request a time</Link>
+              <Link href={`/book-consultation?service=${s.slug}`} className="btn-gold mt-6 w-full text-center justify-center">Request a time</Link>
+              <a href={waLink(`Namaste Dr. Anameka, I have a quick question regarding ${s.title}.`)} target="_blank" rel="noopener noreferrer" className="btn-whatsapp mt-3 w-full text-center justify-center text-xs sm:text-sm">
+                <MessageCircle className="h-4 w-4 fill-current" />
+                <span>Ask on WhatsApp</span>
+              </a>
             </div>
             {relatedProgs.length > 0 && (
               <nav aria-label="Related programmes">
