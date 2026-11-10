@@ -8,14 +8,14 @@ const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
  * the visitor sees all problems at once instead of fixing them in rounds.
  */
 export const enquirySchema = z.object({
-  kind: z.enum(["contact", "consultation"]),
+  kind: z.enum(["contact", "consultation", "course"]),
   full_name: z.string().trim().max(100),
   phone: z.string().trim().max(20),
   email: z.string().trim().max(160).optional(),
   service_slug: z.string().max(80).optional(),
   mode: z.string().max(10).optional(),
   preferred_date: z.string().max(10).optional(),
-  preferred_time: z.string().max(20).optional(),
+  preferred_time: z.string().max(40).optional(),
   message: z.string().trim().max(2000).optional(),
   consent: z.boolean().optional(),
   source_page: z.string().max(200).optional(),
@@ -34,6 +34,8 @@ export const enquirySchema = z.object({
     if (!v.mode) err("mode", "Choose online or offline");
     if (!v.preferred_date) err("preferred_date", "Choose a preferred date");
     else if (v.preferred_date < new Date().toISOString().slice(0, 10)) err("preferred_date", "Choose a date from today onwards");
+  } else if (v.kind === "course") {
+    if (!v.service_slug) err("service_slug", "Select a course to inquire about");
   }
 }).transform((v) => ({ ...v, mode: v.mode as "online" | "offline" | undefined, consent: true as const }));
 export type EnquiryInput = z.infer<typeof enquirySchema>;

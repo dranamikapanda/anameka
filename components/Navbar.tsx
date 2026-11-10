@@ -11,6 +11,7 @@ import { track } from "@/lib/analytics";
 const links = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
+  { href: "/courses", label: "Courses" },
   { href: "/programmes", label: "Programmes" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/gallery", label: "Gallery" },

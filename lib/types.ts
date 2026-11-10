@@ -31,6 +31,22 @@ export interface Faq { question: string; answer: string; topic: string }
 export interface LegalPage { slug: string; title: string; body: string; updated_at?: string }
 export interface ProfileSection { slug: string; title: string; body: string; verified: boolean }
 export interface TimelineItem { period: string; title: string; description?: string | null }
+export interface Course {
+  slug: string;
+  title: string;
+  category: string;
+  tagline: string;
+  duration: string;
+  format: string;
+  level: string;
+  next_batch: string;
+  description: string;
+  modules: string[];
+  certification: string;
+  includes: string;
+  icon: string;
+}
+
 export interface SiteSettings {
   name: string; tagline: string; heroHeadline: string; heroSubheading: string; shortBio: string;
   serviceArea: string; hours: string; logoUrl: string; portraitUrl: string; ogImageUrl: string;

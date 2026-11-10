@@ -5,7 +5,7 @@ import { serviceClient } from "@/lib/supabase/server";
 import { cleanText } from "@/lib/sanitize";
 import { notifyEnquiry } from "@/lib/notify";
 import { syncToGoogleSheet } from "@/lib/google-sheets";
-import { getProgrammes, getServices } from "@/lib/data";
+import { getCourses, getProgrammes, getServices } from "@/lib/data";
 
 export async function POST(req: Request) {
   const ip = clientIp(req.headers);
@@ -22,9 +22,9 @@ export async function POST(req: Request) {
   // Bot traps: filled honeypot, or submitted faster than a human could type. Pretend success.
   if (e.website || (e.started_at && Date.now() - e.started_at < 2500)) return NextResponse.json({ ok: true });
 
-  const [services, programmes] = await Promise.all([getServices(), getProgrammes()]);
-  const service = [...services, ...programmes].find((s) => s.slug === e.service_slug);
-  if (e.service_slug && !service) return NextResponse.json({ error: "Choose a service from the list.", fieldErrors: { service_slug: "Choose a service from the list" } }, { status: 422 });
+  const [services, programmes, courses] = await Promise.all([getServices(), getProgrammes(), getCourses()]);
+  const service = [...services, ...programmes, ...courses].find((s) => s.slug === e.service_slug);
+  if (e.service_slug && !service) return NextResponse.json({ error: "Choose an item from the list.", fieldErrors: { service_slug: "Choose an item from the list" } }, { status: 422 });
 
   const row = {
     kind: e.kind, full_name: cleanText(e.full_name), phone: e.phone.replace(/[^\d+]/g, ""), email: e.email || null,
@@ -45,7 +45,11 @@ export async function POST(req: Request) {
   await Promise.allSettled([
     notifyEnquiry(e, service?.title).catch((err) => console.error("[enquiries] notify failed", err)),
     syncToGoogleSheet({
-      kind: e.kind === "consultation" ? "Consultation Booking" : "Contact Enquiry",
+      kind: e.kind === "course"
+        ? "Course Enquiry"
+        : e.kind === "consultation"
+          ? "Consultation Booking"
+          : "Normal Contact Enquiry",
       full_name: row.full_name,
       phone: row.phone,
       email: row.email,

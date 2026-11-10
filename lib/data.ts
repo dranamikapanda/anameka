@@ -2,10 +2,11 @@ import "server-only";
 import { cache } from "react";
 import { publicClient } from "@/lib/supabase/server";
 import type {
-  BlogPost, Faq, Programme, GalleryItem, LegalPage, ProfileSection, Service, SiteSettings,
+  BlogPost, Faq, Programme, Course, GalleryItem, LegalPage, ProfileSection, Service, SiteSettings,
   SocialLink, SuccessStory, Testimonial, TimelineItem, Video,
 } from "@/lib/types";
 import servicesSeed from "@/lib/content/services.json";
+import coursesSeed from "@/lib/content/courses.json";
 import siteSeed from "@/lib/content/site.json";
 import faqSeed from "@/lib/content/faqs.json";
 import postsSeed from "@/lib/content/blog-posts.json";
@@ -50,6 +51,10 @@ export const getProgrammes = cache(() =>
   query<Programme[]>((db) => db.from("programmes").select("*").eq("status", "published").order("sort_order"), programmesSeed as Programme[]));
 
 export const getProgramme = cache(async (slug: string) => (await getProgrammes()).find((p) => p.slug === slug) ?? null);
+
+export const getCourses = cache(async (): Promise<Course[]> => coursesSeed as Course[]);
+
+export const getCourse = cache(async (slug: string) => (await getCourses()).find((c) => c.slug === slug) ?? null);
 
 export const getTestimonials = cache(() =>
   query<Testimonial[]>((db) => db.from("testimonials").select("*").eq("status", "published").order("featured", { ascending: false }).order("created_at", { ascending: false }), testimonialsDraft as unknown as Testimonial[]));
