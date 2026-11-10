@@ -17,7 +17,7 @@ export function HeroText({ headline, sub }: { headline: string; sub: string }) {
       >
         <Sparkles className="h-3.5 w-3.5 shrink-0 text-gold-light animate-pulse" />
         <span className="truncate sm:whitespace-normal">
-          Vedic Astrology · Vastu · Graphology · Coaching
+          Integrated Spiritual Science · Astrology & Vastu · Energy Healing
         </span>
       </div>
 

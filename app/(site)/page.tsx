@@ -13,6 +13,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ProgrammeCard } from "@/components/ProgrammeCard";
 import { WhatsAppKeyword } from "@/components/WhatsAppKeyword";
 import { InteractiveConsultationTools } from "@/components/InteractiveConsultationTools";
+import { MasterOverviewPillars } from "@/components/MasterOverviewPillars";
 import {
   GraduationCap,
   Briefcase,
@@ -359,6 +360,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* Master Overview: The 3 Core Pillars */}
+      <MasterOverviewPillars />
 
       {/* Areas of Expertise */}
       <section className="section bg-ivory">

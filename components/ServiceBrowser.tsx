@@ -8,12 +8,52 @@ import { waLink } from "@/lib/env";
 import { track } from "@/lib/analytics";
 
 const categories = [
-  { id: "all", label: "All Disciplines" },
-  { id: "astrology", label: "Vedic Astrology", slugs: ["vedic-astrology", "remedial-measures", "astro-vastu-integration"] },
-  { id: "vastu", label: "Vastu Shastra", slugs: ["vastu-consultation", "non-invasive-vastu", "astro-vastu-integration"] },
-  { id: "graphology", label: "Graphology & Mind", slugs: ["graphology", "graphotherapy", "signature-analysis"] },
-  { id: "energy", label: "Energy & Numerology", slugs: ["mobile-number-analysis", "logo-design-guidance", "watch-correction"] },
-  { id: "coaching", label: "Life & Business Coaching", slugs: ["life-transformation-coaching", "business-growth-guidance"] },
+  {
+    id: "all",
+    label: "✦ All Offerings",
+    badge: "Integrated Spiritual Science & Energy Healing",
+    tagline: "Align Your Inner Cosmos — Transform Your Outer World",
+    sub: "Integrated occult science and vibrational energy healing for Health, Wealth, and Relationships.",
+    quote: "One session can shift everything. 🔮",
+    slugs: [] as string[],
+  },
+  {
+    id: "astrology-vastu",
+    label: "🔮 Astrology & Vastu",
+    badge: "⭐ No structural changes needed",
+    tagline: "The Stars Align. Your Space Aligns. You Align.",
+    sub: "Vedic astrology, birth chart analysis, practical remedies, non-invasive residential/commercial Vastu, and Astro-Vastu synthesis.",
+    quote: "Know your chart. Fix your space. Change your life.",
+    slugs: ["vedic-astrology", "remedial-measures", "non-invasive-vastu", "astro-vastu-integration", "vastu-consultation"],
+  },
+  {
+    id: "healing",
+    label: "💫 Healing Modalities",
+    badge: "✨ Distant healing available worldwide",
+    tagline: "Heal. Clear. Recharge.",
+    sub: "Aura scanning, distant & in-person Reiki, crystal healing therapy, chakra balancing, and total energy reset for health, wealth & relationships.",
+    quote: "Feel lighter, think clearer, attract more. 💫",
+    slugs: ["aura-scanning-cleansing", "reiki-healing", "crystal-healing-therapy", "chakra-balancing", "total-energy-alignment"],
+  },
+  {
+    id: "consultation",
+    label: "📜 Consultation & Analysis",
+    badge: "🏆 Trusted by 5,000+ clients",
+    tagline: "Science Meets the Soul",
+    sub: "Analytical handwriting & signature therapy, wristwatch analysis, scientific logo design & brand guidance, and personal coaching.",
+    quote: "Your energy leaves a signature — let us read it. ✍️",
+    slugs: [
+      "signature-analysis",
+      "graphology",
+      "graphotherapy",
+      "watch-correction",
+      "logo-design-guidance",
+      "mobile-number-analysis",
+      "total-energy-alignment",
+      "life-transformation-coaching",
+      "business-growth-guidance",
+    ],
+  },
 ];
 
 export function ServiceBrowser({ services }: { services: Service[] }) {
@@ -33,8 +73,10 @@ export function ServiceBrowser({ services }: { services: Service[] }) {
     });
   }, [services, activeCategory, searchQuery]);
 
+  const currentCat = categories.find((c) => c.id === activeCategory) || categories[0];
+
   return (
-    <div className="space-y-12">
+    <div className="space-y-10">
       {/* Category Filter Pills & Search */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gold/20 pb-6">
         <div className="flex flex-wrap items-center gap-2">
@@ -64,6 +106,39 @@ export function ServiceBrowser({ services }: { services: Service[] }) {
             placeholder="Search consultations..."
             className="w-full rounded-full border border-gold/30 bg-white/90 px-4 py-2 text-sm text-plum placeholder:text-charcoal/50 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
           />
+        </div>
+      </div>
+
+      {/* Category Editorial Highlight Banner (From Brand Posters) */}
+      <div className="relative overflow-hidden rounded-3xl border border-gold/30 bg-gradient-to-r from-plum-deep via-plum to-plum-deep p-6 sm:p-8 text-ivory shadow-soft">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="max-w-2xl">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-gold-light mb-3">
+              <Sparkles className="h-3.5 w-3.5" />
+              <span>{currentCat.badge}</span>
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-display font-medium text-ivory leading-snug">
+              {currentCat.tagline}
+            </h2>
+            <p className="mt-2 text-sm sm:text-base text-ivory/80 leading-relaxed">
+              {currentCat.sub}
+            </p>
+          </div>
+          <div className="shrink-0 flex flex-col items-start md:items-end gap-2 border-t md:border-t-0 md:border-l border-gold/20 pt-4 md:pt-0 md:pl-6">
+            <span className="text-[11px] uppercase tracking-wider font-semibold text-gold-light/80">Pillar Promise</span>
+            <p className="font-display italic text-gold-light text-base sm:text-lg">
+              &ldquo;{currentCat.quote}&rdquo;
+            </p>
+            <a
+              href={waLink(`Namaste Dr. Anameka, I would like to consult regarding your ${currentCat.label} offerings.`)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-whatsapp !py-2 !px-4 text-xs mt-1"
+            >
+              <MessageCircle className="h-3.5 w-3.5 fill-current" />
+              <span>Inquire on WhatsApp</span>
+            </a>
+          </div>
         </div>
       </div>
 
