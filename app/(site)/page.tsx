@@ -140,20 +140,20 @@ export default async function Home() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_70%_45%,#6B3F7A_0%,#441F51_38%,#2B1234_75%)]" />
         <div className="absolute top-1/4 left-10 h-72 w-72 rounded-full bg-gold/10 blur-[100px] pointer-events-none" />
 
-        <div className="container-x grid min-h-[92svh] items-center gap-12 pb-16 pt-32 lg:grid-cols-12 lg:pt-36">
+        <div className="container-x grid items-center gap-8 sm:gap-10 lg:gap-12 pt-28 pb-10 sm:pt-32 sm:pb-12 lg:pt-36 lg:pb-14 lg:grid-cols-12">
           <div className="lg:col-span-6">
             <HeroText headline={s.heroHeadline} sub={s.heroSubheading} />
           </div>
 
           {/* Majestic Hero Portrait Frame with 3D Yantra Aura - Refined Proportions */}
-          <div className="relative mx-auto w-full max-w-[400px] lg:col-span-6 flex flex-col items-center justify-center px-2 sm:px-0">
+          <div className="relative mx-auto w-full max-w-[360px] sm:max-w-[400px] lg:col-span-6 flex flex-col items-center justify-center px-2 sm:px-0 mt-2 lg:mt-0">
             {/* 3D Sacred Yantra Background Aura */}
             <div className="absolute inset-0 pointer-events-none opacity-40 overflow-hidden">
               <HeroVisual />
             </div>
 
             {/* Regal Portrait Container */}
-            <div className="relative z-10 w-full max-w-[230px] xs:max-w-[250px] sm:max-w-[275px] lg:max-w-[295px]">
+            <div className="relative z-10 w-full max-w-[210px] xs:max-w-[230px] sm:max-w-[260px] lg:max-w-[285px]">
               <Portrait
                 src={s.portraitUrl}
                 priority
@@ -162,7 +162,7 @@ export default async function Home() {
               />
 
               {/* Desktop-only floating badges - neatly positioned beside the frame */}
-              <div className="hidden lg:flex absolute -left-10 top-12 z-20 items-center gap-2.5 rounded-xl border border-gold/40 bg-plum-deep/95 px-3.5 py-2 shadow-xl backdrop-blur-md animate-float">
+              <div className="hidden lg:flex absolute -left-6 xl:-left-10 top-10 z-20 items-center gap-2.5 rounded-xl border border-gold/40 bg-plum-deep/95 px-3 py-1.5 xl:px-3.5 xl:py-2 shadow-xl backdrop-blur-md animate-float">
                 <div className="grid h-7 w-7 place-items-center rounded-lg bg-gold/20 text-gold-light shrink-0">
                   <Sparkles className="h-3.5 w-3.5" />
                 </div>
@@ -172,7 +172,7 @@ export default async function Home() {
                 </div>
               </div>
 
-              <div className="hidden lg:flex absolute -right-10 bottom-12 z-20 items-center gap-2.5 rounded-xl border border-gold/40 bg-plum-deep/95 px-3.5 py-2 shadow-xl backdrop-blur-md animate-float [animation-delay:1.5s]">
+              <div className="hidden lg:flex absolute -right-6 xl:-right-10 bottom-10 z-20 items-center gap-2.5 rounded-xl border border-gold/40 bg-plum-deep/95 px-3 py-1.5 xl:px-3.5 xl:py-2 shadow-xl backdrop-blur-md animate-float [animation-delay:1.5s]">
                 <div className="grid h-7 w-7 place-items-center rounded-full bg-whatsapp/20 text-whatsapp shrink-0">
                   <CheckCircle2 className="h-3.5 w-3.5" />
                 </div>
@@ -184,7 +184,7 @@ export default async function Home() {
             </div>
 
             {/* Mobile/Tablet Trust Ribbon - placed cleanly underneath the portrait */}
-            <div className="relative z-20 mt-3.5 flex flex-wrap items-center justify-center gap-2 lg:hidden w-full max-w-[300px]">
+            <div className="relative z-20 mt-3 flex flex-wrap items-center justify-center gap-2 lg:hidden w-full max-w-[300px]">
               <div className="flex items-center gap-1.5 rounded-lg border border-gold/40 bg-plum-deep/95 px-2.5 py-1.5 shadow-md backdrop-blur-md">
                 <Sparkles className="h-3 w-3 text-gold-light" />
                 <span className="text-[11px] font-semibold text-gold-light">15+ Years Practice</span>
@@ -198,19 +198,19 @@ export default async function Home() {
         </div>
 
         {/* Impact & Trust Stats Ribbon */}
-        <div className="border-t border-gold/25 bg-plum-darkest/75 backdrop-blur-md py-5 sm:py-6">
+        <div className="border-t border-gold/25 bg-plum-darkest/75 backdrop-blur-md py-4 sm:py-5">
           <div className="container-x">
-            <div className="grid grid-cols-2 gap-3.5 sm:gap-6 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4">
               {stats.map(({ value, label, icon: StatIcon }) => (
                 <div key={label} className="flex items-center gap-2.5 sm:gap-3.5">
-                  <div className="grid h-9 w-9 sm:h-11 sm:w-11 shrink-0 place-items-center rounded-xl border border-gold/30 bg-gold/10 text-gold-light">
-                    <StatIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <div className="grid h-8 w-8 sm:h-10 sm:w-10 shrink-0 place-items-center rounded-xl border border-gold/30 bg-gold/10 text-gold-light">
+                    <StatIcon className="h-4 w-4 sm:h-4.5 sm:w-4.5" />
                   </div>
                   <div className="min-w-0">
                     <p className="font-display text-lg sm:text-2xl font-semibold text-gold-light leading-none truncate">
                       {value}
                     </p>
-                    <p className="mt-1 text-[11px] sm:text-xs text-ivory/70 font-medium truncate sm:whitespace-normal">{label}</p>
+                    <p className="mt-0.5 text-[11px] sm:text-xs text-ivory/70 font-medium truncate sm:whitespace-normal">{label}</p>
                   </div>
                 </div>
               ))}

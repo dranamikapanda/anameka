@@ -21,17 +21,15 @@ export function HeroText({ headline, sub }: { headline: string; sub: string }) {
         </span>
       </div>
 
-      {/* Main Title - No excessive horizontal offsets on mobile */}
-      <h1 className="text-ivory font-display break-words">
+      {/* Main Title - Symmetrical, responsive and clean across all screens */}
+      <h1 className="text-ivory font-display tracking-tight text-3xl xs:text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-[3.75rem] leading-[1.12]">
         {lines.map((l, i) => (
           <span
             key={l}
             style={{ animationDelay: `${i * 120 + 150}ms` }}
             className={`block animate-[settle_1.1s_cubic-bezier(.2,.7,.2,1)_both] ${
-              i === 1
-                ? "pl-0 sm:pl-[0.4em] lg:pl-[0.6em] text-gold-gradient font-normal italic"
-                : ""
-            } ${i === 2 ? "pl-0 sm:pl-[0.8em] lg:pl-[1.2em]" : ""}`}
+              i === 1 ? "text-gold-gradient font-normal italic py-0.5" : ""
+            }`}
           >
             {l}
           </span>
@@ -41,17 +39,17 @@ export function HeroText({ headline, sub }: { headline: string; sub: string }) {
       {/* Subheading */}
       <p
         style={{ animationDelay: "450ms" }}
-        className="mt-5 sm:mt-7 max-w-lg animate-[rise_.9s_cubic-bezier(.2,.7,.2,1)_both] text-sm sm:text-base md:text-lg leading-relaxed text-ivory/80 font-normal"
+        className="mt-4 sm:mt-5 max-w-xl animate-[rise_.9s_cubic-bezier(.2,.7,.2,1)_both] text-sm sm:text-base lg:text-lg leading-relaxed text-ivory/80 font-normal"
       >
         {sub}
       </p>
 
-      {/* Action Buttons: Full width on mobile, inline on tablet & desktop */}
+      {/* Action Buttons: Responsive, non-crowded */}
       <div
         style={{ animationDelay: "600ms" }}
-        className="mt-7 sm:mt-9 flex animate-[rise_.9s_cubic-bezier(.2,.7,.2,1)_both] flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3.5"
+        className="mt-6 sm:mt-8 flex animate-[rise_.9s_cubic-bezier(.2,.7,.2,1)_both] flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3.5"
       >
-        <Link href="/book-consultation" className="btn-gold group justify-center text-center">
+        <Link href="/book-consultation" className="btn-gold group justify-center text-center shadow-md">
           <span>Book a consultation</span>
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </Link>
@@ -62,7 +60,7 @@ export function HeroText({ headline, sub }: { headline: string; sub: string }) {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("whatsapp_click", { location: "hero" })}
-          className="btn-whatsapp group justify-center text-center"
+          className="btn-whatsapp group justify-center text-center shadow-md"
         >
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
@@ -72,8 +70,12 @@ export function HeroText({ headline, sub }: { headline: string; sub: string }) {
           <span>Chat on WhatsApp</span>
         </a>
 
-        <Link href="/services" className="btn-ghost-light justify-center text-center">
-          Explore services
+        <Link
+          href="/services"
+          className="inline-flex items-center justify-center gap-1.5 py-2 px-3 text-xs sm:text-sm font-medium text-gold-light/90 hover:text-ivory transition-colors text-center"
+        >
+          <span>Explore services</span>
+          <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>
     </div>
