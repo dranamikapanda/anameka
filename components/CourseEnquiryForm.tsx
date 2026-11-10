@@ -276,3 +276,4 @@ export function CourseEnquiryForm({
     </form>
   );
 }
+
