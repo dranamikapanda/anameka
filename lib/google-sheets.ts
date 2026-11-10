@@ -37,6 +37,10 @@ export async function syncToGoogleSheet(payload: SheetEnquiryPayload): Promise<b
       timeStyle: "short",
     });
 
+    const safePhone = payload.phone
+      ? `'${payload.phone.trim().replace(/^'+/, "")}`
+      : "";
+
     const res = await fetch(webhookUrl, {
       method: "POST",
       headers: {
@@ -45,6 +49,7 @@ export async function syncToGoogleSheet(payload: SheetEnquiryPayload): Promise<b
       redirect: "follow",
       body: JSON.stringify({
         ...payload,
+        phone: safePhone,
         admin_email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "anamekaspanda5@gmail.com",
         submitted_at: formattedDate,
       }),
