@@ -13,12 +13,18 @@ export interface SheetEnquiryPayload {
   source_page?: string | null;
 }
 
+const DEFAULT_WEBHOOK_URL =
+  "https://script.google.com/macros/s/AKfycbyFLvva7AVFhSiZyTQEJCjjZCDvHTB3FAT1LSKPL8ud6ZgencwGqd8BOc8hDQPZO_7a/exec";
+
 /**
  * Sends form submission details directly to a Google Sheet via a Webhook (e.g. Google Apps Script, Make, or Zapier).
- * Configured via the GOOGLE_SHEETS_WEBHOOK_URL environment variable.
+ * Configured via the GOOGLE_SHEETS_WEBHOOK_URL environment variable, with a robust production fallback.
  */
 export async function syncToGoogleSheet(payload: SheetEnquiryPayload): Promise<boolean> {
-  const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL || process.env.GOOGLE_SHEET_WEBHOOK_URL;
+  const webhookUrl =
+    process.env.GOOGLE_SHEETS_WEBHOOK_URL ||
+    process.env.GOOGLE_SHEET_WEBHOOK_URL ||
+    DEFAULT_WEBHOOK_URL;
   if (!webhookUrl) {
     console.warn("[google-sheets] GOOGLE_SHEETS_WEBHOOK_URL is not set in environment variables");
     return false;
