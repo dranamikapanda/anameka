@@ -220,7 +220,7 @@ export default async function Home() {
       </section>
 
       {/* Introduction to Dr. Anameka */}
-      <section className="section grain bg-cream">
+      <section className="section grain bg-cream overflow-hidden">
         <div className="container-x grid gap-10 md:grid-cols-12 md:items-center">
           <div className="md:col-span-5 flex justify-center md:justify-start">
             <div className="relative w-full max-w-[230px] xs:max-w-[250px] sm:max-w-[275px] lg:max-w-[295px]">
@@ -284,7 +284,7 @@ export default async function Home() {
       </section>
 
       {/* Who she works with */}
-      <section className="section bg-ivory">
+      <section className="section bg-ivory overflow-hidden">
         <div className="container-x">
           <div className="max-w-2xl">
             <span className="text-xs uppercase tracking-widest font-semibold text-gold-deep">
@@ -365,7 +365,7 @@ export default async function Home() {
       <MasterOverviewPillars />
 
       {/* Areas of Expertise */}
-      <section className="section bg-ivory">
+      <section className="section bg-ivory overflow-hidden">
         <div className="container-x">
           <div className="max-w-2xl mb-12">
             <span className="text-xs uppercase tracking-widest font-semibold text-gold-deep">
@@ -381,7 +381,7 @@ export default async function Home() {
       </section>
 
       {/* Consultations Offered */}
-      <section className="section bg-cream/50 pt-0">
+      <section className="section bg-cream/50 pt-0 overflow-hidden">
         <div className="container-x">
           <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
@@ -410,7 +410,7 @@ export default async function Home() {
       <InteractiveConsultationTools />
 
       {/* How consultations are approached */}
-      <section className="section grain bg-cream">
+      <section className="section grain bg-cream overflow-hidden">
         <div className="container-x grid gap-12 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-4 lg:sticky lg:top-32">
             <span className="text-xs uppercase tracking-widest font-semibold text-gold-deep">
@@ -501,7 +501,7 @@ export default async function Home() {
 
       {/* Success Stories */}
       {stories.length > 0 && (
-        <section className="section bg-ivory">
+        <section className="section bg-ivory overflow-hidden">
           <div className="container-x">
             <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
               <div>
@@ -541,7 +541,7 @@ export default async function Home() {
 
       {/* Gallery preview */}
       {gallery.length > 0 && (
-        <section className="section bg-cream">
+        <section className="section bg-cream overflow-hidden">
           <div className="container-x">
             <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
               <div>
@@ -561,7 +561,7 @@ export default async function Home() {
 
       {/* Knowledge Centre */}
       {lead && (
-        <section className="section bg-ivory">
+        <section className="section bg-ivory overflow-hidden">
           <div className="container-x">
             <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
               <div>
@@ -589,7 +589,7 @@ export default async function Home() {
       )}
 
       {/* Free Parent Resource with instant WhatsApp Keyword */}
-      <section className="grain bg-cream py-16 border-y border-gold/25">
+      <section className="grain bg-cream py-16 border-y border-gold/25 overflow-hidden">
         <div className="container-x grid gap-8 md:grid-cols-12 md:items-center">
           <div className="md:col-span-7">
             <span className="text-xs uppercase tracking-widest font-semibold text-gold-deep">
@@ -614,7 +614,7 @@ export default async function Home() {
       <CtaBand />
 
       {/* Newsletter */}
-      <section className="py-20 bg-ivory">
+      <section className="py-20 bg-ivory overflow-hidden">
         <div className="container-x grid gap-8 md:grid-cols-12 md:items-center">
           <div className="md:col-span-6">
             <h2 className="text-[2.2rem]">Letters from the knowledge centre</h2>

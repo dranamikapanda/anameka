@@ -9,6 +9,7 @@ type Nav = Navigator & { deviceMemory?: number; connection?: { saveData?: boolea
 
 /** True only where real-time WebGL will be smooth: hardware GPU, no data-saver, no reduced motion. */
 function canRender3D() {
+  if (typeof window !== "undefined" && window.innerWidth < 768) return false;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
   const n = navigator as Nav;
   if (n.connection?.saveData || (n.deviceMemory && n.deviceMemory < 4)) return false;

@@ -13,16 +13,16 @@ export function HeroText({ headline, sub }: { headline: string; sub: string }) {
       {/* Luxury spiritual badge - fully responsive */}
       <div
         style={{ animationDelay: "100ms" }}
-        className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3.5 py-1.5 text-[11px] sm:text-xs font-medium tracking-wide text-gold-light backdrop-blur-md animate-[rise_.8s_cubic-bezier(.2,.7,.2,1)_both] mb-5 sm:mb-6 max-w-full"
+        className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 sm:px-3.5 sm:py-1.5 text-[11px] sm:text-xs font-medium tracking-wide text-gold-light backdrop-blur-md animate-[rise_.8s_cubic-bezier(.2,.7,.2,1)_both] mb-4 sm:mb-6 max-w-full"
       >
-        <Sparkles className="h-3.5 w-3.5 shrink-0 text-gold-light animate-pulse" />
-        <span className="truncate sm:whitespace-normal">
-          Integrated Spiritual Science · Astrology & Vastu · Energy Healing
+        <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 shrink-0 text-gold-light animate-pulse" />
+        <span className="truncate">
+          Spiritual Science · Astrology & Vastu · Healing
         </span>
       </div>
 
       {/* Main Title - Symmetrical, responsive and clean across all screens */}
-      <h1 className="text-ivory font-display tracking-tight text-3xl xs:text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-[3.75rem] leading-[1.12]">
+      <h1 className="text-ivory font-display tracking-tight text-[1.85rem] xs:text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-[3.75rem] leading-[1.12] break-words">
         {lines.map((l, i) => (
           <span
             key={l}

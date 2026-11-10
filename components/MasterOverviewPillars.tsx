@@ -64,9 +64,9 @@ export function MasterOverviewPillars() {
       <div className="container-x">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-gold/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold-deep mb-4 shadow-sm">
-            <Sparkles className="h-3.5 w-3.5" />
-            <span>Master Overview • Integrated Spiritual Science</span>
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-gold/15 px-3 py-1 sm:px-4 sm:py-1.5 text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-gold-deep mb-4 shadow-sm max-w-full">
+            <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 shrink-0" />
+            <span className="truncate">Master Overview • 3 Core Pillars</span>
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-plum leading-tight">
             Align Your Inner Cosmos — <br className="hidden sm:block" />
