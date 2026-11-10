@@ -45,6 +45,7 @@ export async function syncToGoogleSheet(payload: SheetEnquiryPayload): Promise<b
       redirect: "follow",
       body: JSON.stringify({
         ...payload,
+        admin_email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "anamekaspanda5@gmail.com",
         submitted_at: formattedDate,
       }),
     });
