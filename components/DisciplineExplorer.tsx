@@ -15,7 +15,7 @@ const disciplines = [
     tagline: "Cosmic timing, life pathways & remedial alignment",
     body: "Reading the Janam Kundli (birth chart) as a profound blueprint for reflecting on planetary periods (Dashas), innate strengths, timing for major decisions, and practical remedial measures.",
     href: "/services/vedic-astrology",
-    links: ["Remedial measures", "Watch correction", "Birth chart analysis"],
+    links: ["Remedial measures", "Wrist Watch Analysis & Therapy", "Birth chart analysis"],
     waMsg: "Namaste Dr. Anameka, I would like to consult with you regarding Vedic Astrology / Kundli reading.",
   },
   {
