@@ -48,7 +48,7 @@ const disciplines = [
     tagline: "Vibrational harmony for phone numbers, business logos & names",
     body: "Reviewing mobile numbers, corporate logos, visiting cards, and brand names to ensure their numerical and symbolic vibrations align with your personal astrological chart and goals.",
     href: "/services/mobile-number-analysis",
-    links: ["Logo design guidance", "Mobile number analysis", "Name vibration"],
+    links: ["Scientific Logo Designing", "Mobile number analysis", "Name vibration"],
     waMsg: "Namaste Dr. Anameka, I would like to consult on mobile number numerology and logo guidance.",
   },
   {
