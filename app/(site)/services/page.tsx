@@ -10,7 +10,7 @@ export async function generateMetadata() {
     path: "/services",
     title: "Services | Vedic Astrology, Vastu, Graphology & More | Dr. Anameka S Panda",
     description:
-      "All consultations offered by Dr. Anameka S Panda: Vedic astrology, Vastu, non-invasive Vastu, graphology, graphotherapy, signature analysis, coaching and business guidance.",
+      "All consultations offered by Dr. Anameka S Panda: Vedic astrology, Vastu, Astro-Vastu, Medical Astrology & Vastu, Graphology (Handwriting & Signature Analysis & Therapy), Wrist Watch Analysis, Scientific Logo Designing, and Energy Healing.",
   });
 }
 
