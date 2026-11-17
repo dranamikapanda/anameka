@@ -50,6 +50,9 @@ export const getService = cache(async (slug: string) => {
   if (slug === "life-transformation-coaching") {
     return all.find((s) => s.slug === "medical-astrology-vastu") ?? all.find((s) => s.slug === slug) ?? null;
   }
+  if (slug === "graphotherapy" || slug === "signature-analysis") {
+    return all.find((s) => s.slug === "graphology") ?? all.find((s) => s.slug === slug) ?? null;
+  }
   return all.find((s) => s.slug === slug) ?? null;
 });
 

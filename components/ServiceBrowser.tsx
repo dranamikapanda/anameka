@@ -43,9 +43,7 @@ const categories = [
     sub: "Analytical handwriting & signature therapy, wristwatch analysis, scientific logo design & brand guidance, and personal coaching.",
     quote: "Your energy leaves a signature — let us read it. ✍️",
     slugs: [
-      "signature-analysis",
       "graphology",
-      "graphotherapy",
       "watch-correction",
       "logo-design-guidance",
       "mobile-number-analysis",

@@ -28,7 +28,7 @@ const blogCatFor: Record<string, string> = {
 };
 
 const programmesFor: Record<string, string[]> = {
-  graphology: ["student-inner-excellence", "child-script-coach", "teacher-handwriting-consultation"],
+  graphology: ["student-inner-excellence", "child-script-coach", "exam-ready-from-the-inside", "teacher-handwriting-consultation"],
   graphotherapy: ["exam-ready-from-the-inside", "student-inner-excellence"],
   "signature-analysis": ["teacher-handwriting-consultation"],
   "medical-astrology-vastu": ["student-inner-excellence"],

@@ -32,13 +32,13 @@ const disciplines = [
   {
     key: "graph",
     icon: FileSignature,
-    name: "Graphology & Graphotherapy",
-    sanskrit: "Handwriting & Signature Analysis",
-    tagline: "Subconscious diagnosis and positive behavioral rewiring",
+    name: "Graphology (Handwriting & Signature Analysis & Therapy)",
+    sanskrit: "Subconscious Neuro-Strokes",
+    tagline: "Comprehensive handwriting diagnosis, signature architecture & corrective therapy",
     body: "Analyzing handwriting strokes and signatures to uncover hidden behavioral patterns, emotional blocks, and subconscious tendencies—followed by guided therapy strokes for lasting positive change.",
     href: "/services/graphology",
-    links: ["Signature analysis", "Subconscious rewiring", "Graphotherapy"],
-    waMsg: "Namaste Dr. Anameka, I would like to get my handwriting / signature analysed.",
+    links: ["Handwriting Diagnosis", "Signature Architecture", "Corrective Graphotherapy"],
+    waMsg: "Namaste Dr. Anameka, I would like to consult on Graphology, Signature Analysis, and Handwriting Therapy.",
   },
   {
     key: "names",

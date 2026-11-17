@@ -212,147 +212,56 @@
  },
  {
   "slug": "graphology",
-  "title": "Graphology",
+  "title": "Graphology (Handwriting & Signature Analysis & Therapy)",
   "icon": "PenLine",
-  "short_description": "Handwriting analysis that looks at how you write as a starting point for self-reflection.",
-  "intro": "Graphology is the study of handwriting: its size, slant, pressure, spacing, margins and letter forms. A consultation uses these features as prompts for a conversation about personal tendencies and patterns.",
-  "what_is": "Graphologists observe recurring features of handwriting and interpret them within a structured framework. Its scientific validity as a personality measure is debated, and it should not be used as the sole basis for decisions such as hiring.",
-  "process": "You provide a sample of natural handwriting on unruled paper. Dr. Anameka studies the sample before the session and then discusses her observations with you, inviting your own reflections.",
-  "who_for": "Individuals interested in self-reflection; students and parents, as part of Anameka's student programmes; teachers who want another lens for understanding pupils; and anyone interested in handwriting as a personal practice.",
+  "short_description": "Comprehensive diagnostic handwriting and signature analysis paired with guided graphotherapy strokes for subconscious transformation, focus, and emotional harmony.",
+  "intro": "Handwriting and signatures are direct neuro-muscular projections of the subconscious mind. Graphology (Handwriting & Signature Analysis & Therapy) combines in-depth diagnostic analysis of pen strokes, margins, slants, and pressure with targeted graphotherapy exercises to dissolve emotional blocks, cultivate inner confidence, and align external behavior.",
+  "what_is": "A complete three-stage subconscious framework: Stage 1 evaluates baseline handwriting strokes (thought patterns, emotional stability, stress handling). Stage 2 decodes signature geometry (public persona, executive authority, self-worth). Stage 3 prescribes custom graphotherapy drills—re-training hand movements to reprogram subconscious habits, improve exam focus, and anchor positive personality shifts.",
+  "process": "You provide a sample of natural handwriting on unruled paper alongside your everyday signatures. Dr. Anameka conducts an in-depth audit, discusses subconscious patterns in a private consultation, and prescribes tailored corrective exercises practised over 21 to 30 days.",
+  "who_for": "Students seeking academic focus and exam calm, professionals and leaders refining their executive presence, teachers understanding student emotional states, and individuals pursuing subconscious self-mastery.",
   "procedure": [
    {
-    "title": "Write a sample",
-    "body": "Half a page to a page of natural writing on unruled paper, with your usual pen, plus your signature."
+    "title": "Sample Submission",
+    "body": "Half a page to a page of natural unruled handwriting and 5 regular signatures using your everyday pen."
    },
    {
-    "title": "Send it",
-    "body": "A clear photograph or scan works for online consultations."
+    "title": "Comprehensive Diagnostic Audit",
+    "body": "In-depth review of stroke zones, slants, pressure, spacing, margins, and signature dynamics."
    },
    {
-    "title": "Analysis session",
-    "body": "Observations are discussed with you, not delivered as a verdict."
+    "title": "Therapeutic Stroke Prescription",
+    "body": "Customized graphotherapy exercises and signature refinement guidelines practised over 21 to 30 days."
    },
    {
-    "title": "Follow-up",
-    "body": "Where useful, the session may lead into graphotherapy exercises."
+    "title": "Progress & Review",
+    "body": "Periodic sample comparison to measure subconscious behavioral integration and emotional shifts."
    }
   ],
   "benefits": [
-   "An engaging, structured prompt for self-reflection",
-   "No birth details required",
-   "Can be combined with graphotherapy practice"
+   "Unified diagnosis and corrective therapy in a single consultation roadmap",
+   "Non-invasive, practical neuro-muscular habit transformation",
+   "No birth date or horoscope required—pure subconscious science"
   ],
   "limitations": [
-   "Graphology is not a validated psychological assessment",
-   "It cannot diagnose health or mental health conditions",
-   "Should not be used as the sole basis for employment or legal decisions"
+   "Graphotherapy requires consistent daily practice (5-10 minutes) for permanent behavioral results",
+   "Complements psychological and medical care; not a substitute for clinical psychiatric treatment"
   ],
   "faqs": [
    {
-    "q": "How should I prepare a handwriting sample?",
-    "a": "Write naturally on unruled paper about half a page to a page, using your normal pen and pace, and sign at the end. Avoid copying text or writing unusually neatly."
+    "q": "How does changing handwriting or signature change my mind?",
+    "a": "Handwriting is brainwriting—conducted via subconscious neural pathways. Consciously practicing specific therapeutic strokes (Graphotherapy) sends reverse bio-feedback to neural pathways, calming anxiety, sharpening focus, and reinforcing confidence over 21-30 days."
    },
    {
-    "q": "Can graphology diagnose illness?",
-    "a": "No. Graphology is not a medical or diagnostic tool, and any health concern should be taken to a qualified doctor."
+    "q": "Does this consultation include both handwriting and signature?",
+    "a": "Yes! Dr. Anameka evaluates your natural handwriting sample, analyzes your signature dynamics, and provides corrective graphotherapy exercises in one complete integrated session."
+   },
+   {
+    "q": "Can children and students benefit from this?",
+    "a": "Absolutely. It is the cornerstone of Dr. Anameka's work with students and educators, helping children overcome exam resistance, restlessness, and lack of concentration without pressure."
    }
   ],
-  "seo_title": "Graphology & Handwriting Analysis | Dr. Anameka S Panda",
-  "seo_description": "Handwriting analysis consultations with Dr. Anameka S Panda. A thoughtful, reflective look at your handwriting, available online or in person."
- },
- {
-  "slug": "graphotherapy",
-  "title": "Graphotherapy",
-  "icon": "Feather",
-  "short_description": "Guided handwriting exercises practised over several weeks, as a mindful habit-building routine.",
-  "intro": "Graphotherapy builds on graphology. It involves practising specific changes to handwriting through regular, short exercises, often over a period of several weeks.",
-  "what_is": "Practitioners of graphotherapy suggest that consciously practising particular strokes and letter forms can support intention-setting and habit change. The approach is traditional and anecdotal; it is best understood as a mindful practice rather than a clinical therapy.",
-  "process": "After a handwriting analysis, a small number of exercises are chosen. You practise them daily for a set period, with check-ins to review progress and adjust the exercises.",
-  "who_for": "Students preparing for exams (see the Exam Ready From the Inside programme), people who enjoy structured daily practices, and anyone wanting a calm, focused routine as part of personal growth.",
-  "procedure": [
-   {
-    "title": "Initial analysis",
-    "body": "Graphotherapy starts with a handwriting analysis session."
-   },
-   {
-    "title": "Exercise plan",
-    "body": "A short set of exercises suited to your goals."
-   },
-   {
-    "title": "Daily practice",
-    "body": "Usually a few minutes each day over several weeks."
-   },
-   {
-    "title": "Review",
-    "body": "Check-ins to compare samples and adjust the plan."
-   }
-  ],
-  "benefits": [
-   "A calm, mindful daily routine",
-   "Visible changes in handwriting with regular practice",
-   "Accountability through scheduled reviews"
-  ],
-  "limitations": [
-   "Graphotherapy is not a substitute for medical or psychological treatment",
-   "Results depend on consistent practice and vary between individuals",
-   "Not a validated clinical therapy"
-  ],
-  "faqs": [
-   {
-    "q": "How long does graphotherapy take?",
-    "a": "Programmes usually run for several weeks of short daily practice. The exact period is agreed after the initial analysis."
-   },
-   {
-    "q": "Is graphotherapy suitable for children?",
-    "a": "Children can practise handwriting exercises with a parent's involvement. It should complement, not replace, any support recommended by teachers or health professionals."
-   }
-  ],
-  "seo_title": "Graphotherapy Handwriting Practice | Dr. Anameka S Panda",
-  "seo_description": "Graphotherapy programmes with Dr. Anameka S Panda: guided handwriting exercises and regular reviews, practised as a mindful habit-building routine."
- },
- {
-  "slug": "signature-analysis",
-  "title": "Signature Analysis",
-  "icon": "Signature",
-  "short_description": "A close reading of your signature, with optional suggestions for refining it.",
-  "intro": "Your signature is the most personal mark you make, and you make it on your most important documents. Signature analysis studies its form, legibility, direction and placement.",
-  "what_is": "Drawing on graphology, signature analysis looks at features such as size relative to your handwriting, underlining, slant and readability. Where you wish, suggestions for a refined signature can be discussed.",
-  "process": "You share several samples of your signature and a short handwriting sample. Observations are discussed with you, and any suggested changes are practical and easy to adopt.",
-  "who_for": "Professionals, business owners and individuals who want to reflect on their signature or are considering changing it; teachers looking at students' signatures alongside their handwriting.",
-  "procedure": [
-   {
-    "title": "Provide samples",
-    "body": "Five or six signatures as you normally sign, plus a short handwriting sample."
-   },
-   {
-    "title": "Analysis",
-    "body": "Features of the signature are studied in context."
-   },
-   {
-    "title": "Discussion",
-    "body": "Observations and optional refinements are explained."
-   },
-   {
-    "title": "Practice",
-    "body": "If you adopt a new signature, a practice routine is suggested."
-   }
-  ],
-  "benefits": [
-   "Insight into how your signature relates to your handwriting",
-   "Practical suggestions you can adopt at your own pace"
-  ],
-  "limitations": [
-   "Outcomes are not guaranteed",
-   "Changing your signature on legal and banking records has administrative implications; check with the relevant institutions first"
-  ],
-  "faqs": [
-   {
-    "q": "Should I change my signature on official documents?",
-    "a": "That is your decision. Changing a signature on bank, legal or identity records may require formal updates, so check with those institutions before you switch."
-   }
-  ],
-  "seo_title": "Signature Analysis | Dr. Anameka S Panda",
-  "seo_description": "Signature analysis consultations: a careful reading of your signature with optional, practical suggestions for refining it. Online and in person."
+  "seo_title": "Graphology (Handwriting & Signature Analysis & Therapy) | Dr. Anameka S Panda",
+  "seo_description": "Comprehensive Graphology with Dr. Anameka S Panda: handwriting diagnosis, signature analysis, and corrective graphotherapy for subconscious confidence and focus."
  },
  {
   "slug": "watch-correction",
@@ -823,7 +732,7 @@
   "title": "Total Energy Alignment",
   "icon": "Activity",
   "short_description": "An integrated diagnostic and complete reset for Health, Wealth, and Relationships across your chart, space, and auric field.",
-  "intro": "When obstacles occur simultaneously across career, family harmony, and physical vitality, addressing only one isolated symptom is seldom sufficient. Total Energy Alignment is Dr. Anameka S Panda\u2019s signature master synthesis of Jyotish astrology, Non-Invasive Vastu, and Bio-Energy Cleansing.",
+  "intro": "When obstacles occur simultaneously across career, family harmony, and physical vitality, addressing only one isolated symptom is seldom sufficient. Total Energy Alignment is Dr. Anameka S Panda’s signature master synthesis of Jyotish astrology, Non-Invasive Vastu, and Bio-Energy Cleansing.",
   "what_is": "A comprehensive tri-pillar diagnostic that evaluates: (1) Your planetary timing in the Vedic cosmos, (2) The geometric energy flow of your dwelling or workplace, and (3) Your personal auric and subconscious frequency.",
   "process": "A multi-dimensional consultation that diagnoses where energy is leaking or blocked across your Health, Wealth, and Relationship spheres, followed by a prioritized roadmap of practical corrections.",
   "who_for": "Individuals, couples, and entrepreneurs seeking a definitive, holistic breakthrough across health, wealth, and relationship harmony without conflicting piecemeal remedies.",
@@ -864,6 +773,6 @@
    }
   ],
   "seo_title": "Total Energy Alignment (Health, Wealth & Relationships) | Dr. Anameka S Panda",
-  "seo_description": "Experience Dr. Anameka S Panda\u2019s flagship Total Energy Alignment consultation. Harmonize your birth chart, living space, and auric field for lasting health, wealth, and harmony."
+  "seo_description": "Experience Dr. Anameka S Panda’s flagship Total Energy Alignment consultation. Harmonize your birth chart, living space, and auric field for lasting health, wealth, and harmony."
  }
 ]
