@@ -26,6 +26,7 @@ import {
   Star,
   MessageCircle,
   ArrowRight,
+  ShieldCheck,
 } from "lucide-react";
 import {
   getCategories,
@@ -234,9 +235,15 @@ export default async function Home() {
           </div>
 
           <div className="md:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/15 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-gold-deep mb-4">
-              <CheckCircle2 className="h-3.5 w-3.5" />
-              <span>Certified Practitioner</span>
+            <div className="flex flex-wrap items-center gap-2.5 mb-4">
+              <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/15 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-gold-deep">
+                <CheckCircle2 className="h-3.5 w-3.5" />
+                <span>Certified Practitioner</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-white/90 px-3 py-1 text-xs font-semibold text-plum shadow-xs">
+                <ShieldCheck className="h-3.5 w-3.5 text-gold-deep" />
+                <span>ISO 9001-2015 Certified • Unit of IVARC (Regd)</span>
+              </div>
             </div>
 
             <h2>Meet Dr. Anameka S Panda</h2>

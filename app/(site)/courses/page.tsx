@@ -24,8 +24,8 @@ const reasons = [
   },
   {
     icon: ShieldCheck,
-    title: "Non-Fear Based, Ethical Science",
-    desc: "Learn pure classical principles without superstition, fear-mongering, or commercial dependencies.",
+    title: "ISO 9001-2015 Certified Academy",
+    desc: "A Unit of IVARC, managed by Indian Vastu & Astrological Research Centre (Regd) with verified classical methodology.",
   },
   {
     icon: Users,
@@ -61,6 +61,20 @@ export default async function CoursesPage() {
         ctaText="Register Course Interest"
         showWhatsAppCta
       />
+
+      {/* Institutional Accreditation Banner */}
+      <div className="bg-plum-darkest text-ivory py-3 px-4 border-y border-gold/30 text-center">
+        <p className="container-x text-xs sm:text-sm font-medium tracking-wide text-gold-light/95 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+          <span className="inline-flex items-center gap-1.5 font-semibold text-gold">
+            <ShieldCheck className="h-4 w-4" />
+            ISO 9001-2015 Certified
+          </span>
+          <span className="hidden sm:inline text-gold/40">•</span>
+          <span>A Unit of IVARC</span>
+          <span className="hidden sm:inline text-gold/40">•</span>
+          <span className="text-ivory/80">Managed by: Indian Vastu &amp; Astrological Research Centre (Regd)</span>
+        </p>
+      </div>
 
       {/* Academy Overview Banner */}
       <section className="bg-cream/40 py-12 border-b border-gold/20">

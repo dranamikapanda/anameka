@@ -8,6 +8,7 @@ import {
   Globe,
   Award,
   ArrowRight,
+  ShieldCheck,
 } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Portrait } from "@/components/Portrait";
@@ -84,6 +85,14 @@ export default async function About() {
                     <div>
                       <p className="font-semibold text-plum">15+ Years Experience</p>
                       <p className="text-xs text-charcoal/60">Astrology, Vastu, Graphology</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-2.5">
+                    <ShieldCheck className="h-4 w-4 text-gold shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-plum">ISO 9001-2015 Certified</p>
+                      <p className="text-xs text-charcoal/70">A Unit of IVARC • Indian Vastu &amp; Astrological Research Centre (Regd)</p>
                     </div>
                   </div>
 

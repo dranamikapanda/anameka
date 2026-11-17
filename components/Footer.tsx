@@ -8,6 +8,7 @@ import {
   Phone,
   Youtube,
   MessageCircle,
+  ShieldCheck,
 } from "lucide-react";
 import { Logo } from "./Logo";
 import { CookieSettingsLink } from "./CookieSettingsLink";
@@ -40,6 +41,18 @@ export async function Footer() {
           <p className="mt-5 max-w-sm text-sm sm:text-base text-ivory/75 leading-relaxed">
             {s.tagline}. {s.serviceArea}.
           </p>
+
+          {/* Institutional Accreditation Card */}
+          <div className="mt-6 max-w-sm rounded-2xl border border-gold/30 bg-white/5 p-4 backdrop-blur-sm shadow-soft">
+            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold-light">
+              <ShieldCheck className="h-4 w-4 text-gold shrink-0" />
+              <span>ISO 9001-2015 Certified</span>
+            </div>
+            <p className="mt-2 text-sm font-semibold text-ivory">A Unit of IVARC</p>
+            <p className="mt-0.5 text-xs text-ivory/70 leading-snug">
+              Managed by: <span className="text-gold-light/90 font-medium">Indian Vastu &amp; Astrological Research Centre (Regd)</span>
+            </p>
+          </div>
 
           {/* Social Icons with golden borders */}
           {social.length > 0 && (
@@ -192,7 +205,12 @@ export async function Footer() {
       {/* Bottom legal strip */}
       <div className="border-t border-gold/15 bg-plum-darkest/80">
         <div className="container-x flex flex-col gap-4 py-6 text-sm text-ivory/70 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} {s.name}. All rights reserved.</p>
+          <div>
+            <p>© {new Date().getFullYear()} {s.name}. All rights reserved.</p>
+            <p className="mt-1 text-xs text-gold-light/80">
+              A Unit of IVARC • Managed by Indian Vastu &amp; Astrological Research Centre (Regd) • ISO 9001-2015 Certified
+            </p>
+          </div>
           <ul className="flex flex-wrap gap-x-5 gap-y-2">
             {[
               ["Privacy", "/privacy-policy"],
