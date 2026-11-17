@@ -24,14 +24,15 @@ export async function generateMetadata({ params }: P) {
 const blogCatFor: Record<string, string> = {
   "vedic-astrology": "vedic-astrology", "vastu-consultation": "vastu-shastra", "non-invasive-vastu": "vastu-shastra", graphology: "graphology", graphotherapy: "graphotherapy",
   "signature-analysis": "signature-analysis", "remedial-measures": "remedial-measures", "watch-correction": "remedial-measures",
-  "life-transformation-coaching": "life-transformation", "business-growth-guidance": "business-guidance", "logo-design-guidance": "business-guidance", "mobile-number-analysis": "business-guidance",
+  "medical-astrology-vastu": "vedic-astrology", "life-transformation-coaching": "vedic-astrology", "business-growth-guidance": "business-guidance", "logo-design-guidance": "business-guidance", "mobile-number-analysis": "business-guidance",
 };
 
 const programmesFor: Record<string, string[]> = {
   graphology: ["student-inner-excellence", "child-script-coach", "teacher-handwriting-consultation"],
   graphotherapy: ["exam-ready-from-the-inside", "student-inner-excellence"],
   "signature-analysis": ["teacher-handwriting-consultation"],
-  "life-transformation-coaching": ["student-inner-excellence", "exam-ready-from-the-inside"],
+  "medical-astrology-vastu": ["student-inner-excellence"],
+  "life-transformation-coaching": ["student-inner-excellence"],
 };
 
 export default async function ServicePage({ params }: P) {

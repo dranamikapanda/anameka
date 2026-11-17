@@ -45,7 +45,13 @@ export const getSettings = cache(async (): Promise<SiteSettings> => {
 export const getServices = cache(() =>
   query<Service[]>((db) => db.from("services").select("*").eq("status", "published").order("sort_order"), servicesSeed as Service[]));
 
-export const getService = cache(async (slug: string) => (await getServices()).find((s) => s.slug === slug) ?? null);
+export const getService = cache(async (slug: string) => {
+  const all = await getServices();
+  if (slug === "life-transformation-coaching") {
+    return all.find((s) => s.slug === "medical-astrology-vastu") ?? all.find((s) => s.slug === slug) ?? null;
+  }
+  return all.find((s) => s.slug === slug) ?? null;
+});
 
 export const getProgrammes = cache(() =>
   query<Programme[]>((db) => db.from("programmes").select("*").eq("status", "published").order("sort_order"), programmesSeed as Programme[]));

@@ -525,49 +525,49 @@
   "seo_description": "Simple, practical traditional remedies suggested within a full astrology or Vastu consultation. Affordable, optional and explained clearly."
  },
  {
-  "slug": "life-transformation-coaching",
-  "title": "Life Transformation Coaching",
-  "icon": "Sunrise",
-  "short_description": "Structured coaching conversations to clarify goals, build habits and move forward with intent.",
-  "intro": "Coaching brings together reflection, goal-setting and accountability. Sessions may draw on insights from Dr. Anameka's other disciplines, while staying grounded in practical steps you choose and take.",
-  "what_is": "Life coaching is a collaborative, forward-looking process. It is not counselling or therapy, and it does not address mental health conditions.",
-  "process": "An initial session clarifies what you want to change. Later sessions set specific goals, plan actions and review progress.",
-  "who_for": "People navigating transitions, wanting clearer direction, or looking for accountability in building new habits.",
+  "slug": "medical-astrology-vastu",
+  "title": "Medical Astrology / Vastu",
+  "icon": "HeartPulse",
+  "short_description": "Diagnostic analysis of planetary health root causes in the birth chart combined with North-North-East healing zone Vastu harmonization.",
+  "intro": "Physical health is deeply intertwined with cosmic planetary vibrations and the environmental energies of your dwelling. Medical Astrology / Vastu diagnoses subtle astrological indicators in the 6th, 8th, and 12th houses of your Janam Kundli, while balancing the North-North-East (Arogya) directional zone of your home to support vital immunity, rapid recovery, and physical well-being.",
+  "what_is": "A dual-lens synthesis: Medical Astrology investigates planetary afflictions affecting specific bodily systems (e.g., Sun for vitality and heart, Moon for fluids and mental calm, Mars for blood and inflammation, Saturn for chronic strain), while Health Vastu identifies and clears environmental geopathic stress, toilets, or clutter in the healing zones of your residence.",
+  "process": "Provide your birth details (date, time, place) alongside a floor plan of your home with North indicated. Dr. Anameka evaluates the energetic correlations and offers non-invasive remedial adjustments. This holistic guidance works alongside, and never replaces, professional medical diagnosis and treatment.",
+  "who_for": "Individuals and families experiencing persistent lethargy, unexplained recurring health setbacks, prolonged recovery periods, or seeking preventive energetic harmony for family members.",
   "procedure": [
    {
-    "title": "Discovery session",
-    "body": "Clarify where you are and where you want to go."
+    "title": "Birth Chart Health Audit",
+    "body": "Detailed assessment of the 6th house (Roga), Lagna lord vitality, and active planetary Dasha periods."
    },
    {
-    "title": "Goal setting",
-    "body": "Turn intentions into specific, realistic goals."
+    "title": "Premises Health Zone Check",
+    "body": "Examination of North-North-East (NNE - Health & Healing) and South-South-West zones for energetic disturbances."
    },
    {
-    "title": "Regular sessions",
-    "body": "Action planning, reflection and accountability."
-   },
-   {
-    "title": "Review",
-    "body": "Look back at progress and decide next steps."
+    "title": "Holistic Remedial Prescription",
+    "body": "Non-invasive color adjustments, elemental stabilizers, gemstone/mantra recommendations, and bed direction alignment."
    }
   ],
   "benefits": [
-   "Clearer goals and priorities",
-   "Accountability and structured reflection",
-   "Practical action plans you set yourself"
+   "Identifies subtle astrological predispositions before chronic manifestation",
+   "Harmonizes home healing zones without demolition or expensive structural changes",
+   "Supports conventional medical care by removing energetic and environmental recovery barriers"
   ],
   "limitations": [
-   "Coaching is not therapy and does not treat mental health conditions",
-   "Progress depends on your own commitment and circumstances"
+   "Medical Astrology and Health Vastu are holistic energetic disciplines; they are never a substitute for qualified medical care, diagnosis, or prescribed treatments",
+   "You must never stop or alter any ongoing medical therapy or medication"
   ],
   "faqs": [
    {
-    "q": "Is life coaching the same as therapy?",
-    "a": "No. Coaching focuses on goals and action. If you are experiencing mental health difficulties, please speak with a qualified mental health professional."
+    "q": "Does Medical Astrology replace visiting a doctor?",
+    "a": "Never. Dr. Anameka strictly emphasizes that astrological and Vastu insights serve as complementary energetic support. Always consult qualified doctors and medical specialists for all health conditions."
+   },
+   {
+    "q": "How does Vastu affect physical health?",
+    "a": "In Vastu Shastra, the North-North-East (NNE) direction governs immunity and healing, while the East governs vitality. Disturbances like toilets, heavy clutter, or fire elements in these zones can energetically stall recovery."
    }
   ],
-  "seo_title": "Life Transformation Coaching | Dr. Anameka S Panda",
-  "seo_description": "Life transformation coaching with Dr. Anameka S Panda: structured sessions to clarify goals, build habits and move forward with intent."
+  "seo_title": "Medical Astrology & Health Vastu Consultation | Dr. Anameka S Panda",
+  "seo_description": "Medical Astrology and Health Vastu consultations with Dr. Anameka S Panda: analyze planetary health indicators and harmonize home healing zones in Bhubaneswar and online."
  },
  {
   "slug": "business-growth-guidance",

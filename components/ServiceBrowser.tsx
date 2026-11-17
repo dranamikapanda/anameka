@@ -24,7 +24,7 @@ const categories = [
     tagline: "The Stars Align. Your Space Aligns. You Align.",
     sub: "Vedic astrology, birth chart analysis, practical remedies, non-invasive residential/commercial Vastu, and Astro-Vastu synthesis.",
     quote: "Know your chart. Fix your space. Change your life.",
-    slugs: ["vedic-astrology", "remedial-measures", "non-invasive-vastu", "astro-vastu-integration", "vastu-consultation"],
+    slugs: ["vedic-astrology", "remedial-measures", "non-invasive-vastu", "astro-vastu-integration", "vastu-consultation", "medical-astrology-vastu"],
   },
   {
     id: "healing",
@@ -33,7 +33,7 @@ const categories = [
     tagline: "Heal. Clear. Recharge.",
     sub: "Aura scanning, distant & in-person Reiki, crystal healing therapy, chakra balancing, and total energy reset for health, wealth & relationships.",
     quote: "Feel lighter, think clearer, attract more. 💫",
-    slugs: ["aura-scanning-cleansing", "reiki-healing", "crystal-healing-therapy", "chakra-balancing", "total-energy-alignment"],
+    slugs: ["aura-scanning-cleansing", "reiki-healing", "crystal-healing-therapy", "chakra-balancing", "total-energy-alignment", "medical-astrology-vastu"],
   },
   {
     id: "consultation",
@@ -50,7 +50,7 @@ const categories = [
       "logo-design-guidance",
       "mobile-number-analysis",
       "total-energy-alignment",
-      "life-transformation-coaching",
+      "medical-astrology-vastu",
       "business-growth-guidance",
     ],
   },

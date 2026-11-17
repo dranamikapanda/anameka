@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Sparkles, Compass, FileSignature, Hash, Target, MessageCircle, ArrowRight } from "lucide-react";
+import { Sparkles, Compass, FileSignature, Hash, HeartPulse, MessageCircle, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { waLink } from "@/lib/env";
 import { track } from "@/lib/analytics";
@@ -52,15 +52,15 @@ const disciplines = [
     waMsg: "Namaste Dr. Anameka, I would like to consult on mobile number numerology and logo guidance.",
   },
   {
-    key: "coach",
-    icon: Target,
-    name: "Life & Business Coaching",
-    sanskrit: "Transformative Mentorship",
-    tagline: "Bridging timeless wisdom with clear, actionable strategy",
-    body: "One-to-one coaching sessions that integrate your astrological timing, psychological mindset, and practical life goals into a focused, unhurried roadmap for personal and professional growth.",
-    href: "/services/life-transformation-coaching",
-    links: ["Life transformation", "Executive mentorship", "Mindset alignment"],
-    waMsg: "Namaste Dr. Anameka, I would like to explore life and business transformation coaching.",
+    key: "medical",
+    icon: HeartPulse,
+    name: "Medical Astrology / Vastu",
+    sanskrit: "Arogya Vidya & Healing",
+    tagline: "Planetary root causes & domestic healing zone harmonization",
+    body: "Evaluating subtle energetic root causes of recurring health setbacks through the Janam Kundli (6th, 8th & 12th houses) and North-North-East (Arogya) health zone Vastu. Complements medical care with practical non-invasive remedies.",
+    href: "/services/medical-astrology-vastu",
+    links: ["Arogya Kundli Analysis", "NNE Health Zone Vastu", "Vitality & Recovery Alignment"],
+    waMsg: "Namaste Dr. Anameka, I would like to consult on Medical Astrology and Health Vastu.",
   },
 ];
 
