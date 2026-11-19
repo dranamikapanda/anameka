@@ -7,11 +7,11 @@ import { track } from "@/lib/analytics";
 import type { Course } from "@/lib/types";
 
 const categories = [
-  { id: "all", label: "All Certifications" },
-  { id: "astrology", label: "Vedic Astrology" },
-  { id: "vastu", label: "Vastu Shastra" },
-  { id: "graphology", label: "Graphology & Mind" },
-  { id: "energy", label: "Energy & Healing" },
+  { id: "all", label: "All Certifications & Courses" },
+  { id: "graphology", label: "Handwriting (Students, Parents & Teachers)" },
+  { id: "numerology-watch", label: "Mobile Numerology & Wrist Watch" },
+  { id: "energy", label: "Reiki & Crystal Healing" },
+  { id: "vastu-branding", label: "Astro-Vastu & Scientific Logo" },
 ];
 
 export function CourseBrowser({
@@ -26,7 +26,12 @@ export function CourseBrowser({
 
   const filtered = useMemo(() => {
     return courses.filter((c) => {
-      return activeCategory === "all" || c.category === activeCategory;
+      if (activeCategory === "all") return true;
+      if (activeCategory === "graphology") return c.category === "graphology";
+      if (activeCategory === "numerology-watch") return c.category === "numerology" || c.category === "occult";
+      if (activeCategory === "energy") return c.category === "energy";
+      if (activeCategory === "vastu-branding") return c.category === "vastu" || c.category === "business";
+      return c.category === activeCategory;
     });
   }, [courses, activeCategory]);
 
@@ -92,6 +97,16 @@ export function CourseBrowser({
                 <p className="mt-2 text-xs font-display italic text-gold-deep font-medium">
                   &ldquo;{c.tagline}&rdquo;
                 </p>
+
+                {/* Price highlight if available */}
+                {c.price_note && (
+                  <div className="mt-3">
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-gold bg-gradient-to-r from-gold/25 via-gold/15 to-gold/25 px-3 py-1 text-xs font-bold text-plum shadow-sm">
+                      <Sparkles className="h-3.5 w-3.5 text-gold-deep" />
+                      <span>{c.price_note}</span>
+                    </span>
+                  </div>
+                )}
 
                 {/* Format and Level Badges */}
                 <div className="mt-4 flex flex-wrap gap-2 text-[11px]">

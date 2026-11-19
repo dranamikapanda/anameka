@@ -56,7 +56,7 @@ export default async function CoursesPage() {
         badge="Sacred Occult Academy"
         title="Courses & Masterclasses"
         crumbs={[{ name: "Courses", path: "/courses" }]}
-        intro="Step into authentic esoteric mastery. Learn Vedic Astrology, Non-Invasive Vastu, Graphology, and Bio-Energy Healing through structured live practitioner certifications."
+        intro="Step into authentic esoteric mastery. Learn Mobile Numerology, Graphology, Wrist Watch Analysis, Reiki & Crystal Healing, Scientific Logo Designing, and Astro-Vastu through structured Online live classes & Offline in-person batches in Bhubaneswar."
         ctaHref="#course-enquiry-section"
         ctaText="Register Course Interest"
         showWhatsAppCta

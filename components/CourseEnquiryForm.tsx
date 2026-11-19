@@ -17,6 +17,7 @@ export function CourseEnquiryForm({
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [learningGoal, setLearningGoal] = useState("Personal Growth & Family Guidance");
+  const [learningMode, setLearningMode] = useState("Online Live Classes");
   const [preferredBatch, setPreferredBatch] = useState("Live Weekend Batch");
   const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
@@ -35,6 +36,7 @@ export function CourseEnquiryForm({
     setSubmitting(true);
     try {
       const combinedMessage = [
+        learningMode ? `Class Mode: ${learningMode}` : null,
         learningGoal ? `Goal: ${learningGoal}` : null,
         preferredBatch ? `Batch Preference: ${preferredBatch}` : null,
         message ? `Notes: ${message}` : null,
@@ -51,7 +53,7 @@ export function CourseEnquiryForm({
           phone: phone.trim(),
           email: email.trim() || undefined,
           service_slug: selectedCourse,
-          mode: "online",
+          mode: learningMode.toLowerCase().includes("offline") ? "in_person" : "online",
           preferred_time: preferredBatch,
           message: combinedMessage,
           consent: true,
@@ -186,20 +188,22 @@ export function CourseEnquiryForm({
         </div>
       </div>
 
-      {/* Email and Batch Preference */}
+      {/* Class Mode & Batch Preference */}
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
-          <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-charcoal/80 mb-2">
-            Email Address (Optional)
+          <label htmlFor="class-mode" className="block text-xs font-semibold uppercase tracking-wider text-charcoal/80 mb-2">
+            Preferred Class Mode *
           </label>
-          <input
-            id="email"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="For syllabus PDF delivery"
-            className="w-full rounded-xl border border-gold/30 bg-cream/30 px-4 py-3 text-sm text-plum placeholder:text-charcoal/40 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
-          />
+          <select
+            id="class-mode"
+            value={learningMode}
+            onChange={(e) => setLearningMode(e.target.value)}
+            className="w-full rounded-xl border border-gold/30 bg-cream/30 px-4 py-3 text-sm text-plum focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
+          >
+            <option value="Online Live Classes">Online Live Interactive Classes</option>
+            <option value="Offline In-Person (Bhubaneswar)">Offline In-Person Classroom (Bhubaneswar)</option>
+            <option value="Hybrid (Online + Offline Practical Labs)">Hybrid (Online + Offline Practical Labs)</option>
+          </select>
         </div>
 
         <div>
@@ -214,9 +218,25 @@ export function CourseEnquiryForm({
           >
             <option value="Live Weekend Batch">Live Weekend Batch (Sat / Sun)</option>
             <option value="Live Weekday Evening">Live Weekday Evening</option>
+            <option value="Fast-Track Intensive">Fast-Track Intensive</option>
             <option value="Self-Paced with Mentor Sessions">Self-Paced with Mentor Q&A</option>
           </select>
         </div>
+      </div>
+
+      {/* Email Address */}
+      <div>
+        <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-charcoal/80 mb-2">
+          Email Address (Optional)
+        </label>
+        <input
+          id="email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="For syllabus PDF delivery"
+          className="w-full rounded-xl border border-gold/30 bg-cream/30 px-4 py-3 text-sm text-plum placeholder:text-charcoal/40 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
+        />
       </div>
 
       {/* Learning Goal */}

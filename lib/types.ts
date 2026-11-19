@@ -45,6 +45,8 @@ export interface Course {
   certification: string;
   includes: string;
   icon: string;
+  price_note?: string | null;
+  price_inr?: number | null;
 }
 
 export interface SiteSettings {
