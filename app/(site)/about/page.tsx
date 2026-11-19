@@ -14,6 +14,7 @@ import { PageHero } from "@/components/PageHero";
 import { Portrait } from "@/components/Portrait";
 import { CtaBand } from "@/components/CtaBand";
 import { GalleryGrid } from "@/components/GalleryGrid";
+import { AssociatedBrands } from "@/components/AssociatedBrands";
 import { JsonLd } from "@/components/JsonLd";
 import { getGallery, getProfile, getServices, getSettings } from "@/lib/data";
 import { buildMetadata, webPageSchema } from "@/lib/seo";
@@ -258,6 +259,9 @@ export default async function About() {
           </div>
         </section>
       )}
+
+      {/* Associated Brands & Digital Platforms */}
+      <AssociatedBrands />
 
       <CtaBand
         title="Schedule an Unhurried Session with Dr. Anameka"

@@ -14,6 +14,7 @@ import { ProgrammeCard } from "@/components/ProgrammeCard";
 import { WhatsAppKeyword } from "@/components/WhatsAppKeyword";
 import { InteractiveConsultationTools } from "@/components/InteractiveConsultationTools";
 import { MasterOverviewPillars } from "@/components/MasterOverviewPillars";
+import { AssociatedBrands } from "@/components/AssociatedBrands";
 import {
   GraduationCap,
   Briefcase,
@@ -341,6 +342,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* Associated Brands & Digital Platforms */}
+      <AssociatedBrands />
 
       {/* Signature Programmes */}
       <section className="section relative overflow-hidden bg-gradient-to-br from-plum-deep via-plum to-plum-darkest text-ivory">
