@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --ivory: #FBF6EF; --cream: #F4E8DA; --gold: #C8912F; --gold-light: #F2C766; --plum: #441F51; --charcoal: #2E2E2E;
+  --ivory: #FEFBEA; --cream: #F8F0CB; --gold: #C8912F; --gold-light: #F2C766; --plum: #441F51; --charcoal: #2E2E2E; --maroon: #4E0D1B; --navy-header: #0B1A30;
 }
 
 @layer base {

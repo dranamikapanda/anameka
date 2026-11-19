@@ -33,7 +33,7 @@ export async function Footer() {
   const col = "space-y-2.5 text-[0.95rem] text-ivory/70";
 
   return (
-    <footer className="bg-gradient-to-b from-plum-deep to-plum-darkest text-ivory border-t border-gold/20">
+    <footer className="bg-gradient-to-b from-[#4A0E17] via-[#35080E] to-[#200408] text-ivory border-t border-gold/30">
       <div className="container-x grid gap-12 py-16 md:grid-cols-12">
         {/* Brand column */}
         <div className="md:col-span-4">
@@ -203,7 +203,7 @@ export async function Footer() {
       </div>
 
       {/* Bottom legal strip */}
-      <div className="border-t border-gold/15 bg-plum-darkest/80">
+      <div className="border-t border-gold/20 bg-[#1A0307]">
         <div className="container-x flex flex-col gap-4 py-6 text-sm text-ivory/70 md:flex-row md:items-center md:justify-between">
           <div>
             <p>© {new Date().getFullYear()} {s.name}. All rights reserved.</p>

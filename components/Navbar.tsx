@@ -45,19 +45,19 @@ export function Navbar({ logoUrl }: { logoUrl?: string }) {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
         scrolled
-          ? "bg-ivory/92 py-2.5 shadow-[0_4px_24px_rgba(43,18,52,0.06)] border-b border-gold/20 backdrop-blur-xl"
-          : "bg-transparent py-4 sm:py-5"
+          ? "bg-[#0B1A30]/95 py-2.5 shadow-[0_4px_24px_rgba(7,16,30,0.4)] border-b border-gold/30 backdrop-blur-xl"
+          : "bg-[#0B1A30]/90 py-3.5 sm:py-4 border-b border-gold/20 backdrop-blur-lg"
       )}
     >
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-2 focus:rounded focus:bg-ivory focus:px-3 focus:py-2 text-plum font-medium"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-2 focus:rounded focus:bg-white focus:px-3 focus:py-2 text-[#0B1A30] font-medium"
       >
         Skip to content
       </a>
       <nav className="container-x flex items-center justify-between" aria-label="Main">
         <Link href="/" aria-label="Dr. Anameka S Panda, home" className="transition-transform hover:scale-[1.01]">
-          <Logo src={logoUrl} light={overDark} />
+          <Logo src={logoUrl} light />
         </Link>
 
         {/* Desktop navigation */}
@@ -69,8 +69,8 @@ export function Navbar({ logoUrl }: { logoUrl?: string }) {
                 aria-current={active(l.href) ? "page" : undefined}
                 className={cn(
                   "relative py-1 text-[0.95rem] font-medium tracking-wide transition-colors",
-                  overDark ? "text-ivory/85 hover:text-gold-light" : "text-charcoal/80 hover:text-plum",
-                  active(l.href) && (overDark ? "text-gold-light" : "text-plum"),
+                  "text-white/90 hover:text-gold-light",
+                  active(l.href) ? "text-gold-light" : "text-white/90",
                   "after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:bg-gradient-to-r after:from-gold after:to-gold-light after:transition-all after:duration-300",
                   active(l.href) ? "after:w-full" : "after:w-0 hover:after:w-full"
                 )}
@@ -89,12 +89,7 @@ export function Navbar({ logoUrl }: { logoUrl?: string }) {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track("whatsapp_click", { location: "navbar" })}
-            className={cn(
-              "hidden md:inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-xs font-medium transition-all duration-300",
-              overDark
-                ? "border border-whatsapp/50 bg-whatsapp/15 text-white hover:bg-whatsapp/30"
-                : "border border-whatsapp/40 bg-whatsapp/10 text-whatsapp-dark hover:bg-whatsapp hover:text-white"
-            )}
+            className="hidden md:inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-xs font-medium transition-all duration-300 border border-whatsapp/50 bg-whatsapp/20 text-white hover:bg-whatsapp/35 shadow-xs"
             aria-label="Direct WhatsApp Chat"
           >
             <span className="relative flex h-2 w-2">
@@ -115,10 +110,7 @@ export function Navbar({ logoUrl }: { logoUrl?: string }) {
           {/* Mobile menu trigger */}
           <button
             onClick={() => setOpen(true)}
-            className={cn(
-              "rounded-full p-2.5 transition-colors lg:hidden",
-              overDark ? "text-ivory hover:bg-white/10" : "text-plum hover:bg-cream"
-            )}
+            className="rounded-full p-2.5 transition-colors lg:hidden text-white hover:bg-white/10"
             aria-label="Open menu"
             aria-expanded={open}
           >
@@ -130,7 +122,7 @@ export function Navbar({ logoUrl }: { logoUrl?: string }) {
       {/* Mobile Menu Overlay */}
       {open && (
         <div
-          className="fixed inset-0 z-50 flex flex-col justify-between overflow-y-auto bg-plum-deep/98 backdrop-blur-2xl lg:hidden animate-[fadein_.25s_ease-out]"
+          className="fixed inset-0 z-50 flex flex-col justify-between overflow-y-auto bg-[#0B1A30]/98 backdrop-blur-2xl lg:hidden animate-[fadein_.25s_ease-out]"
           role="dialog"
           aria-modal="true"
           aria-label="Menu"

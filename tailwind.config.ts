@@ -5,14 +5,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        ivory: "#FBF6EF",
-        cream: "#F4E8DA",
+        ivory: "#FEFBEA", // elegant sacred light yellow background
+        cream: "#F8F0CB", // soft golden light yellow accent
         gold: {
           DEFAULT: "#C8912F",
           light: "#F2C766",
           deep: "#85591A",
           metallic: "#D4AF37",
           glow: "#FFE49E",
+        },
+        maroon: {
+          DEFAULT: "#4E0D1B",
+          deep: "#380712",
+          darkest: "#220309",
+        },
+        navy: {
+          DEFAULT: "#0B1A30",
+          header: "#0D1E38",
+          dark: "#071120",
         },
         plum: {
           DEFAULT: "#441F51",
