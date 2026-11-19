@@ -72,18 +72,18 @@ const audiences = [
   {
     Icon: Briefcase,
     title: "Entrepreneurs & Business",
-    badge: "Corporate Growth",
-    body: "Brand logo energy analysis, phone number numerology, and commercial Vastu for offices and retail spaces.",
-    href: "/services/logo-design-guidance",
-    link: "Logo analysis & guidance",
+    badge: "Leadership & Growth",
+    body: "Handwriting Mastery, 1-to-1 Signature Consultation, Scientific Logo Designing, and commercial Vastu for offices.",
+    href: "/programmes/teacher-handwriting-consultation",
+    link: "Handwriting & Signature Consultation",
   },
   {
     Icon: Users,
     title: "Individuals & Families",
     badge: "Life Direction",
-    body: "Comprehensive Vedic birth chart readings, non-invasive residential Vastu, remedies, and life mentorship.",
-    href: "/services/astro-vastu-integration",
-    link: "Astro-Vastu Integration",
+    body: "Student Inner Excellence programmes, 1-to-1 subconscious consultation, Vedic astrology readings, and residential Vastu.",
+    href: "/programmes/student-inner-excellence",
+    link: "Student & 1-to-1 Programmes",
   },
 ];
 

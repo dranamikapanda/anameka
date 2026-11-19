@@ -8,22 +8,35 @@ import { track } from "@/lib/analytics";
 
 const audienceFilters = [
   { id: "all", label: "All Programmes" },
+  { id: "business", label: "Business Owners" },
+  { id: "families", label: "Individuals & Families" },
   { id: "students", label: "Students & Exams" },
-  { id: "universal", label: "Everyone & Professionals" },
-  { id: "vastu", label: "Vastu & Land Energy" },
-  { id: "healing", label: "Holistic Healing" },
-  { id: "occult", label: "Occult & Astrology" },
+  { id: "teachers", label: "Teachers & Schools" },
+  { id: "vastu", label: "Vastu & Occult" },
 ];
+
+const programmeAudienceMap: Record<string, string[]> = {
+  "handwriting-mastery-certification": ["business", "teachers", "students", "families"],
+  "teacher-handwriting-consultation": ["business", "families", "teachers"],
+  "student-inner-excellence": ["students", "families"],
+  "exam-ready-from-the-inside": ["students", "families"],
+  "child-script-coach": ["teachers"],
+  "vastu-transformation-programme": ["business", "families", "vastu"],
+  "land-geopathic-healing-programme": ["business", "families", "vastu"],
+  "holistic-energy-healing-programme": ["families", "vastu"],
+  "occult-sciences-kundli-programme": ["families", "vastu"],
+};
 
 export function ProgrammesBrowser({ programmes }: { programmes: Programme[] }) {
   const [activeAudience, setActiveAudience] = useState("all");
 
   const filtered = useMemo(() => {
     if (activeAudience === "all") return programmes;
-    if (activeAudience === "universal") {
-      return programmes.filter((p) => ["universal", "teachers", "business", "families"].includes(p.audience_key));
-    }
-    return programmes.filter((p) => p.audience_key === activeAudience);
+    return programmes.filter((p) => {
+      const allowed = programmeAudienceMap[p.slug];
+      if (allowed) return allowed.includes(activeAudience);
+      return p.audience_key === activeAudience;
+    });
   }, [programmes, activeAudience]);
 
   return (
