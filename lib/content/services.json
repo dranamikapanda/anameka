@@ -351,43 +351,48 @@
  },
  {
   "slug": "mobile-number-analysis",
-  "title": "Mobile Number Numerology",
-  "icon": "Smartphone",
-  "short_description": "A numerological reading of your mobile number, with guidance if you are choosing a new personal or business number.",
-  "intro": "Many people choose phone numbers with care, especially for business. Mobile number analysis applies numerological principles to your current number or to a shortlist of options.",
-  "what_is": "The digits of a number, their sequence and their totals are interpreted within a numerological framework, in the context of your date of birth.",
-  "process": "Share your current number or the options you are considering, along with your date of birth. You receive observations and, where relevant, a comparison of the options.",
-  "who_for": "Professionals and business owners choosing a new number, and individuals curious about their current one.",
+  "title": "Numerology Consultation (Mobile, Vehicle, Account & Business)",
+  "icon": "Hash",
+  "short_description": "Comprehensive vibrational analysis of all significant numbers: mobile number, bank account, vehicle/car number, flat number, and date of birth.",
+  "intro": "Numbers carry distinct vibrational frequencies that continually interact with your subconscious mindset and external opportunities. Numerology Consultation analyzes every crucial number in your life—including your mobile phone, bank account, vehicle/car registration, home/flat address, and business contact numbers—aligning them with your date of birth (Mulank & Bhagyank) for sustained prosperity.",
+  "what_is": "A 360-degree diagnostic evaluation covering: 1) Mobile Number Numerology (calling energy and opportunity flow), 2) Bank Account Number (financial retention, liquidity, and wealth stability), 3) Vehicle / Car Registration (transit harmony, safety, and smooth travels), 4) House & Office Flat Numbers (environmental numerical resonance), and 5) Name & Date of Birth Harmony (Mulank & Bhagyank planetary alignment).",
+  "process": "Provide your date of birth alongside the numbers you wish to evaluate (current mobile numbers, bank accounts, car plates, flat addresses, or shortlists of options). Dr. Anameka calculates compound frequencies and provides practical alignment recommendations.",
+  "who_for": "Entrepreneurs, car owners, professionals selecting new phone/bank numbers, and anyone seeking to align their daily numerical vibrations with their birth chart.",
   "procedure": [
    {
-    "title": "Share numbers",
-    "body": "Your current number or a shortlist, with your date of birth."
+    "title": "Share Numbers & Date of Birth",
+    "body": "Your date of birth along with current or shortlisted numbers (mobile, car, bank account, or flat)."
    },
    {
-    "title": "Analysis",
-    "body": "Each number is interpreted and compared."
+    "title": "Frequency & Grid Audit",
+    "body": "Comprehensive compound calculations, planetary number affinities, and missing number checks."
    },
    {
-    "title": "Recommendation",
-    "body": "Observations to help you decide."
+    "title": "Harmonization & Remedies",
+    "body": "Practical recommendations on optimal numbers to choose and remedies to harmonize existing fixed numbers."
    }
   ],
   "benefits": [
-   "Quick, focused guidance",
-   "Helpful when choosing between several available numbers"
+   "Holistic guidance covering mobile, vehicle, bank, and residential numbers in one session",
+   "Clear, mathematically grounded selection criteria for new numbers",
+   "Practical neutralization remedies for numbers you cannot change (e.g. car or bank accounts)"
   ],
   "limitations": [
-   "Numerology is a traditional belief system; outcomes are not guaranteed",
-   "Changing a business number has practical costs that should be weighed separately"
+   "Numerology provides vibrational alignment; personal effort and practical decision-making remain paramount",
+   "Changing official numbers entails administrative steps that should be weighed independently"
   ],
   "faqs": [
    {
-    "q": "Do I need to change my number?",
-    "a": "Not necessarily. The analysis gives observations; whether to change is your decision, and practical costs matter too."
+    "q": "Can I get my car and bank account numbers checked in this consultation?",
+    "a": "Yes! The consultation covers mobile numbers, vehicle registration numbers, bank account numbers, and home/office addresses alongside your personal birth numerology."
+   },
+   {
+    "q": "What if I cannot change my bank account or vehicle number?",
+    "a": "You do not always need to change a number. Dr. Anameka provides simple numerical neutralization remedies (like lucky frequency pairing, signature codes, or color associations) to harmonize existing numbers."
    }
   ],
-  "seo_title": "Mobile Number Analysis | Dr. Anameka S Panda",
-  "seo_description": "Mobile number analysis using numerological principles. Compare options before choosing a new personal or business number."
+  "seo_title": "Numerology Consultation (Mobile, Vehicle, Account & Business) | Dr. Anameka S Panda",
+  "seo_description": "Numerology consultations with Dr. Anameka S Panda: analyze mobile numbers, vehicle & car numbers, bank accounts, and address vibrations in Bhubaneswar and online."
  },
  {
   "slug": "remedial-measures",

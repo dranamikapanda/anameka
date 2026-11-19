@@ -53,6 +53,9 @@ export const getService = cache(async (slug: string) => {
   if (slug === "graphotherapy" || slug === "signature-analysis") {
     return all.find((s) => s.slug === "graphology") ?? all.find((s) => s.slug === slug) ?? null;
   }
+  if (slug === "numerology" || slug === "numerology-consultation") {
+    return all.find((s) => s.slug === "mobile-number-analysis") ?? all.find((s) => s.slug === slug) ?? null;
+  }
   return all.find((s) => s.slug === slug) ?? null;
 });
 

@@ -41,8 +41,8 @@ const topics = [
   },
   {
     icon: Briefcase,
-    label: "Business Numerology & Logo",
-    msg: "Namaste Dr. Anameka, I would like guidance for business growth / mobile number & logo analysis.",
+    label: "Numerology & Scientific Logo",
+    msg: "Namaste Dr. Anameka, I would like guidance for Numerology (mobile, vehicle, account) and Scientific Logo Designing.",
   },
   {
     icon: Calendar,
