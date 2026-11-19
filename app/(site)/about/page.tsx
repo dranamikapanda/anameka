@@ -15,6 +15,7 @@ import { Portrait } from "@/components/Portrait";
 import { CtaBand } from "@/components/CtaBand";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { AssociatedBrands } from "@/components/AssociatedBrands";
+import { InstitutionalClients } from "@/components/InstitutionalClients";
 import { JsonLd } from "@/components/JsonLd";
 import { getGallery, getProfile, getServices, getSettings } from "@/lib/data";
 import { buildMetadata, webPageSchema } from "@/lib/seo";
@@ -262,6 +263,9 @@ export default async function About() {
 
       {/* Associated Brands & Digital Platforms */}
       <AssociatedBrands />
+
+      {/* Institutional Clients & Work Done */}
+      <InstitutionalClients />
 
       <CtaBand
         title="Schedule an Unhurried Session with Dr. Anameka"

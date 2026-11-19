@@ -15,6 +15,7 @@ import { WhatsAppKeyword } from "@/components/WhatsAppKeyword";
 import { InteractiveConsultationTools } from "@/components/InteractiveConsultationTools";
 import { MasterOverviewPillars } from "@/components/MasterOverviewPillars";
 import { AssociatedBrands } from "@/components/AssociatedBrands";
+import { InstitutionalClients } from "@/components/InstitutionalClients";
 import {
   GraduationCap,
   Briefcase,
@@ -345,6 +346,9 @@ export default async function Home() {
 
       {/* Associated Brands & Digital Platforms */}
       <AssociatedBrands />
+
+      {/* Institutional Clients & Work Done */}
+      <InstitutionalClients />
 
       {/* Signature Programmes */}
       <section className="section relative overflow-hidden bg-gradient-to-br from-plum-deep via-plum to-plum-darkest text-ivory">
