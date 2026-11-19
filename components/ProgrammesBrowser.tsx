@@ -61,11 +61,6 @@ export function ProgrammesBrowser({ programmes }: { programmes: Programme[] }) {
                   <Users className="h-3 w-3" />
                   <span>{p.audience}</span>
                 </span>
-                {p.price_inr && (
-                  <span className="font-display font-semibold text-plum text-sm">
-                    ₹{p.price_inr}
-                  </span>
-                )}
               </div>
 
               {/* Title */}

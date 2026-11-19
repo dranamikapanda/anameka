@@ -83,7 +83,6 @@ export default async function ProgrammePage({ params }: P) {
             <div className="rounded-3xl border border-gold/30 bg-plum p-8 text-ivory shadow-soft">
               <h2 className="text-[1.8rem] text-ivory">How to begin</h2>
               <p className="mt-3 text-ivory/75">{p.format}</p>
-              {p.price_note && <p className="mt-3 font-medium text-gold-light">{p.price_note}</p>}
               <Link href={book} className="btn-gold mt-6 w-full text-center justify-center">{p.cta_label}</Link>
               <a href={waLink(`Namaste Dr. Anameka, I would like to inquire about the ${p.title} programme.`)} target="_blank" rel="noopener noreferrer" className="btn-whatsapp mt-3 w-full text-center justify-center text-xs sm:text-sm">
                 <MessageCircle className="h-4 w-4 fill-current" />

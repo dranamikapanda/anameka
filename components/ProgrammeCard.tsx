@@ -26,15 +26,6 @@ export function ProgrammeCard({ p, dark = false }: { p: Programme; dark?: boolea
           >
             {p.audience}
           </span>
-          {p.price_note && (
-            <span
-              className={`text-xs font-semibold ${
-                dark ? "text-gold-light" : "text-plum"
-              }`}
-            >
-              {p.price_note}
-            </span>
-          )}
         </div>
 
         {/* Title */}
