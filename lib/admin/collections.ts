@@ -50,7 +50,7 @@ export const collections: Collection[] = [
       { name: "title", label: "Title", type: "text", required: true, half: true },
       { name: "slug", label: "URL slug", type: "slug", from: "title", required: true, half: true },
       { name: "audience", label: "Who it is for (short)", type: "text", required: true, half: true },
-      { name: "audience_key", label: "Audience group", type: "select", required: true, half: true, options: [["students", "Students and parents"], ["teachers", "Teachers and schools"], ["business", "Business owners"], ["families", "Individuals and families"]].map(([value, label]) => ({ value, label })) },
+      { name: "audience_key", label: "Audience group", type: "select", required: true, half: true, options: [["students", "Students & Competitive Exams"], ["universal", "Everyone & Professionals"], ["vastu", "Vastu & Land Energy"], ["healing", "Holistic Healing"], ["occult", "Occult & Astrology"], ["teachers", "Teachers and schools"], ["business", "Business owners"], ["families", "Individuals and families"]].map(([value, label]) => ({ value, label })) },
       { name: "tagline", label: "Tagline", type: "text" },
       { name: "summary", label: "Summary", type: "textarea", required: true, help: "Shown on cards and as the default meta description." },
       { name: "intro", label: "Introduction", type: "textarea" },

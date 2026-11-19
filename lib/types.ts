@@ -7,7 +7,7 @@ export interface Service {
   faqs: { q: string; a: string }[]; seo_title?: string; seo_description?: string;
 }
 export interface Programme {
-  id?: string; slug: string; title: string; audience: string; audience_key: "students" | "teachers" | "business" | "families";
+  id?: string; slug: string; title: string; audience: string; audience_key: "students" | "teachers" | "business" | "families" | "universal" | "vastu" | "healing" | "occult" | string;
   tagline: string; summary: string; intro: string; pillars: { title: string; body: string }[]; includes: { title: string; body: string }[];
   for_whom: string[]; format: string; price_note?: string | null; price_inr?: number | null; cta_label: string; whatsapp_keyword?: string | null;
   poster_url?: string | null; poster_alt?: string | null; faqs: { q: string; a: string }[]; seo_title?: string | null; seo_description?: string | null;

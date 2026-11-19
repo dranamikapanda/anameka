@@ -8,19 +8,22 @@ import { track } from "@/lib/analytics";
 
 const audienceFilters = [
   { id: "all", label: "All Programmes" },
-  { id: "students", label: "Students & Parents" },
-  { id: "teachers", label: "Teachers & Schools" },
-  { id: "business", label: "Business Owners" },
-  { id: "families", label: "Individuals & Families" },
+  { id: "students", label: "Students & Exams" },
+  { id: "universal", label: "Everyone & Professionals" },
+  { id: "vastu", label: "Vastu & Land Energy" },
+  { id: "healing", label: "Holistic Healing" },
+  { id: "occult", label: "Occult & Astrology" },
 ];
 
 export function ProgrammesBrowser({ programmes }: { programmes: Programme[] }) {
   const [activeAudience, setActiveAudience] = useState("all");
 
   const filtered = useMemo(() => {
-    return activeAudience === "all"
-      ? programmes
-      : programmes.filter((p) => p.audience_key === activeAudience);
+    if (activeAudience === "all") return programmes;
+    if (activeAudience === "universal") {
+      return programmes.filter((p) => ["universal", "teachers", "business", "families"].includes(p.audience_key));
+    }
+    return programmes.filter((p) => p.audience_key === activeAudience);
   }, [programmes, activeAudience]);
 
   return (

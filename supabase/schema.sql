@@ -103,7 +103,7 @@ create table public.programmes (
   slug text unique not null,
   title text not null,
   audience text not null,
-  audience_key text not null default 'students' check (audience_key in ('students','teachers','business','families')),
+  audience_key text not null default 'students' check (audience_key in ('students','teachers','business','families','universal','vastu','healing','occult')),
   tagline text not null default '',
   summary text not null,
   intro text not null default '',

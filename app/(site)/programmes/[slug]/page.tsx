@@ -75,7 +75,7 @@ export default async function ProgrammePage({ params }: P) {
             </section>
           )}
 
-          {p.faqs.length > 0 && <section className="border-t border-gold/30 pt-10"><h2 className="mb-6 text-[2.2rem]">Questions parents and teachers ask</h2><FaqList items={p.faqs} /></section>}
+          {p.faqs.length > 0 && <section className="border-t border-gold/30 pt-10"><h2 className="mb-6 text-[2.2rem]">Frequently Asked Questions</h2><FaqList items={p.faqs} /></section>}
         </article>
 
         <aside className="lg:col-span-4">

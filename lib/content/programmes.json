@@ -1,326 +1,618 @@
 [
- {
-  "slug": "exam-ready-from-the-inside",
-  "title": "Exam Ready From the Inside",
-  "audience": "Board-exam students and their parents",
-  "audience_key": "students",
-  "tagline": "Helping your child become calm, focused and exam-ready, from the inside out.",
-  "summary": "A programme for board-exam students that pairs handwriting therapy with a simple daily spiritual routine, so children approach exams calmer and more focused.",
-  "intro": "Extra tuition fills the notebook, but it cannot always settle the mind. Exam Ready From the Inside works on the other half of exam preparation: how a child feels, focuses and holds steady in the exam hall. No complicated theory, just practical tools for real children preparing for real exams.",
-  "pillars": [
-   {
-    "title": "Calm",
-    "body": "Reduce stress and build inner steadiness before and during the exam season."
-   },
-   {
-    "title": "Focused",
-    "body": "Improve concentration and cut down distractions with short daily practices."
-   },
-   {
-    "title": "Ready",
-    "body": "Walk into the exam hall with confidence, in exams and in life."
-   }
-  ],
-  "includes": [
-   {
-    "title": "Handwriting therapy",
-    "body": "Guided graphotherapy exercises, a few minutes a day, chosen after looking at your child's handwriting."
-   },
-   {
-    "title": "Spiritual study routine",
-    "body": "A simple daily rhythm for study, rest and prayer or reflection, built around your family's routine."
-   },
-   {
-    "title": "Parent guidance",
-    "body": "Ways to support your child at home without adding pressure."
-   }
-  ],
-  "for_whom": [
-   "Students preparing for Class 10 or Class 12 board exams",
-   "Children who know the syllabus but freeze, rush or blank out in exams",
-   "Parents who want to help without adding more tuition"
-  ],
-  "format": "Begins with a free discovery call for parents. Online or in person.",
-  "price_note": "Discovery call is free. Programme fees are shared on the call.",
-  "cta_label": "Book a free parent discovery call",
-  "whatsapp_keyword": "EXAM READY",
-  "poster_url": null,
-  "poster_alt": null,
-  "faqs": [
-   {
-    "q": "Is this a replacement for tuition?",
-    "a": "No. It works alongside your child's studies, focusing on calm, focus and confidence rather than syllabus content."
-   },
-   {
-    "q": "How much time does it take each day?",
-    "a": "The daily practices are short, usually a few minutes of handwriting exercises plus a simple routine that fits around study."
-   },
-   {
-    "q": "What happens on the parent discovery call?",
-    "a": "You describe what you are seeing in your child, Anameka explains how the programme works, and you decide together whether it suits your family. There is no charge for the call."
-   }
-  ],
-  "seo_title": "Exam Ready From the Inside | Board Exam Programme | Dr. Anameka S Panda",
-  "seo_description": "A programme for board-exam students combining handwriting therapy with a daily spiritual routine, for calmer, more focused exam preparation. Free parent discovery call."
- },
- {
-  "slug": "student-inner-excellence",
-  "title": "Student Inner Excellence Program",
-  "audience": "High-school and higher-secondary students, with their parents",
-  "audience_key": "students",
-  "tagline": "Build confidence. Master your mind. Discover your potential.",
-  "summary": "A holistic coaching programme for high-school and higher-secondary students covering mindset, handwriting, study habits, emotional balance and goal-setting.",
-  "intro": "Success begins inside the mind before it appears on the report card. The Student Inner Excellence Program helps students work on focus, confidence and study habits, and on the stress, anxiety, procrastination and exam fear that so often hold them back. Anameka uses handwriting analysis to understand each student better and guide them more personally.",
-  "pillars": [
-   {
-    "title": "Build confidence",
-    "body": "Believe in yourself and overcome fear of failure."
-   },
-   {
-    "title": "Master your mind",
-    "body": "Stay calm, stay focused, stay in control under pressure."
-   },
-   {
-    "title": "Your potential",
-    "body": "Find your strengths, purpose and direction."
-   }
-  ],
-  "includes": [
-   {
-    "title": "Mindset coaching",
-    "body": "Positive thinking, emotional strength and handling setbacks."
-   },
-   {
-    "title": "Handwriting analysis and improvement",
-    "body": "Better handwriting, better focus and clearer expression."
-   },
-   {
-    "title": "Academic guidance",
-    "body": "Smart study strategies, discipline and consistent habits."
-   },
-   {
-    "title": "Emotional balance",
-    "body": "A calmer mind and healthier ways to handle exam pressure."
-   },
-   {
-    "title": "Goal setting and future readiness",
-    "body": "Clear goals and a sense of direction beyond exams."
-   },
-   {
-    "title": "Parent partnership",
-    "body": "Guidance for parents to understand their child, reduce exam pressure and build confidence at home."
-   }
-  ],
-  "for_whom": [
-   "Students in high school and higher secondary (Classes 9 to 12)",
-   "Students struggling with focus, procrastination, stress or exam fear",
-   "Parents who want a positive learning environment at home"
-  ],
-  "format": "One-to-one coaching sessions, online or in person, with parent check-ins.",
-  "price_note": "Fees are shared when you enquire.",
-  "cta_label": "Enquire about the programme",
-  "whatsapp_keyword": "INNER EXCELLENCE",
-  "poster_url": null,
-  "poster_alt": null,
-  "faqs": [
-   {
-    "q": "Which classes is this programme for?",
-    "a": "It is designed for high-school and higher-secondary students, typically Classes 9 to 12."
-   },
-   {
-    "q": "Are parents involved?",
-    "a": "Yes. Parent partnership is part of the programme, with guidance on supporting your child and reducing pressure at home."
-   }
-  ],
-  "seo_title": "Student Inner Excellence Program | Student Coaching | Dr. Anameka S Panda",
-  "seo_description": "Holistic coaching for high-school and higher-secondary students: mindset, handwriting, study habits, emotional balance and goal setting. Online and in Bhubaneswar."
- },
- {
-  "slug": "child-script-coach",
-  "title": "Child Script Coach™ Program",
-  "audience": "Teachers and educators",
-  "audience_key": "teachers",
-  "tagline": "See beyond the handwriting. See the child.",
-  "summary": "A training programme that teaches teachers to read handwriting as another lens for understanding and supporting each learner, leading to Child Script Coach certification.",
-  "intro": "Every student has a story, and sometimes their handwriting offers valuable clues. The Child Script Coach™ Program teaches teachers the foundations of handwriting analysis so they can notice patterns early and respond to each child with more understanding.",
-  "pillars": [
-   {
-    "title": "Notice early",
-    "body": "Identify learning and emotional patterns sooner."
-   },
-   {
-    "title": "Understand",
-    "body": "See each child's unique needs more clearly."
-   },
-   {
-    "title": "Connect",
-    "body": "Build stronger teacher–student relationships."
-   }
-  ],
-  "includes": [
-   {
-    "title": "Foundations of handwriting analysis",
-    "body": "Reading size, slant, pressure, spacing and letter forms in children's writing."
-   },
-   {
-    "title": "Classroom application",
-    "body": "Using what you observe to support confidence, engagement and growth."
-   },
-   {
-    "title": "Certification",
-    "body": "On completion, become a certified Child Script Coach."
-   }
-  ],
-  "for_whom": [
-   "School teachers and educators",
-   "Tutors and special-education support staff",
-   "School leaders building pastoral-care skills"
-  ],
-  "format": "Begins with a free one-to-one discovery call.",
-  "price_note": "Discovery call is free. Programme fees are shared on the call.",
-  "cta_label": "Book a free discovery call",
-  "whatsapp_keyword": "COACH",
-  "poster_url": null,
-  "poster_alt": null,
-  "faqs": [
-   {
-    "q": "Do I need any background in graphology?",
-    "a": "No. The programme starts with the foundations."
-   },
-   {
-    "q": "Who awards the certification?",
-    "a": "The Child Script Coach certification is awarded through Anameka S Panda's programme on completion."
-   },
-   {
-    "q": "Is handwriting analysis a diagnostic tool?",
-    "a": "No. It is a lens for observation and conversation, not a way to diagnose learning or mental-health conditions. Concerns of that kind should be referred to qualified professionals."
-   }
-  ],
-  "seo_title": "Child Script Coach Program for Teachers | Dr. Anameka S Panda",
-  "seo_description": "Training for teachers in handwriting analysis as a lens for understanding students. Become a certified Child Script Coach. Free discovery call."
- },
- {
-  "slug": "handwriting-mastery-certification",
-  "title": "Handwriting Mastery Certification",
-  "audience": "Teachers and educators",
-  "audience_key": "teachers",
-  "tagline": "Smart classrooms start with smart writing.",
-  "summary": "A certification programme giving teachers practical handwriting techniques to improve student focus, presentation and classroom management.",
-  "intro": "Handwriting is more than neatness. Writing by hand involves memory, attention and fine motor skills, which is why messy notebooks often go hand in hand with a messy learning process. This certification gives teachers practical handwriting techniques to use with their classes.",
-  "pillars": [
-   {
-    "title": "Focus",
-    "body": "Help students build concentration and classroom engagement."
-   },
-   {
-    "title": "Presentation",
-    "body": "Tidier notebooks, faster writing and more complete work."
-   },
-   {
-    "title": "Understanding",
-    "body": "Recognise signs of stress in handwriting and respond with support."
-   }
-  ],
-  "includes": [
-   {
-    "title": "Improve student focus",
-    "body": "Structured handwriting routines that support attention in class."
-   },
-   {
-    "title": "Strengthen thinking skills",
-    "body": "Techniques that support memory and organised thinking."
-   },
-   {
-    "title": "Identify stress patterns",
-    "body": "Understanding emotional cues in handwriting."
-   },
-   {
-    "title": "Classroom management",
-    "body": "Using handwriting activities to settle and structure lessons."
-   },
-   {
-    "title": "Certification",
-    "body": "Become a certified handwriting specialist in your school."
-   }
-  ],
-  "for_whom": [
-   "Primary and secondary school teachers",
-   "Schools wanting a handwriting specialist on staff",
-   "Tutors and coaching-centre educators"
-  ],
-  "format": "Training programme for individual teachers or school groups.",
-  "price_note": "Fees are shared when you enquire.",
-  "cta_label": "Enquire to enrol",
-  "whatsapp_keyword": "CERTIFY",
-  "poster_url": null,
-  "poster_alt": null,
-  "faqs": [
-   {
-    "q": "Can a whole school staff take this together?",
-    "a": "Yes. Get in touch to discuss group training for your school."
-   },
-   {
-    "q": "How is this different from the Child Script Coach Program?",
-    "a": "Handwriting Mastery focuses on improving students' handwriting and classroom practice. Child Script Coach focuses on reading handwriting to understand each child."
-   }
-  ],
-  "seo_title": "Handwriting Mastery Certification for Teachers | Dr. Anameka S Panda",
-  "seo_description": "Certification for teachers in practical handwriting techniques to support student focus, presentation and classroom management."
- },
- {
-  "slug": "teacher-handwriting-consultation",
-  "title": "1-to-1 Handwriting Insight Consultation for Teachers",
-  "audience": "Teachers seeking help with a specific student or class",
-  "audience_key": "teachers",
-  "tagline": "Stop correcting behaviour. Understand what's behind it.",
-  "summary": "A one-to-one consultation in which Anameka helps a teacher look at students' handwriting and signatures for patterns behind challenging behaviour.",
-  "intro": "A child's behaviour is a message, not the problem. When a student is angry, fearful, low in confidence or swayed by peer pressure, punishment and repeated correction may not solve the issue. Their handwriting can offer insight into how they think, feel and approach challenges, so you can respond with clarity and support instead of guesswork.",
-  "pillars": [
-   {
-    "title": "Observe",
-    "body": "Look at handwriting and signature samples together."
-   },
-   {
-    "title": "Understand",
-    "body": "Discuss the patterns and what may lie behind the behaviour."
-   },
-   {
-    "title": "Respond",
-    "body": "Leave with practical ideas for supporting the student."
-   }
-  ],
-  "includes": [
-   {
-    "title": "Sample review",
-    "body": "Handwriting and signature samples from the students you are concerned about (shared with appropriate permission)."
-   },
-   {
-    "title": "Practical insights",
-    "body": "Ideas you can use in class straight away."
-   }
-  ],
-  "for_whom": [
-   "Teachers facing behaviour challenges with particular students",
-   "Class teachers and counsellors wanting another lens on a child"
-  ],
-  "format": "One-to-one session, online or in person.",
-  "price_note": null,
-  "price_inr": null,
-  "cta_label": "Book a consultation",
-  "whatsapp_keyword": "ANALYZE",
-  "poster_url": null,
-  "poster_alt": null,
-  "faqs": [
-   {
-    "q": "Do I need the parents' permission to share a student's handwriting?",
-    "a": "Follow your school's policy. Samples can be shared without names, and Anameka treats them confidentially."
-   },
-   {
-    "q": "Can this replace a counsellor or special educator?",
-    "a": "No. It offers another perspective. Where you suspect a learning difficulty or mental-health concern, involve the school counsellor and qualified professionals."
-   }
-  ],
-  "seo_title": "Handwriting Consultation for Teachers | Dr. Anameka S Panda",
-  "seo_description": "One-to-one consultation for teachers: handwriting and signature analysis to understand patterns behind student behaviour. Available online or in person."
- }
+  {
+    "slug": "student-inner-excellence",
+    "title": "Student Inner Excellence Program",
+    "audience": "Class 8 to College Students, Competitive Exam Aspirants & Interview Candidates",
+    "audience_key": "students",
+    "tagline": "Build Unshakeable Focus, Master the Mind & Clear Competitive Exams",
+    "summary": "A complete subconscious coaching programme for students from Class 8 onwards, competitive exam aspirants (JEE, NEET, UPSC, Banking, CA), and interview candidates. Blends mindset mastery, graphotherapy, and emotional resilience.",
+    "intro": "Academic success is 20% syllabus and 80% mindset. Whether preparing for high school finals, intense competitive entrances (NEET, JEE, UPSC, Banking), or high-stakes job interviews, students face procrastination, mental fatigue, self-doubt, and exam fear. Through personalized handwriting analysis (graphology), subconscious rewiring, and practical focus rituals, Dr. Anameka guides students to peak mental performance and composure under pressure.",
+    "pillars": [
+      {
+        "title": "Unshakeable Confidence",
+        "body": "Overcome fear of failure, imposter syndrome, and perform with poise in exams and interviews."
+      },
+      {
+        "title": "Laser Focus & Memory",
+        "body": "Master active recall, eliminate digital distractions, and sustain deep concentration."
+      },
+      {
+        "title": "Subconscious Alignment",
+        "body": "Reprogram limiting beliefs through daily scientific graphotherapy and breathwork."
+      }
+    ],
+    "includes": [
+      {
+        "title": "Scientific Handwriting & Graphotherapy",
+        "body": "Custom penmanship strokes to rewire patience, precision, and cognitive endurance."
+      },
+      {
+        "title": "Competitive Exam & Interview Mindset",
+        "body": "Strategies to eliminate panic, handle tricky papers, and project authentic authority in interviews."
+      },
+      {
+        "title": "Memory Retention & Smart Study Habits",
+        "body": "Techniques for high-yield revision without burnout."
+      },
+      {
+        "title": "Emotional Regulation & Stress Detox",
+        "body": "Techniques to neutralize pressure from peers, mentors, and parents."
+      },
+      {
+        "title": "Parent & Mentor Alignment",
+        "body": "Guidance sessions for families to foster a supportive, pressure-free sanctuary."
+      }
+    ],
+    "for_whom": [
+      "Students from Class 8 through university preparing for academic milestones",
+      "Competitive exam aspirants (JEE, NEET, UPSC, State PCS, Banking, CLAT, CA)",
+      "Graduates and job seekers preparing for high-stakes interviews and group discussions",
+      "Students experiencing procrastination, anxiety, low retention, or lack of direction",
+      "Parents seeking proven, pressure-free mentorship for their children"
+    ],
+    "format": "One-to-one personalized mentoring sessions, online (live video) or in person, with periodic milestone evaluations.",
+    "price_note": null,
+    "price_inr": null,
+    "cta_label": "Enquire for Mentorship",
+    "whatsapp_keyword": "INNER EXCELLENCE",
+    "poster_url": null,
+    "poster_alt": null,
+    "faqs": [
+      {
+        "q": "Which students can join this programme?",
+        "a": "It is open to students from Class 8 onwards, college students, aspirants appearing for competitive entrance exams (JEE, NEET, UPSC, Banking, CA), and job interview candidates."
+      },
+      {
+        "q": "How does handwriting therapy help in competitive exams?",
+        "a": "Handwriting therapy (graphotherapy) directly alters neural pathways associated with patience, analytical speed, and concentration span, preventing impulsive mistakes during timed exam conditions."
+      },
+      {
+        "q": "Are parents involved in the sessions?",
+        "a": "Yes. Parent guidance sessions are integrated to help families reduce household tension and build an encouraging study sanctuary at home."
+      }
+    ],
+    "seo_title": "Student Inner Excellence Program | Competitive Exams & Mindset | Dr. Anameka S Panda",
+    "seo_description": "Subconscious coaching for students from Class 8 onwards, competitive exam aspirants (JEE, NEET, UPSC, Banking), and interview candidates. Online and in Bhubaneswar."
+  },
+  {
+    "slug": "exam-ready-from-the-inside",
+    "title": "Exam Ready From the Inside",
+    "audience": "Class 10 & 12 Board Exam Students (CBSE, ICSE, State Boards) & Parents",
+    "audience_key": "students",
+    "tagline": "Turn Board Exam Stress into Calm, High-Speed Exam Hall Mastery",
+    "summary": "Specifically crafted for Class 10 and Class 12 board exam candidates. Combines handwriting graphotherapy, paper-writing stamina, and inner emotional steadiness so students write with speed, clarity, and zero blank-outs.",
+    "intro": "Tuition centres complete the syllabus, but they cannot stop the child's hands from trembling or their mind from going blank when the board exam paper is placed on their desk. 'Exam Ready From the Inside' specifically trains Class 10 and Class 12 students in the psychological and physiological aspects of board exam performance: neat high-speed handwriting, calm time management, and emotional poise.",
+    "pillars": [
+      {
+        "title": "Board Exam Composure",
+        "body": "Banish the dreaded blank-out and walk into the board exam hall grounded, calm, and prepared."
+      },
+      {
+        "title": "High-Speed Legible Writing",
+        "body": "Improve writing endurance so 3-hour long subjective papers are completed with ease."
+      },
+      {
+        "title": "Parental Peace of Mind",
+        "body": "Eliminate household tension during board exam months with supportive daily routines."
+      }
+    ],
+    "includes": [
+      {
+        "title": "Targeted Graphotherapy for Exam Stamina",
+        "body": "Daily penmanship drills to relieve wrist fatigue and enhance presentation clarity for board examiners."
+      },
+      {
+        "title": "The 3-Hour Paper Strategy",
+        "body": "Techniques for the first 15 minutes of reading time, question pacing, and error-checking."
+      },
+      {
+        "title": "Spiritual Daily Rhythm",
+        "body": "Brief morning and pre-sleep grounding rituals to prevent panic and maintain mental freshness."
+      },
+      {
+        "title": "Parent Consultation & De-stressing Guide",
+        "body": "Practical steps parents can take at home to keep the atmosphere relaxed."
+      }
+    ],
+    "for_whom": [
+      "Students preparing for Class 10 or Class 12 Board Exams (CBSE, ICSE, State Boards)",
+      "Children who know the syllabus thoroughly but freeze, rush, or blank out in exams",
+      "Students struggling with slow writing speed or messy presentation losing easy marks",
+      "Parents who want to support their board student without adding more pressure"
+    ],
+    "format": "Begins with a diagnostic consultation for student and parents. Conducted online or in person.",
+    "price_note": null,
+    "price_inr": null,
+    "cta_label": "Book Board Exam Discovery Call",
+    "whatsapp_keyword": "BOARD EXAM READY",
+    "poster_url": null,
+    "poster_alt": null,
+    "faqs": [
+      {
+        "q": "Is this a replacement for academic tuition?",
+        "a": "No. It works alongside your child's academic studies, focusing on psychological calm, handwriting endurance, speed, and confidence rather than syllabus content."
+      },
+      {
+        "q": "How much daily practice is required?",
+        "a": "The daily graphotherapy practices take only 10 to 15 minutes and fit effortlessly into the student's revision schedule."
+      },
+      {
+        "q": "How does it stop students from blanking out during board exams?",
+        "a": "Blanking out is triggered by acute sympathetic nervous system fight-or-flight arousal. Through physiological breathing anchors and muscle-memory handwriting strokes, the student maintains parasympathetic composure."
+      }
+    ],
+    "seo_title": "Exam Ready From the Inside | Class 10 & 12 Board Exam Mastery | Dr. Anameka S Panda",
+    "seo_description": "Specialized board exam coaching for Class 10 & 12 students combining graphotherapy handwriting speed, emotional calm, and exam hall strategy."
+  },
+  {
+    "slug": "handwriting-mastery-certification",
+    "title": "Handwriting Mastery Certification",
+    "audience": "Open to Everyone — Teachers, Homemakers, Principals, Professionals & Students",
+    "audience_key": "universal",
+    "tagline": "Transform Penmanship, Subconscious Focus & Teaching Mastery",
+    "summary": "A comprehensive, universally accessible certification open to educators, homemakers, working professionals, school principals, and students. Master scientific handwriting mechanics, graphotherapy principles, and pedagogical guidance.",
+    "intro": "Handwriting is crystallized thought. How we hold a pen and shape our strokes influences neuro-pathways responsible for patience, memory, self-discipline, and emotional balance. Whether you are a teacher guiding 40 students, a school principal elevating classroom standards, a homemaker seeking a rewarding skill, a professional aiming for executive presence, or a student wanting neater, faster writing—this certification equips you with the complete science and art of handwriting mastery.",
+    "pillars": [
+      {
+        "title": "Cognitive Focus & Memory",
+        "body": "Harness hand-brain coordination to heighten mental clarity, analytical thinking, and focus."
+      },
+      {
+        "title": "Flawless Speed & Aesthetics",
+        "body": "Master ergonomic grip, rhythm, margin discipline, and effortless speed without hand fatigue."
+      },
+      {
+        "title": "Mentorship & Career Capability",
+        "body": "Empower teachers and homemakers to start their own handwriting coaching or elevate institutional teaching."
+      }
+    ],
+    "includes": [
+      {
+        "title": "Scientific Anatomy of Writing",
+        "body": "Stroke formation, pressure dynamics, baseline stability, and spacing psychology."
+      },
+      {
+        "title": "Universal Graphotherapy Applications",
+        "body": "Recognizing signs of emotional distress, lethargy, or impulsivity in strokes and applying corrective exercises."
+      },
+      {
+        "title": "Pedagogy & Coaching Modules",
+        "body": "Step-by-step guidance methods tailored for young children, teenagers, and adults."
+      },
+      {
+        "title": "Accredited Certification",
+        "body": "Official certification awarded under the banner of Indian Vastu & Astrological Research Centre (Regd) & ISO 9001-2015 standards."
+      }
+    ],
+    "for_whom": [
+      "School teachers, tutors, and remedial educators",
+      "Homemakers seeking self-development, personal enrichment, or home-coaching skills",
+      "School principals and academic coordinators seeking campus-wide handwriting standards",
+      "Working professionals and executives wanting poised, impactful handwriting and signatures",
+      "College and school students looking to perfect their penmanship"
+    ],
+    "format": "Flexible modular training available online (interactive live sessions) and in-person workshops, complete with practice manuals.",
+    "price_note": null,
+    "price_inr": null,
+    "cta_label": "Enquire to Enrol",
+    "whatsapp_keyword": "CERTIFY",
+    "poster_url": null,
+    "poster_alt": null,
+    "faqs": [
+      {
+        "q": "Can homemakers and non-teachers take this certification?",
+        "a": "Absolutely. The course is structured from fundamental penmanship biology to advanced coaching, making it ideal for homemakers, professionals, students, and educators alike."
+      },
+      {
+        "q": "Can an entire school or college staff enroll together?",
+        "a": "Yes. Group institutional faculty training programs are conducted across Odisha and nationwide."
+      },
+      {
+        "q": "What accreditation does the certificate carry?",
+        "a": "The certification is officially credentialed by Indian Vastu & Astrological Research Centre (Regd) with ISO 9001-2015 quality standards."
+      }
+    ],
+    "seo_title": "Handwriting Mastery Certification | Teachers, Homemakers & Professionals | Dr. Anameka S Panda",
+    "seo_description": "Accredited Handwriting Mastery Certification for teachers, homemakers, principals, professionals, and students. ISO 9001-2015 certified."
+  },
+  {
+    "slug": "teacher-handwriting-consultation",
+    "title": "1-to-1 Handwriting & Subconscious Insight Consultation",
+    "audience": "Open to Everyone — Business Professionals, Homemakers, Job Seekers, Educators & Parents",
+    "audience_key": "universal",
+    "tagline": "Uncover Hidden Subconscious Blocks, Career Strengths & Behavioural Roots Through Handwriting",
+    "summary": "A private, in-depth one-to-one consultation for individuals from all walks of life—business professionals, homemakers, job seekers, educators, and parents. Decode subconscious traits, emotional blocks, leadership patterns, and relationship dynamics through handwriting and signature analysis.",
+    "intro": "Your handwriting and signature are the direct mirror of your subconscious mind. Long before a behaviour, fear, hesitation, or talent shows up in daily life, it is already inscribed in your slants, loops, margins, and t-crosses. In this private 1-to-1 consultation, Dr. Anameka conducts an exhaustive analysis of your writing and signature, revealing your core strengths, unconscious emotional bottlenecks, decision-making style, and providing personalized graphotherapy remedies to unlock your true potential.",
+    "pillars": [
+      {
+        "title": "Subconscious Diagnosis",
+        "body": "Identify underlying anxiety, trust issues, repressed frustration, or self-sabotage."
+      },
+      {
+        "title": "Career & Financial Blueprint",
+        "body": "Understand financial mindset, negotiation traits, leadership presence, and public persona through your signature."
+      },
+      {
+        "title": "Actionable Graphotherapy",
+        "body": "Receive bespoke stroke alterations to reprogram confidence, willpower, and inner peace."
+      }
+    ],
+    "includes": [
+      {
+        "title": "Comprehensive Sample Evaluation",
+        "body": "Microscopic review of handwriting samples, baseline trends, spacing, pressure, and signature angles."
+      },
+      {
+        "title": "60-Minute Deep-Dive Consultation",
+        "body": "One-on-one private discussion uncovering personality insights, career inclinations, and relationship tendencies."
+      },
+      {
+        "title": "Custom Graphotherapy Prescription",
+        "body": "Tailored 21-day to 30-day penmanship therapy regimen to shift unconscious conditioning."
+      },
+      {
+        "title": "Post-Therapy Review",
+        "body": "Follow-up check to monitor subconscious integration and visible shifts in daily demeanor."
+      }
+    ],
+    "for_whom": [
+      "Business owners and entrepreneurs seeking self-awareness, leadership confidence, and financial clarity",
+      "Corporate professionals and job seekers preparing for career transitions or interviews",
+      "Homemakers wanting personal clarity, emotional healing, and enhanced self-worth",
+      "Educators and school teachers wanting deep insights into students' hidden struggles and emotional needs",
+      "Individuals experiencing recurring mental roadblocks, self-doubt, or relationship friction"
+    ],
+    "format": "Confidential 1-to-1 session conducted via Zoom/Google Meet or in person at Bhubaneswar.",
+    "price_note": null,
+    "price_inr": null,
+    "cta_label": "Book Your 1-to-1 Consultation",
+    "whatsapp_keyword": "ANALYZE",
+    "poster_url": null,
+    "poster_alt": null,
+    "faqs": [
+      {
+        "q": "What should I prepare for the consultation?",
+        "a": "You will be asked to write an unlined page in your natural handwriting using a ballpoint pen and sign twice at the bottom, then send a clear photo or scan."
+      },
+      {
+        "q": "Can I consult about my child or spouse's handwriting?",
+        "a": "Yes. Parents and spouses frequently bring handwriting samples to understand emotional bottlenecks, communication gaps, or behavioural shifts."
+      },
+      {
+        "q": "Is the consultation completely confidential?",
+        "a": "Strictly confidential. Your handwriting samples and personal discussions are never shared."
+      }
+    ],
+    "seo_title": "1-to-1 Handwriting & Subconscious Insight Consultation | Dr. Anameka S Panda",
+    "seo_description": "Confidential 1-to-1 handwriting and signature analysis consultation for professionals, homemakers, job seekers, and educators. Decode subconscious traits and career blueprints."
+  },
+  {
+    "slug": "child-script-coach",
+    "title": "Child Script Coach™ Program",
+    "audience": "Teachers, Educators & Remedial Mentors",
+    "audience_key": "universal",
+    "tagline": "See beyond the handwriting. See the child.",
+    "summary": "A specialized training programme that teaches educators and mentors to read handwriting as another lens for understanding and supporting each learner, leading to Child Script Coach certification.",
+    "intro": "Every student has a story, and sometimes their handwriting offers valuable clues. The Child Script Coach™ Program teaches educators the foundations of handwriting analysis so they can notice patterns early and respond to each child with more understanding.",
+    "pillars": [
+      {
+        "title": "Notice early",
+        "body": "Identify learning and emotional patterns sooner."
+      },
+      {
+        "title": "Understand",
+        "body": "See each child's unique needs more clearly."
+      },
+      {
+        "title": "Connect",
+        "body": "Build stronger teacher–student relationships."
+      }
+    ],
+    "includes": [
+      {
+        "title": "Foundations of handwriting analysis",
+        "body": "Reading size, slant, pressure, spacing and letter forms in children's writing."
+      },
+      {
+        "title": "Classroom application",
+        "body": "Using what you observe to support confidence, engagement and growth."
+      },
+      {
+        "title": "Certification",
+        "body": "On completion, become a certified Child Script Coach."
+      }
+    ],
+    "for_whom": [
+      "School teachers and educators",
+      "Tutors and special-education support staff",
+      "School leaders building pastoral-care skills"
+    ],
+    "format": "Begins with a one-to-one discovery call. Online or in person.",
+    "price_note": null,
+    "price_inr": null,
+    "cta_label": "Book a Discovery Call",
+    "whatsapp_keyword": "COACH",
+    "poster_url": null,
+    "poster_alt": null,
+    "faqs": [
+      {
+        "q": "Do I need any background in graphology?",
+        "a": "No. The programme starts with the foundations."
+      },
+      {
+        "q": "Who awards the certification?",
+        "a": "The Child Script Coach certification is awarded under the banner of Indian Vastu & Astrological Research Centre (Regd) on completion."
+      },
+      {
+        "q": "Is handwriting analysis a diagnostic tool?",
+        "a": "No. It is a lens for observation and conversation, not a way to diagnose clinical conditions."
+      }
+    ],
+    "seo_title": "Child Script Coach Program for Teachers & Educators | Dr. Anameka S Panda",
+    "seo_description": "Training for teachers in handwriting analysis as a lens for understanding students. Become a certified Child Script Coach."
+  },
+  {
+    "slug": "vastu-transformation-programme",
+    "title": "Vastu Transformation & Spatial Harmony Programme",
+    "audience": "Homeowners, Business Owners, Architects & Property Buyers",
+    "audience_key": "vastu",
+    "tagline": "Harmonize Living & Commercial Spaces Without Structural Demolition",
+    "summary": "An intensive, scientifically grounded spatial harmony programme based on 16 directional zones, the Pancha Mahabhutas (Five Elements), and non-invasive elemental remedies for homes, factories, and commercial establishments.",
+    "intro": "Your built environment continuously interacts with your personal energy field. When directional energies are skewed, families face persistent discord, health setbacks, or unexplained financial stagnation. Dr. Anameka’s Vastu Transformation Programme blends traditional Vedic principles with modern spatial psychology to correct energetic anomalies without tearing down walls or undertaking expensive structural demolition.",
+    "pillars": [
+      {
+        "title": "Pancha Mahabhuta Balance",
+        "body": "Balance Earth, Water, Fire, Air, and Space in your layout for sustained vitality and abundance."
+      },
+      {
+        "title": "16-Zone Energy Mapping",
+        "body": "Pinpoint weak and hyperactive sectors influencing health, relationships, wealth, and mental clarity."
+      },
+      {
+        "title": "Zero-Demolition Remedies",
+        "body": "Implement sacred metallic strips, elemental colors, crystals, and directional shifts with zero disruption."
+      }
+    ],
+    "includes": [
+      {
+        "title": "Architectural Floor Plan Energy Audit",
+        "body": "To-scale grid analysis mapping the Brahmasthan and 16 energetic directions."
+      },
+      {
+        "title": "On-Site / Virtual Energy Evaluation",
+        "body": "Detection of negative geo-pathways, clutter blocks, and wrong placements (kitchen, bedroom, entrance)."
+      },
+      {
+        "title": "Remedial Blueprint Document",
+        "body": "Comprehensive customized report detailing non-invasive remedies, color therapies, and brass/copper elemental balancers."
+      },
+      {
+        "title": "Consecration & Activation Guidance",
+        "body": "Guidance on energetic charging of spaces for peace, health, and commercial growth."
+      }
+    ],
+    "for_whom": [
+      "Homeowners experiencing recurrent health issues, friction, or financial instability",
+      "Business owners and industrialists needing smoother cash flows, employee stability, and factory throughput",
+      "Individuals purchasing new apartments, plots, or commercial offices wanting pre-possession audit",
+      "Architects and interior designers wanting to incorporate authentic Vastu principles into their design plans"
+    ],
+    "format": "On-site visits (Bhubaneswar, Odisha & across India) or highly detailed remote plan analysis via WhatsApp & Video.",
+    "price_note": null,
+    "price_inr": null,
+    "cta_label": "Book Vastu Consultation",
+    "whatsapp_keyword": "VASTU PROGRAMME",
+    "poster_url": null,
+    "poster_alt": null,
+    "faqs": [
+      {
+        "q": "Do I need to break walls or make major structural alterations?",
+        "a": "No. Dr. Anameka specializes in non-invasive remedies using elemental color frequencies, metals (copper/brass/iron), sacred geometry, and spatial realignment without demolition."
+      },
+      {
+        "q": "Can Vastu consultation be performed online with a floor plan?",
+        "a": "Yes. With a to-scale floor plan and accurate compass orientation, an exhaustive 16-zone diagnostic audit and remedy plan can be conducted virtually."
+      }
+    ],
+    "seo_title": "Vastu Transformation & Spatial Harmony Programme | Dr. Anameka S Panda",
+    "seo_description": "Scientific Vastu consultation and spatial harmony without demolition. Residential, commercial, and industrial 16-zone elemental balancing."
+  },
+  {
+    "slug": "land-geopathic-healing-programme",
+    "title": "Land & Geopathic Stress Healing Programme",
+    "audience": "Plot Buyers, Builders, Factory Owners & Farmers",
+    "audience_key": "vastu",
+    "tagline": "Neutralize Underground Distortions, Hartmann Lines & Sick Building Syndrome",
+    "summary": "A specialized environmental programme to detect and neutralize subterranean earth radiation, Hartmann and Curry grid lines, water veins, and historical trauma embedded in plots, farmhouses, and industrial land.",
+    "intro": "Invisible electromagnetic and geopathic lines emanating from deep within the earth can cause chronic fatigue, sleep disorders, and severe business setbacks when homes or workspaces sit directly on them. Dr. Anameka utilizes advanced dowsing, Lecher antenna bio-energetics, and traditional Bhumi Shuddhi (Earth Purification) techniques to detect geopathic stress lines and neutralize them permanently.",
+    "pillars": [
+      {
+        "title": "Geopathic Line Detection",
+        "body": "Identify subterranean water currents, geological fault lines, and Hartmann grids running under the property."
+      },
+      {
+        "title": "Energy Neutralization",
+        "body": "Deploy earth-acupuncture rods, energetic neutralizing resonators, and mineral barriers to dispel negative frequencies."
+      },
+      {
+        "title": "Bhumi Shuddhi (Soil Consecration)",
+        "body": "Purify land with historical energetic distress prior to laying building foundations."
+      }
+    ],
+    "includes": [
+      {
+        "title": "Land Bio-Field Dowsing & Frequency Audit",
+        "body": "Comprehensive assessment of the plot's vibrational index (Bovis scale)."
+      },
+      {
+        "title": "Underground Fault & Water Vein Mapping",
+        "body": "Precise identification of toxic intersection points affecting sleep and health."
+      },
+      {
+        "title": "Installation of Geopathic Neutralizers",
+        "body": "Strategic grounding of neutralizer bars, copper spirals, and energised earth crystals."
+      },
+      {
+        "title": "Pre-Construction Foundation Blessing",
+        "body": "Guidance on foundation rituals (Bhoomi Pujan) and crystal grids for long-term protection."
+      }
+    ],
+    "for_whom": [
+      "Plot owners and builders preparing to begin construction on residential or commercial sites",
+      "Factory and warehouse owners troubled by frequent machinery breakdowns, labor unrest, or accidents",
+      "Residents experiencing chronic insomnia, unrefreshing sleep, or persistent illnesses resisting medical treatment",
+      "Real estate investors looking to restore vitality to stagnant, unsellable properties"
+    ],
+    "format": "On-site inspection with specialized dowsing and bio-energetic tools; remote plot map energetic review available.",
+    "price_note": null,
+    "price_inr": null,
+    "cta_label": "Consult on Land Healing",
+    "whatsapp_keyword": "LAND HEALING",
+    "poster_url": null,
+    "poster_alt": null,
+    "faqs": [
+      {
+        "q": "What is Geopathic Stress?",
+        "a": "Geopathic stress occurs when natural radiation from the earth is distorted by underground water streams, faults, or mineral deposits, creating harmful energetic lines that weaken human immunity and cause sleep disturbances."
+      },
+      {
+        "q": "How is it cured without digging up the entire floor or plot?",
+        "a": "Through targeted geopathic neutralizing instruments, metallic resonance earth-staples, and specialized crystals placed at energetic nodes, creating a deflected protective envelope."
+      }
+    ],
+    "seo_title": "Land & Geopathic Stress Healing Programme | Dr. Anameka S Panda",
+    "seo_description": "Detect and neutralize subterranean geopathic stress, Hartmann lines, and earth radiation for plots, residential homes, and commercial buildings."
+  },
+  {
+    "slug": "holistic-energy-healing-programme",
+    "title": "Holistic Energy & Aura Healing Programme",
+    "audience": "Individuals Seeking Emotional Peace, Stress Relief & Vitality",
+    "audience_key": "healing",
+    "tagline": "Cleanse Auric Blocks, Realign Chakras & Restore Pranic Vitality",
+    "summary": "A transformative multi-session energy healing journey incorporating Usui Reiki, Pranic energy clearing, chakra harmonization, and distance healing for deep emotional release, mental peace, and physical recuperation.",
+    "intro": "Long before stress, anxiety, or emotional wounds manifest in the physical body, they exist as dense energetic blockages in the auric field and the seven primary chakras. Dr. Anameka’s Holistic Energy Healing Programme provides a safe, nurturing sanctuary to release accumulated emotional toxicity, dissolve energetic cords, and restore luminous balance to mind, body, and spirit.",
+    "pillars": [
+      {
+        "title": "Chakra Harmonization",
+        "body": "Clear stagnant congestion from the 7 major chakras to awaken emotional stability and clarity."
+      },
+      {
+        "title": "Auric Shielding & Cleansing",
+        "body": "Purge toxic vibrations, psychic debris, and negative attachments from your personal energy shield."
+      },
+      {
+        "title": "Somatic Emotional Release",
+        "body": "Release chronic somatic stress, grief, and burnout trapped within bodily tissue."
+      }
+    ],
+    "includes": [
+      {
+        "title": "Aura Diagnostic Scan",
+        "body": "Mapping energetic depletion, congestion, and leakages across major and minor energy centres."
+      },
+      {
+        "title": "Guided Usui Reiki & Pranic Healing Sessions",
+        "body": "Deep therapeutic energy channelled to accelerate physical recovery and emotional equilibrium."
+      },
+      {
+        "title": "Cord Cutting & Energetic Detachment",
+        "body": "Sever unhealthy emotional cords tying you to past relationships, traumatic events, or toxic environments."
+      },
+      {
+        "title": "Self-Healing Grounding Rituals",
+        "body": "Daily breathwork, affirmations, and gemstone/salt therapies to maintain auric purity at home."
+      }
+    ],
+    "for_whom": [
+      "Individuals dealing with chronic stress, emotional exhaustion, grief, or burnout",
+      "People feeling energetically drained after being around toxic colleagues or stressful environments",
+      "Seekers wanting deeper meditation, inner peace, and spiritual awakening",
+      "Working professionals, caregivers, and homemakers looking for restorative rejuvenation"
+    ],
+    "format": "Available as both intimate in-person sessions and potent distant energy healing sessions (online video).",
+    "price_note": null,
+    "price_inr": null,
+    "cta_label": "Book Energy Healing Session",
+    "whatsapp_keyword": "AURA HEALING",
+    "poster_url": null,
+    "poster_alt": null,
+    "faqs": [
+      {
+        "q": "Does distance energy healing really work?",
+        "a": "Yes. Energy and quantum consciousness are not limited by physical space. Distant Reiki and Pranic healing sessions are equally potent, with clients feeling palpable warmth, lightness, and deep relaxation during the transmission."
+      },
+      {
+        "q": "Is this a substitute for medical treatment?",
+        "a": "No. Energy healing is a complementary therapeutic modality that works synergistically with medical treatment by boosting the body's natural restorative capacity and balancing the mind."
+      }
+    ],
+    "seo_title": "Holistic Energy & Aura Healing Programme | Dr. Anameka S Panda",
+    "seo_description": "Chakra alignment, auric cleansing, and Usui Reiki energy healing for emotional peace, burnout recovery, and spiritual rejuvenation."
+  },
+  {
+    "slug": "occult-sciences-kundli-programme",
+    "title": "Occult Sciences & Kundli Alignment Programme",
+    "audience": "Spiritual Seekers, Astrologers & Individuals Navigating Life Transitions",
+    "audience_key": "occult",
+    "tagline": "Decode Your Janam Kundli, Planetary Dashas & Sacred Karmic Blueprints",
+    "summary": "An enlightened synthesis of Vedic Astrology (Jyotish), planetary dasha timing, sacred yantras, and non-superstitious karmic remedies designed to illuminate your life purpose, career transitions, and relationship harmony.",
+    "intro": "Vedic Astrology is not fatalism; it is the cosmic GPS of your soul's journey. Your birth chart (Janam Kundli) captures the planetary frequencies at the exact moment of your birth, revealing your karmic blueprints, strengths, vulnerability cycles, and spiritual mission. In this empowering programme, Dr. Anameka decodes your birth chart with deep psychological insight, providing sensible, ethical, and practical remedies that dispel fear and inspire self-mastery.",
+    "pillars": [
+      {
+        "title": "Planetary Dasha Mastery",
+        "body": "Understand which planetary cycle (Mahadasha/Antardasha) you are walking through and how to navigate it."
+      },
+      {
+        "title": "Career & Karmic Purpose",
+        "body": "Identify your innate talents, high-growth professional avenues, and wealth combinations (Dhana Yogas)."
+      },
+      {
+        "title": "Sensible Vedic Remedies",
+        "body": "Neutralize challenging planetary periods through mantra vibrations, charity, gemstone guidance, and lifestyle modifications."
+      }
+    ],
+    "includes": [
+      {
+        "title": "Comprehensive Birth Chart Synthesis",
+        "body": "Deep mathematical and astrological breakdown of the Lagna chart, Navamsha (D9), and D10 charts."
+      },
+      {
+        "title": "Planetary Transit & Dasha Timeline",
+        "body": "Precise timing of forthcoming career breakthroughs, marriage/relationship opportunities, and health precautions."
+      },
+      {
+        "title": "Custom Karmic Remedy Plan",
+        "body": "Non-fear-based solutions—including specific mantra sadhanas, elemental remedies, and color alignment."
+      },
+      {
+        "title": "60-Minute Detailed Audio/Video Consultation",
+        "body": "Live interactive discussion answering all specific life questions with compassion and clarity."
+      }
+    ],
+    "for_whom": [
+      "Individuals standing at life crossroads (career shift, business venture, marriage, relocation)",
+      "Those undergoing stressful Saturn (Shani Sade Sati), Rahu/Ketu, or Mars (Mangal Dosha) periods seeking calm direction",
+      "Spiritual seekers curious about past karmic debts (Rina Anubandha) and soul purpose",
+      "Entrepreneurs choosing auspicious dates (Muhurta) for brand launches or contracts"
+    ],
+    "format": "Online video consultation with comprehensive personalized chart dossier delivered prior to the session.",
+    "price_note": null,
+    "price_inr": null,
+    "cta_label": "Book Kundli Consultation",
+    "whatsapp_keyword": "KUNDLI ALIGNMENT",
+    "poster_url": null,
+    "poster_alt": null,
+    "faqs": [
+      {
+        "q": "Are remedies expensive rituals or gemstones?",
+        "a": "No. Dr. Anameka advocates sensible, sattvic, non-commercial remedies—such as mantra frequencies, directional vastu alignment, behavioral adjustments, and charitable acts—which bring enduring results without fear-mongering."
+      },
+      {
+        "q": "What details are needed for the Kundli reading?",
+        "a": "Accurate date of birth, time of birth, and place of birth (city/state)."
+      }
+    ],
+    "seo_title": "Occult Sciences & Kundli Alignment Programme | Dr. Anameka S Panda",
+    "seo_description": "Empowering Vedic Astrology & Janam Kundli analysis. Practical karmic remedies, planetary dasha navigation, and career & relationship guidance."
+  }
 ]
