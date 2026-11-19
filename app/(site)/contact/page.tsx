@@ -1,16 +1,32 @@
-import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, Phone, Instagram, Youtube, Facebook, Linkedin, Star, ExternalLink } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { JsonLd } from "@/components/JsonLd";
-import { getProgrammes, getServices, getSettings } from "@/lib/data";
+import { getProgrammes, getServices, getSettings, getSocial } from "@/lib/data";
 import { buildMetadata, webPageSchema } from "@/lib/seo";
 import { env, formatPhone, waLink } from "@/lib/env";
+
+function GoogleIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M21.35 11.1h-9.17v2.73h5.27c-.23 1.2-1.35 3.52-5.27 3.52-3.17 0-5.76-2.63-5.76-5.87s2.59-5.87 5.76-5.87c1.8 0 3.01.77 3.7 1.43l2.16-2.08C21.9 3.56 19.34 2.5 16.5 2.5 10.98 2.5 6.5 6.98 6.5 12.5s4.48 10 10 10c5.77 0 9.61-4.06 9.61-9.78 0-.66-.07-1.16-.16-1.62z" />
+    </svg>
+  );
+}
+
+const icons: Record<string, any> = {
+  instagram: Instagram,
+  facebook: Facebook,
+  youtube: Youtube,
+  linkedin: Linkedin,
+  google: GoogleIcon,
+};
 
 export async function generateMetadata() {
   return buildMetadata({ path: "/contact", title: "Contact Dr. Anameka S Panda | Call, WhatsApp or Send a Message", description: "Contact the office of Dr. Anameka S Panda by phone or WhatsApp on +91 79925 12533, or send a message online." });
 }
 export default async function Contact() {
-  const [services, s, progs] = await Promise.all([getServices(), getSettings(), getProgrammes()]);
+  const [services, s, progs, social] = await Promise.all([getServices(), getSettings(), getProgrammes(), getSocial()]);
   const row = "flex items-start gap-4 border-t border-gold/30 py-5";
   return (
     <>
@@ -49,6 +65,57 @@ export default async function Contact() {
             <li className={row}><MapPin className="mt-1 h-5 w-5 text-gold" /><div><p className="text-sm text-charcoal/75">Location</p><p className="text-plum">{env.address ? `${env.address}, ` : ""}{env.city}, {env.region}</p><p className="text-sm text-charcoal/75">In person by appointment, online worldwide</p></div></li>
             <li className={`${row} border-b`}><Clock className="mt-1 h-5 w-5 text-gold" /><div><p className="text-sm text-charcoal/75">Hours</p><p className="text-plum">{s.hours}</p></div></li>
           </ul>
+
+          {/* Google My Business Card */}
+          <div className="rounded-3xl border border-gold/30 bg-white/90 p-5 shadow-soft">
+            <div className="flex items-center gap-3">
+              <div className="grid h-10 w-10 place-items-center rounded-2xl bg-gold/15 text-gold-deep shrink-0">
+                <MapPin className="h-5 w-5" />
+              </div>
+              <div>
+                <h4 className="font-display text-base font-medium text-plum">Google My Business</h4>
+                <p className="text-xs text-charcoal/75 flex items-center gap-1">
+                  <span className="text-amber-500 font-bold">★★★★★ 4.9</span>
+                  <span>• Verified Google Profile</span>
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://maps.google.com/?q=Dr.+Anameka+S+Panda+Bhubaneswar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 flex items-center justify-center gap-1.5 rounded-full border border-gold/40 bg-gold/10 px-4 py-2 text-xs font-semibold text-plum hover:bg-gold hover:text-plum-deep transition-all"
+            >
+              <span>View Location &amp; Reviews on Google</span>
+              <ExternalLink className="h-3 w-3" />
+            </a>
+          </div>
+
+          {/* Social Media Connect Row */}
+          {social.length > 0 && (
+            <div className="rounded-3xl border border-gold/30 bg-cream/40 p-5 shadow-soft">
+              <p className="text-xs uppercase tracking-wider font-semibold text-gold-deep mb-3">
+                Connect Across Social Media
+              </p>
+              <div className="flex flex-wrap gap-2.5">
+                {social.map((l) => {
+                  const I = icons[l.platform] ?? Instagram;
+                  return (
+                    <a
+                      key={l.url}
+                      href={l.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={l.platform}
+                      className="grid h-10 w-10 place-items-center rounded-full border border-gold/30 bg-white text-plum transition-all duration-300 hover:border-gold hover:bg-gold/20 hover:scale-105"
+                    >
+                      <I className="h-4 w-4" />
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
         <div className="lg:col-span-7 lg:col-start-6"><EnquiryForm kind="contact" services={services.map(({ slug, title }) => ({ slug, title }))} programmes={progs.map(({ slug, title }) => ({ slug, title }))} /></div>
       </div></section>

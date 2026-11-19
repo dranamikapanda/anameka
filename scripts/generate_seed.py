@@ -59,8 +59,8 @@ for t in read("testimonials-draft.json"):
     fields = [q(t.get("kind")), q(t.get("client_name")), q(t.get("service_slug")), q(t.get("quote")), "'false'", q(t.get("permission_note")), "'draft'"]
     out.append(f"insert into public.testimonials (kind,client_name,service_slug,quote,permission_confirmed,permission_note,status) select {','.join(fields)} where not exists (select 1 from public.testimonials where quote = {q(t.get('quote'))});")
 
-for s in read("social-draft.json"):
-    out.append(f"insert into public.social_links (platform,url,status) select {q(s.get('platform'))},{q(s.get('url'))},'draft' where not exists (select 1 from public.social_links where url = {q(s.get('url'))});")
+for s in read("social.json"):
+    out.append(f"insert into public.social_links (platform,url,status) select {q(s.get('platform'))},{q(s.get('url'))},'published' where not exists (select 1 from public.social_links where url = {q(s.get('url'))});")
 
 for i, g in enumerate(read("gallery-draft.json")):
     out.append(f"insert into public.gallery_items (category,title,alt,image_url,sort_order,status) select 'flyers',{q(g.get('title'))},{q(g.get('alt'))},{q(g.get('image_url'))},{(i + 1) * 10},'draft' where not exists (select 1 from public.gallery_items where image_url = {q(g.get('image_url'))});")

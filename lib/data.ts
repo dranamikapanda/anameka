@@ -14,6 +14,7 @@ import categoriesSeed from "@/lib/content/blog-categories.json";
 import legalSeed from "@/lib/content/legal.json";
 import profileSeed from "@/lib/content/profile.json";
 import programmesSeed from "@/lib/content/programmes.json";
+import socialSeed from "@/lib/content/social.json";
 import testimonialsDraft from "@/lib/content/testimonials-draft.json";
 import { readingMinutes } from "@/lib/utils";
 
@@ -106,7 +107,7 @@ export const getProfile = cache(async () => {
 });
 
 export const getSocial = cache(() =>
-  query<SocialLink[]>((db) => db.from("social_links").select("platform,url").eq("status", "published").order("sort_order"), []));
+  query<SocialLink[]>((db) => db.from("social_links").select("platform,url").eq("status", "published").order("sort_order"), socialSeed as SocialLink[]));
 
 export const getSeoOverride = cache(async (path: string) =>
   query<{ title?: string; description?: string; og_image_url?: string; noindex?: boolean } | null>((db) => db.from("seo_pages").select("*").eq("path", path).maybeSingle(), null));

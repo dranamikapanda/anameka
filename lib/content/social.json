@@ -1,0 +1,27 @@
+[
+  {
+    "platform": "google",
+    "label": "Google My Business",
+    "url": "https://maps.google.com/?q=Dr.+Anameka+S+Panda+Bhubaneswar"
+  },
+  {
+    "platform": "instagram",
+    "label": "Instagram",
+    "url": "https://www.instagram.com/anameka_graphologyst5/"
+  },
+  {
+    "platform": "youtube",
+    "label": "YouTube",
+    "url": "https://www.youtube.com/@DrAnamekaSPanda"
+  },
+  {
+    "platform": "facebook",
+    "label": "Facebook",
+    "url": "https://www.facebook.com/dranamekapanda"
+  },
+  {
+    "platform": "linkedin",
+    "label": "LinkedIn",
+    "url": "https://www.linkedin.com/in/dranamekapanda"
+  }
+]

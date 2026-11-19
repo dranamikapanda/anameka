@@ -9,17 +9,28 @@ import {
   Youtube,
   MessageCircle,
   ShieldCheck,
+  Star,
+  ExternalLink,
 } from "lucide-react";
 import { Logo } from "./Logo";
 import { CookieSettingsLink } from "./CookieSettingsLink";
 import { env, formatPhone, waLink } from "@/lib/env";
 import { getProgrammes, getServices, getSettings, getSocial } from "@/lib/data";
 
-const icons: Record<string, typeof Instagram> = {
+function GoogleIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M21.35 11.1h-9.17v2.73h5.27c-.23 1.2-1.35 3.52-5.27 3.52-3.17 0-5.76-2.63-5.76-5.87s2.59-5.87 5.76-5.87c1.8 0 3.01.77 3.7 1.43l2.16-2.08C21.9 3.56 19.34 2.5 16.5 2.5 10.98 2.5 6.5 6.98 6.5 12.5s4.48 10 10 10c5.77 0 9.61-4.06 9.61-9.78 0-.66-.07-1.16-.16-1.62z" />
+    </svg>
+  );
+}
+
+const icons: Record<string, any> = {
   instagram: Instagram,
   facebook: Facebook,
   youtube: Youtube,
   linkedin: Linkedin,
+  google: GoogleIcon,
 };
 
 export async function Footer() {
@@ -52,6 +63,33 @@ export async function Footer() {
             <p className="mt-0.5 text-xs text-ivory/70 leading-snug">
               Managed by: <span className="text-gold-light/90 font-medium">Indian Vastu &amp; Astrological Research Centre (Regd)</span>
             </p>
+          </div>
+
+          {/* Google My Business Verified Profile Card */}
+          <div className="mt-4 max-w-sm rounded-2xl border border-gold/30 bg-white/5 p-4 backdrop-blur-sm shadow-soft">
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-2.5">
+                <div className="grid h-8 w-8 place-items-center rounded-xl bg-gold/15 text-gold">
+                  <MapPin className="h-4 w-4" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-ivory">Google My Business</p>
+                  <p className="text-[11px] text-gold-light/90 flex items-center gap-1">
+                    <span className="text-amber-300">★★★★★</span>
+                    <span>Verified Profile &amp; Reviews</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://maps.google.com/?q=Dr.+Anameka+S+Panda+Bhubaneswar"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="View on Google Maps"
+                className="shrink-0 rounded-full border border-gold/40 bg-gold/15 px-3 py-1 text-[11px] font-semibold text-gold-light hover:bg-gold hover:text-plum transition-all"
+              >
+                View Profile
+              </a>
+            </div>
           </div>
 
           {/* Social Icons with golden borders */}
